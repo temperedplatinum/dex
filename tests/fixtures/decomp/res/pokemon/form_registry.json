@@ -1,0 +1,9 @@
+{
+    "rotom": {
+        "wash": "data"
+    },
+    "shellos": {
+        "east_sea": "icon",
+        "__all_back_then_front": true
+    }
+}

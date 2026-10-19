@@ -1,0 +1,43 @@
+{
+    "base_stats": {
+        "hp": 45,
+        "attack": 49,
+        "defense": 49,
+        "speed": 45,
+        "special_attack": 65,
+        "special_defense": 65
+    },
+    "types": [
+        "TYPE_STEEL"
+    ],
+    "gender_ratio": "GENDER_RATIO_FEMALE_12_5",
+    "egg_groups": [
+        "EGG_GROUP_MONSTER",
+        "EGG_GROUP_MONSTER"
+    ],
+    "abilities": [
+        "ABILITY_STENCH",
+        "ABILITY_NONE",
+        "ABILITY_NONE"
+    ],
+    "body_color": "MON_COLOR_GREEN",
+    "learnset": {
+        "by_level": [
+            [
+                1,
+                "MOVE_POUND"
+            ]
+        ],
+        "by_tm": [],
+        "by_tutor": [],
+        "egg_moves": []
+    },
+    "evolutions": [],
+    "pokedex_data": {
+        "height_inches": 87,
+        "weight_pounds": 298.3,
+        "en": {
+            "name": "ABOMASNOW"
+        }
+    }
+}

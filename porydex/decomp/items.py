@@ -11,6 +11,7 @@ PLACEHOLDER_DESCRIPTION = '???'
 @dataclasses.dataclass(frozen=True)
 class Item:
     key: str
+    constant: str
     num: int
     name: str
     description: str
@@ -66,6 +67,7 @@ def load_items(decomp: pathlib.Path, vanilla: dict[str, dict]) -> dict[str, Item
         description = descriptions[num]
         items[resolved.key] = Item(
             key=resolved.key,
+            constant=constant,
             num=num,
             name=resolved.name,
             description='' if description == PLACEHOLDER_DESCRIPTION else description,

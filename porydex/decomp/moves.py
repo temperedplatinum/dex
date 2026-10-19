@@ -54,6 +54,7 @@ ALWAYS_CRIT_EFFECT = 'BATTLE_EFFECT_ALWAYS_CRIT'
 @dataclasses.dataclass(frozen=True)
 class Move:
     key: str
+    constant: str
     num: int
     name: str
     type: str
@@ -113,6 +114,7 @@ def _parse_move(num: int,
     effect = data['effect']['type']
     return Move(
         key=resolved.key,
+        constant=constant,
         num=num,
         name=resolved.name,
         type=showdown_type(data['type']),

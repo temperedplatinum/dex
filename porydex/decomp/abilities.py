@@ -9,6 +9,7 @@ CUSTOM_RATING = 1
 @dataclasses.dataclass(frozen=True)
 class Ability:
     key: str
+    constant: str
     num: int
     name: str
     description: str
@@ -37,6 +38,7 @@ def load_abilities(decomp: pathlib.Path, vanilla: dict[str, dict]) -> dict[str, 
         known = vanilla.get(resolved.key, {})
         abilities[resolved.key] = Ability(
             key=resolved.key,
+            constant=constant,
             num=num,
             name=resolved.name,
             description=descriptions[num],
