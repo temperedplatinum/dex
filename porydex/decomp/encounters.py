@@ -82,6 +82,30 @@ INACCESSIBLE_LOCATION_FILES: frozenset[str] = frozenset({
     *(f'encounters_turnback_cave_pillar_3_room_{room}' for room in range(1, 6)),
 })
 
+LOCATION_ORDER: tuple[str, ...] = (
+    'twinleaftown', 'route201', 'lakeverity', 'sandgemtown', 'route202', 'route203', 'route204',
+    'ravagedpath', 'valleywindworks', 'route205south', 'fuegoironworks', 'eternaforest', 'route205north',
+    'eternacity', 'route211west', 'mtcoronet1fnorth', 'oldchateau', 'route206', 'route207',
+    'mtcoronet1fsouth', 'waywardcave1f', 'waywardcaveb1f', 'oreburghcity', 'oreburghmineb1f',
+    'oreburghmineb2f', 'oreburghgate1f', 'oreburghgateb1f', 'route208', 'route209',
+    'losttower1f', 'losttower2f', 'losttower3f', 'losttower4f', 'losttower5f', 'solaceonruins',
+    'route212north', 'trophygarden', 'route212south', 'pastoriacity',
+    'greatmarsharea12', 'greatmarsharea34', 'greatmarsharea56', 'route213', 'valorlakefront', 'route214',
+    'sendoffspring', 'turnbackcaveentrance', 'turnbackcavepillarroom', 'turnbackcavegiratinaroom',
+    'area1', 'area2', 'area3', 'area4', 'ruinmaniaccave', 'route215', 'route210south', 'route210north',
+    'celestictown', 'route211east', 'mtcoronetb1f', 'mtcoronet1fnorthroute216exit', 'route216', 'route217',
+    'acuitylakefront', 'snowpointcity', 'snowpointtemple1f', 'snowpointtempleb1f', 'snowpointtempleb2f',
+    'snowpointtempleb3f', 'snowpointtempleb4f', 'snowpointtempleb5f', 'fightarea', 'route225',
+    'survivalarea', 'route226', 'route227', 'starkmountainoutside', 'starkmountainroom1',
+    'starkmountainroom2', 'route228', 'route229', 'resortarea', 'route230', 'route218', 'canalavecity',
+    'ironisland', 'ironisland1f', 'ironislandb1fleftroom', 'ironislandb1frightroom', 'ironislandb2fleftroom',
+    'ironislandb2frightroom', 'ironislandb3f', 'mtcoronet2f', 'mtcoronet3f', 'coronetmountaintopsouth',
+    'mtcoronet4frooms1and2', 'coronetmountaintopnorth', 'mtcoronet1ftunnelroom', 'mtcoronet4froom3',
+    'mtcoronet5f', 'mtcoronet6f', 'lakevalor', 'lakeacuity', 'route219', 'route220', 'route221', 'route222',
+    'sunyshorecity', 'route223', 'pokemonleague', 'victoryroad1f', 'victoryroad2f', 'victoryroadb1f',
+    'victoryroad1froom1', 'victoryroad1froom2', 'victoryroad1froom3', 'route224', 'honeytrees',
+)
+
 MAP_HEADER_ENCOUNTERS = re.compile(
     r'\.wildEncountersArchiveID\s*=\s*(encounters_\w+),.*?\.mapLabelTextID\s*=\s*(\w+),',
     re.S,
@@ -212,7 +236,9 @@ def _add_location(locations: dict[str, Location],
     elif locations[key].methods != methods:
         raise ValueError(f'{file_stem} merges into {name} but its encounters differ')
 
-def load_encounters(decomp: pathlib.Path, species: dict[str, Species]) -> dict[str, Location]:
+def load_encounters(decomp: pathlib.Path,
+                    species: dict[str, Species],
+                    order: tuple[str, ...] = ()) -> dict[str, Location]:
     species_keys = {mon.constant: mon.key for mon in species.values() if not mon.base_species}
     slot_rates = load_slot_rates(decomp)
     location_names = load_text_bank_by_id(decomp, 'location_names')
@@ -240,4 +266,13 @@ def load_encounters(decomp: pathlib.Path, species: dict[str, Species]) -> dict[s
 
     honey = _honey_tree(decomp, species_keys)
     locations[honey.key] = honey
-    return locations
+    return _ordered(locations, order)
+
+def _ordered(locations: dict[str, Location], order: tuple[str, ...]) -> dict[str, Location]:
+    missing = [key for key in order if key not in locations]
+    if missing:
+        raise ValueError(f'location order lists unknown locations: {missing}')
+    return {
+        **{key: locations[key] for key in order},
+        **{key: location for key, location in locations.items() if key not in order},
+    }

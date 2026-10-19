@@ -1361,11 +1361,14 @@ var BattleLocationSearch = /** @class */ (function (_super) {
     };
     BattleLocationSearch.prototype.getDefaultResults = function () {
         var results = [];
-        results.push(['header', "Location"]);
+        results.push(['header', "Locations"]);
         for (var id in BattleLocationdex) {
             results.push(['location', id]);
         }
         return results;
+    };
+    BattleLocationSearch.prototype.getBaseResults = function () {
+        return this.getDefaultResults();
     };
     BattleLocationSearch.prototype.filter = function (row, filters) {
         if (!filters)
@@ -1389,8 +1392,8 @@ var BattleLocationSearch = /** @class */ (function (_super) {
         switch (sortCol) {
             case 'name':
                 return results.sort(function (_a, _b) {
-                    var name1 = id1;
-                    var name2 = id2;
+                    var name1 = BattleLocationdex[_a[1]].name;
+                    var name2 = BattleLocationdex[_b[1]].name;
                     return (name1 < name2 ? -1 : name1 > name2 ? 1 : 0) * sortOrder;
                 });
         }

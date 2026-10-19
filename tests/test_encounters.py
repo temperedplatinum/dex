@@ -95,3 +95,15 @@ def test_honey_tree_rates_are_weight_percentages(locations):
             {'species': 'rotom', 'minLvl': 5, 'maxLvl': 15, 'rate': 16.7},
         ],
     }
+
+def test_locations_follow_given_order_then_unlisted(decomp):
+    species = load_species(decomp, load_moves(decomp, {}), load_abilities(decomp, {}), load_items(decomp, {}))
+    order = ('honeytrees', 'losttower2f', 'route212south')
+    assert list(load_encounters(decomp, species, order)) == [
+        'honeytrees', 'losttower2f', 'route212south', 'route212north', 'losttower1f',
+    ]
+
+def test_unknown_location_in_order_is_rejected(decomp):
+    species = load_species(decomp, load_moves(decomp, {}), load_abilities(decomp, {}), load_items(decomp, {}))
+    with pytest.raises(ValueError, match='route999'):
+        load_encounters(decomp, species, ('route999',))

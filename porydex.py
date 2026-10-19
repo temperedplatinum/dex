@@ -6,7 +6,7 @@ import porydex.config
 import porydex.showdown
 
 from porydex.decomp.abilities import load_abilities
-from porydex.decomp.encounters import load_encounters
+from porydex.decomp.encounters import LOCATION_ORDER, load_encounters
 from porydex.decomp.items import load_items
 from porydex.decomp.loaders import load_json
 from porydex.decomp.moves import load_moves
@@ -66,7 +66,10 @@ def extract(_):
         'moves': {key: moves[key].to_showdown() for key in sorted(moves)},
         'species': species_to_showdown(species),
         'learnsets': learnsets_to_showdown(species),
-        'encounters': {key: location.to_showdown() for key, location in load_encounters(decomp, species).items()},
+        'encounters': {
+            key: location.to_showdown()
+            for key, location in load_encounters(decomp, species, LOCATION_ORDER).items()
+        },
         'abilities': {key: ability.to_showdown() for key, ability in abilities.items()},
         'items': {key: item.to_showdown() for key, item in items.items()},
     }
