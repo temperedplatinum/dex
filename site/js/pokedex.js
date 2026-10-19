@@ -1,5 +1,11 @@
 BattleSearch.urlRoot = './';
 
+var EncounterMethods = [
+	{id: 'land', name: 'Land'},
+	{id: 'surf', name: 'Surfing'},
+	{id: 'honey', name: 'Honey Tree'}
+];
+
 Dex.escapeHTML = function (str, jsEscapeToo) {
 	str = String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 	if (jsEscapeToo) str = str.replace(/\\/g, '\\\\').replace(/'/g, '\\\'');

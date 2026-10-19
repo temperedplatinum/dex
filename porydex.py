@@ -6,21 +6,13 @@ import porydex.config
 import porydex.showdown
 
 from porydex.decomp.abilities import load_abilities
+from porydex.decomp.encounters import load_encounters
 from porydex.decomp.items import load_items
 from porydex.decomp.loaders import load_json
 from porydex.decomp.moves import load_moves
 from porydex.decomp.species import learnsets_to_showdown, load_species, species_to_showdown
 
 VANILLA_DIR = pathlib.Path('vanilla')
-
-EMPTY_ENCOUNTERS: dict = {
-    'rates': {
-        'land': [],
-        'surf': [],
-        'rock': [],
-        'fish': {'old': [], 'good': [], 'super': []},
-    },
-}
 
 def config_show(_):
     porydex.config.load()
@@ -79,7 +71,7 @@ def extract(_):
         'moves': {key: move.to_showdown() for key, move in moves.items()},
         'species': species_to_showdown(species),
         'learnsets': learnsets_to_showdown(species),
-        'encounters': EMPTY_ENCOUNTERS,
+        'encounters': {key: location.to_showdown() for key, location in load_encounters(decomp, species).items()},
         'abilities': {key: ability.to_showdown() for key, ability in abilities.items()},
         'items': {key: item.to_showdown() for key, item in items.items()},
     }

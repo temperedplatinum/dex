@@ -1,0 +1,53 @@
+{
+    "land_rate": 20,
+    "land_encounters": [
+        {
+            "level": 5,
+            "species": "SPECIES_ROTOM"
+        },
+        {
+            "level": 6,
+            "species": "SPECIES_ROTOM"
+        },
+        {
+            "level": 7,
+            "species": "SPECIES_ROTOM"
+        },
+        {
+            "level": 8,
+            "species": "SPECIES_ROTOM"
+        },
+        {
+            "level": 9,
+            "species": "SPECIES_ROTOM"
+        },
+        {
+            "level": 10,
+            "species": "SPECIES_ROTOM"
+        },
+        {
+            "level": 11,
+            "species": "SPECIES_ROTOM"
+        },
+        {
+            "level": 12,
+            "species": "SPECIES_ROTOM"
+        },
+        {
+            "level": 13,
+            "species": "SPECIES_ROTOM"
+        },
+        {
+            "level": 14,
+            "species": "SPECIES_ROTOM"
+        },
+        {
+            "level": 15,
+            "species": "SPECIES_ROTOM"
+        },
+        {
+            "level": 16,
+            "species": "SPECIES_ROTOM"
+        }
+    ]
+}

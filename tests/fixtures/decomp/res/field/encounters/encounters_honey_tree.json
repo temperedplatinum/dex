@@ -1,0 +1,16 @@
+{
+    "encounters": [
+        {
+            "species": "SPECIES_BULBASAUR",
+            "weight": 3
+        },
+        {
+            "species": "SPECIES_ROTOM",
+            "weight": 1
+        },
+        {
+            "species": "SPECIES_BULBASAUR",
+            "weight": 2
+        }
+    ]
+}

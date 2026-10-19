@@ -1,0 +1,53 @@
+{
+    "land_rate": 10,
+    "land_encounters": [
+        {
+            "level": 5,
+            "species": "SPECIES_IVYSAUR"
+        },
+        {
+            "level": 6,
+            "species": "SPECIES_IVYSAUR"
+        },
+        {
+            "level": 7,
+            "species": "SPECIES_IVYSAUR"
+        },
+        {
+            "level": 8,
+            "species": "SPECIES_IVYSAUR"
+        },
+        {
+            "level": 9,
+            "species": "SPECIES_IVYSAUR"
+        },
+        {
+            "level": 10,
+            "species": "SPECIES_IVYSAUR"
+        },
+        {
+            "level": 11,
+            "species": "SPECIES_IVYSAUR"
+        },
+        {
+            "level": 12,
+            "species": "SPECIES_IVYSAUR"
+        },
+        {
+            "level": 13,
+            "species": "SPECIES_IVYSAUR"
+        },
+        {
+            "level": 14,
+            "species": "SPECIES_IVYSAUR"
+        },
+        {
+            "level": 15,
+            "species": "SPECIES_IVYSAUR"
+        },
+        {
+            "level": 16,
+            "species": "SPECIES_IVYSAUR"
+        }
+    ]
+}

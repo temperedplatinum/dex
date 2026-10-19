@@ -193,7 +193,7 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 		}
 
 		// learnset
-        if (pokemon.tier === 'obtainable') {
+        if (this.getEncounterLocations(pokemon.id).length) {
 			buf += '<ul class="tabbar"><li><button class="button nav-first cur" value="move">Moves</button></li><li><button class="button" value="details">Flavor</button></li><li><button class="button" value="encounters">Encounters</button></li></ul>';
 		} else {
 			buf += '<ul class="tabbar"><li><button class="button nav-first cur" value="move">Moves</button></li><li><button class="button" value="details">Flavor</button></li></ul>';
@@ -557,126 +557,37 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 		this.$('.utilichart').html(buf);
 	},
     getEncounterLocations: function(pokemon) {
-        if (this.results) return this.results;
-
-        var rates = BattleLocationdex['rates'];
-
-        let isInZone = function(location, enc_mode, pokemon) {
-            let for_mode = location[enc_mode]
-            if (!('encs' in for_mode)) {
-                return 0;
-            }
-
-            let sum_rate = 0;
-            for (let i = 0; i < for_mode['encs'].length; i++) {
-                let slot = for_mode['encs'][i];
-                let species = slot['species'];
-                if (species === pokemon) {
-                    sum_rate += rates[enc_mode][i];
+        var groups = [];
+        for (var i = 0; i < EncounterMethods.length; i++) {
+            var method = EncounterMethods[i];
+            var rows = [];
+            for (var locationId in BattleLocationdex) {
+                var slots = BattleLocationdex[locationId][method.id] || [];
+                var rate = 0;
+                for (var j = 0; j < slots.length; j++) {
+                    if (slots[j].species === pokemon) rate += slots[j].rate;
                 }
+                if (rate > 0) rows.push({location: BattleLocationdex[locationId], rate: Math.round(rate * 10) / 10});
             }
-
-            return sum_rate;
+            rows.sort(function(a, b) {
+                return b.rate - a.rate || (a.location.name < b.location.name ? -1 : 1);
+            });
+            if (rows.length) groups.push({method: method, rows: rows});
         }
-
-        var formatRate = function(i) {
-            return i.toString().padStart(3, 'z') + '% ';
-        }
-
-        var results = [];
-        for (let location in BattleLocationdex) {
-            if (location === 'rates') {
-                continue;
-            }
-
-            let encounters = BattleLocationdex[location];
-            let land_rate = isInZone(encounters, 'land', pokemon)
-            let surf_rate = isInZone(encounters, 'surf', pokemon)
-            let rock_rate = isInZone(encounters, 'rock', pokemon)
-            let fish_rate = isInZone(encounters, 'fish', pokemon)
-
-            if (land_rate > 0) {
-                if (!results.includes('A')) {
-                    results.push('A');
-                }
-
-                results.push('A ' + formatRate(land_rate) + location);
-            }
-            if (surf_rate > 0) {
-                if (!results.includes('B')) {
-                    results.push('B');
-                }
-
-                results.push('B ' + formatRate(surf_rate) + location);
-            }
-            if (rock_rate > 0) {
-                if (!results.includes('C')) {
-                    results.push('C');
-                }
-
-                results.push('C ' + formatRate(rock_rate) + location);
-            }
-            if (fish_rate > 0) {
-                if (!results.includes('D')) {
-                    results.push('D');
-                }
-
-                results.push('D ' + formatRate(fish_rate) + location);
-            }
-        }
-
-        results.sort();
-        return results;
+        return groups;
     },
     renderEncounters: function() {
-        var locations = this.getEncounterLocations(this.id);
+        var groups = this.getEncounterLocations(this.id);
         var buf = '';
-        for (let i = 0; i < locations.length; i++) {
-            let location = locations[i];
-            if (location.length == 1) {
-                if (buf.length != 0) {
-                    buf += '</ul>'
-                }
-                switch (location) {
-                case 'A': // land
-                    buf += '<li class="resultheader"><h3>Land</h3></li>';
-                    break;
-                case 'B': // surfing
-                    buf += '<li class="resultheader"><h3>Surfing</h3></li>';
-                    break;
-                case 'C': // rock smash
-                    buf += '<li class="resultheader"><h3>Rock Smash</h3></li>';
-                    break;
-                case 'D': // fishing
-                    buf += '<li class="resultheader"><h3>Fishing</h3></li>';
-                    break;
-                case 'O':
-                    buf += '<li class="resultheader"><h3>Old Rod</h3></li>';
-                    break;
-                case 'G':
-                    buf += '<li class="resultheader"><h3>Good Rod</h3></li>';
-                    break;
-                case 'S':
-                    buf += '<li class="resultheader"><h3>Super Rod</h3></li>';
-                    break;
-                default:
-                    buf += '<pre>error: "'+location+'"</pre>';
-                    break;
-                }
-                buf += '<ul>';
-            } else {
-                let rate = location.substr(2, 4).replace('z', '').replace('z', '');
-                let zoneid = location.slice(7);
-                let zone = BattleLocationdex[zoneid];
-                buf += BattleSearch.renderTaggedEncounterRow(zone, rate);
+        for (var i = 0; i < groups.length; i++) {
+            buf += '<li class="resultheader"><h3>' + groups[i].method.name + '</h3></li><ul>';
+            for (var j = 0; j < groups[i].rows.length; j++) {
+                var row = groups[i].rows[j];
+                buf += BattleSearch.renderTaggedEncounterRow(row.location, row.rate + '%');
             }
-        }
-
-        if (buf.length != 0) {
             buf += '</ul>';
         }
-
-		this.$('.utilichart').html(buf);
+        this.$('.utilichart').html(buf);
     },
 	getStat: function(baseStat, isHP, level, iv, ev, natureMult) {
 		if (isHP) {

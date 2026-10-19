@@ -1,0 +1,98 @@
+{
+    "land_rate": 30,
+    "land_encounters": [
+        {
+            "level": 5,
+            "species": "SPECIES_BULBASAUR"
+        },
+        {
+            "level": 6,
+            "species": "SPECIES_BULBASAUR"
+        },
+        {
+            "level": 7,
+            "species": "SPECIES_IVYSAUR"
+        },
+        {
+            "level": 8,
+            "species": "SPECIES_IVYSAUR"
+        },
+        {
+            "level": 9,
+            "species": "SPECIES_IVYSAUR"
+        },
+        {
+            "level": 10,
+            "species": "SPECIES_IVYSAUR"
+        },
+        {
+            "level": 11,
+            "species": "SPECIES_IVYSAUR"
+        },
+        {
+            "level": 12,
+            "species": "SPECIES_IVYSAUR"
+        },
+        {
+            "level": 13,
+            "species": "SPECIES_IVYSAUR"
+        },
+        {
+            "level": 14,
+            "species": "SPECIES_IVYSAUR"
+        },
+        {
+            "level": 15,
+            "species": "SPECIES_IVYSAUR"
+        },
+        {
+            "level": 16,
+            "species": "SPECIES_IVYSAUR"
+        }
+    ],
+    "surf_rate": 10,
+    "surf_encounters": [
+        {
+            "level_max": 30,
+            "level_min": 20,
+            "species": "SPECIES_SHELLOS"
+        },
+        {
+            "level_max": 30,
+            "level_min": 20,
+            "species": "SPECIES_SHELLOS"
+        },
+        {
+            "level_max": 30,
+            "level_min": 20,
+            "species": "SPECIES_NONE"
+        },
+        {
+            "level_max": 30,
+            "level_min": 20,
+            "species": "SPECIES_NONE"
+        },
+        {
+            "level_max": 30,
+            "level_min": 20,
+            "species": "SPECIES_NONE"
+        },
+        {
+            "level_max": 30,
+            "level_min": 20,
+            "species": "SPECIES_ROTOM"
+        }
+    ],
+    "day": [
+        "SPECIES_ABOMASNOW",
+        "SPECIES_ABOMASNOW"
+    ],
+    "old_rod_rate": 10,
+    "old_rod_encounters": [
+        {
+            "level_max": 30,
+            "level_min": 20,
+            "species": "SPECIES_ROTOM"
+        }
+    ]
+}

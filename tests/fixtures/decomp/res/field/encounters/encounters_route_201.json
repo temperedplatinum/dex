@@ -1,0 +1,86 @@
+{
+    "land_rate": 0,
+    "land_encounters": [
+        {
+            "level": 5,
+            "species": "SPECIES_BULBASAUR"
+        },
+        {
+            "level": 6,
+            "species": "SPECIES_BULBASAUR"
+        },
+        {
+            "level": 7,
+            "species": "SPECIES_BULBASAUR"
+        },
+        {
+            "level": 8,
+            "species": "SPECIES_BULBASAUR"
+        },
+        {
+            "level": 9,
+            "species": "SPECIES_BULBASAUR"
+        },
+        {
+            "level": 10,
+            "species": "SPECIES_BULBASAUR"
+        },
+        {
+            "level": 11,
+            "species": "SPECIES_BULBASAUR"
+        },
+        {
+            "level": 12,
+            "species": "SPECIES_BULBASAUR"
+        },
+        {
+            "level": 13,
+            "species": "SPECIES_BULBASAUR"
+        },
+        {
+            "level": 14,
+            "species": "SPECIES_BULBASAUR"
+        },
+        {
+            "level": 15,
+            "species": "SPECIES_BULBASAUR"
+        },
+        {
+            "level": 16,
+            "species": "SPECIES_BULBASAUR"
+        }
+    ],
+    "surf_rate": 0,
+    "surf_encounters": [
+        {
+            "level_max": 30,
+            "level_min": 20,
+            "species": "SPECIES_SHELLOS"
+        },
+        {
+            "level_max": 30,
+            "level_min": 20,
+            "species": "SPECIES_SHELLOS"
+        },
+        {
+            "level_max": 30,
+            "level_min": 20,
+            "species": "SPECIES_SHELLOS"
+        },
+        {
+            "level_max": 30,
+            "level_min": 20,
+            "species": "SPECIES_SHELLOS"
+        },
+        {
+            "level_max": 30,
+            "level_min": 20,
+            "species": "SPECIES_SHELLOS"
+        },
+        {
+            "level_max": 30,
+            "level_min": 20,
+            "species": "SPECIES_SHELLOS"
+        }
+    ]
+}

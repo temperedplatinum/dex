@@ -14,6 +14,10 @@ def load_text_bank(decomp: pathlib.Path, name: str) -> list[str]:
     messages = load_json(decomp / 'res' / 'text' / f'{name}.json')['messages']
     return [_flatten(message.get('en_US', '')) for message in messages]
 
+def load_text_bank_by_id(decomp: pathlib.Path, name: str) -> dict[str, str]:
+    messages = load_json(decomp / 'res' / 'text' / f'{name}.json')['messages']
+    return {message['id']: _flatten(message.get('en_US', '')) for message in messages}
+
 def _flatten(text: str | list[str]) -> str:
     joined = ''.join(text) if isinstance(text, list) else text
     return ' '.join(joined.split())

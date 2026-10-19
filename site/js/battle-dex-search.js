@@ -800,78 +800,16 @@ var BattleTypedSearch = /** @class */ (function () {
         return '';
     };
     BattleTypedSearch.prototype.isHere = function (speciesid, location) {
-        if (typeof location.landslot1 !== 'undefined') {
-            if (location.landslot1 === speciesid)
-                return true;
-            if (location.landslot2 === speciesid)
-                return true;
-            if (location.landslot3 === speciesid)
-                return true;
-            if (location.landslot4 === speciesid)
-                return true;
-            if (location.landslot5 === speciesid)
-                return true;
-            if (location.landslot6 === speciesid)
-                return true;
-            if (location.landslot7 === speciesid)
-                return true;
-            if (location.landslot8 === speciesid)
-                return true;
-            if (location.landslot9 === speciesid)
-                return true;
-            if (location.landslot10 === speciesid)
-                return true;
-            if (location.landslot11 === speciesid)
-                return true;
-            if (location.landslot12 === speciesid)
-                return true;
+        for (var method in location) {
+            var slots = location[method];
+            if (!Array.isArray(slots))
+                continue;
+            for (var i = 0; i < slots.length; i++) {
+                if (slots[i].species === speciesid)
+                    return true;
+            }
         }
-        if (typeof location.fishslot1 !== 'undefined') {
-            if (location.fishslot1 === speciesid)
-                return true;
-            if (location.fishslot2 === speciesid)
-                return true;
-            if (location.fishslot3 === speciesid)
-                return true;
-            if (location.fishslot4 === speciesid)
-                return true;
-            if (location.fishslot5 === speciesid)
-                return true;
-            if (location.fishslot6 === speciesid)
-                return true;
-            if (location.fishslot7 === speciesid)
-                return true;
-            if (location.fishslot8 === speciesid)
-                return true;
-            if (location.fishslot9 === speciesid)
-                return true;
-            if (location.fishslot10 === speciesid)
-                return true;
-        }
-        if (typeof location.waterslot1 !== 'undefined') {
-            if (location.waterslot1 === speciesid)
-                return true;
-            if (location.waterslot2 === speciesid)
-                return true;
-            if (location.waterslot3 === speciesid)
-                return true;
-            if (location.waterslot4 === speciesid)
-                return true;
-            if (location.waterslot5 === speciesid)
-                return true;
-        }
-        if (typeof location.rockslot1 !== 'undefined') {
-            if (location.rockslot1 === speciesid)
-                return true;
-            if (location.rockslot2 === speciesid)
-                return true;
-            if (location.rockslot3 === speciesid)
-                return true;
-            if (location.rockslot4 === speciesid)
-                return true;
-            if (location.rockslot5 === speciesid)
-                return true;
-        }
+        return false;
     };
     BattleTypedSearch.prototype.canLearn = function (speciesid, moveid) {
         var _a;

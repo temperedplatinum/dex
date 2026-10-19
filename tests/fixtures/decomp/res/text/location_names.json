@@ -1,0 +1,21 @@
+{
+  "key": 2566,
+  "messages": [
+    {
+      "id": "LocationNames_Text_TwinleafTown",
+      "en_US": "Twinleaf Town"
+    },
+    {
+      "id": "LocationNames_Text_Route201",
+      "en_US": "Route 201"
+    },
+    {
+      "id": "LocationNames_Text_Route212",
+      "en_US": "Route 212"
+    },
+    {
+      "id": "LocationNames_Text_LostTower",
+      "en_US": "Lost Tower"
+    }
+  ]
+}
