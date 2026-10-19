@@ -26,6 +26,39 @@ LOCATION_NAME_OVERRIDES: dict[str, str] = {
     'encounters_turnback_cave_pillar_1_room_5': '??? Area 4',
     'encounters_route_204_south': 'Route 204',
     'encounters_route_204_north': 'Route 204',
+    'encounters_lake_verity': 'Lake Verity',
+    'encounters_lake_verity_low_water': 'Lake Verity',
+    'encounters_ruin_maniac_cave_short': 'Ruin Maniac Cave',
+    'encounters_ruin_maniac_cave_long': 'Ruin Maniac Cave',
+    'encounters_maniac_tunnel': 'Ruin Maniac Cave',
+    **{
+        f'encounters_solaceon_ruins_{room}': 'Solaceon Ruins'
+        for room in (
+            'maniac_tunnel_room',
+            'room_1_northwest_dead_end',
+            'room_1_southeast_dead_end',
+            'room_2',
+            'room_2_northeast_dead_end',
+            'room_2_southeast_dead_end',
+            'room_3',
+            'room_3_northwest_dead_end',
+            'room_3_southwest_dead_end',
+            'room_4',
+            'room_4_southeast_dead_end',
+            'room_5',
+            'room_5_southwest_dead_end',
+            'room_5_southeast_deadend',
+            'room_6',
+            'room_6_northwest_dead_end',
+            'room_6_southeast_dead_end',
+            'room_7',
+        )
+    },
+    **{
+        f'encounters_great_marsh_{area}': f'Great Marsh Area {first} & {first + 1}'
+        for first in (1, 3, 5)
+        for area in (first, first + 1)
+    },
     **{
         f'encounters_old_chateau{room}': 'Old Chateau'
         for room in (
