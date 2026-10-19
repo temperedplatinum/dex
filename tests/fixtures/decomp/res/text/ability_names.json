@@ -1,0 +1,9 @@
+{
+  "key": 3,
+  "messages": [
+    { "id": "ability_names_0", "en_US": " -" },
+    { "id": "ability_names_1", "en_US": "Stench" },
+    { "id": "ability_names_2", "en_US": "Overgrow" },
+    { "id": "ability_names_3", "en_US": "Mega Sol" }
+  ]
+}

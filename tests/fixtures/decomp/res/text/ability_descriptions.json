@@ -1,0 +1,9 @@
+{
+  "key": 4,
+  "messages": [
+    { "id": "ability_descriptions_0", "en_US": " -" },
+    { "id": "ability_descriptions_1", "en_US": ["The stench helps keep\n", "wild Pokémon away."] },
+    { "id": "ability_descriptions_2", "en_US": "Powers up Grass-type moves in a pinch." },
+    { "id": "ability_descriptions_3", "en_US": "Acts as if under harsh sunlight." }
+  ]
+}

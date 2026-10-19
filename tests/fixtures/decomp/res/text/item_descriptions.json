@@ -1,0 +1,11 @@
+{
+  "key": 2,
+  "messages": [
+    { "id": "item_descriptions_0", "en_US": "???" },
+    { "id": "item_descriptions_1", "en_US": ["The best Poké Ball with the\n", "ultimate level of performance."] },
+    { "id": "item_descriptions_2", "en_US": "Restores 20 HP." },
+    { "id": "item_descriptions_3", "en_US": "Restores 10 HP." },
+    { "id": "item_descriptions_4", "en_US": "Lets Abomasnow Mega Evolve." },
+    { "id": "item_descriptions_5", "en_US": "???" }
+  ]
+}
