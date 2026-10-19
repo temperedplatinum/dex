@@ -63,7 +63,7 @@ def extract(_):
     species = load_species(decomp, moves, abilities, items, UNOBTAINABLE_SPECIES)
 
     data = {
-        'moves': {key: move.to_showdown() for key, move in moves.items()},
+        'moves': {key: moves[key].to_showdown() for key in sorted(moves)},
         'species': species_to_showdown(species),
         'learnsets': learnsets_to_showdown(species),
         'encounters': {key: location.to_showdown() for key, location in load_encounters(decomp, species).items()},
