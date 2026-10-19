@@ -302,10 +302,8 @@
 		var tier = pokemon.tier
         if (tier === "obtainable") {
             buf += '<span class="col numcol">' + '✅' + '</span> ';
-        } else if (tier === "unobtainable") {
-            buf += '<span class="col numcol">' + '❌' + '</span> ';
         } else {
-            buf += '<span class="col numcol">' + pokemon.num + '</span> ';
+            buf += '<span class="col numcol">' + '❌' + '</span> ';
         }
 
 		// icon

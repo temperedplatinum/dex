@@ -21,6 +21,14 @@ STAT_KEYS: dict[str, str] = {
 
 SKIPPED_SPECIES: frozenset[str] = frozenset({'SPECIES_NONE', 'SPECIES_EGG', 'SPECIES_BAD_EGG'})
 
+UNOBTAINABLE_SPECIES: frozenset[str] = frozenset({
+    'Chansey', 'Mewtwo', 'Mew',
+    'Blissey', 'Lugia', 'Ho-Oh', 'Celebi',
+    'Slakoth', 'Vigoroth', 'Slaking', 'Nincada', 'Shedinja', 'Kyogre', 'Groudon', 'Rayquaza', 'Jirachi',
+    'Deoxys', 'Deoxys-Attack', 'Deoxys-Defense', 'Deoxys-Speed',
+    'Happiny', 'Dialga', 'Palkia', 'Heatran', 'Regigigas', 'Giratina', 'Manaphy', 'Darkrai', 'Shaymin', 'Arceus',
+})
+
 BASE_FORMES: dict[str, str] = {
     'deoxys': 'Normal',
     'burmy': 'Plant',
@@ -135,8 +143,7 @@ class Species:
         if self.required_item:
             mon['requiredItem'] = self.required_item
             mon['battleOnly'] = self.base_species
-        if not self.obtainable:
-            mon['tier'] = 'unobtainable'
+        mon['tier'] = 'obtainable' if self.obtainable else 'unobtainable'
         return mon
 
 @dataclasses.dataclass(frozen=True)
@@ -219,7 +226,8 @@ def _first_existing(*paths: pathlib.Path) -> pathlib.Path | None:
 def load_species(decomp: pathlib.Path,
                  moves: dict[str, Move],
                  abilities: dict[str, Ability],
-                 items: dict[str, Item]) -> dict[str, Species]:
+                 items: dict[str, Item],
+                 unobtainable: frozenset[str] = frozenset()) -> dict[str, Species]:
     lookups = _Lookups(
         ability_names={a.constant: a.name for a in abilities.values()},
         item_names={i.constant: i.name for i in items.values()},
@@ -250,7 +258,9 @@ def load_species(decomp: pathlib.Path,
             for form in _form_dirs(mon_dir, mon_registry)
         }
 
+        base_obtainable = name not in unobtainable
         base = _species(constant, num, name, data, height_m, weight_kg, lookups,
+                        obtainable=base_obtainable,
                         base_forme=BASE_FORMES.get(species_dir),
                         other_formes=tuple(forms),
                         cosmetic_formes=_cosmetic_formes(species_dir, name, mon_registry),
@@ -263,10 +273,15 @@ def load_species(decomp: pathlib.Path,
                            base_species=name,
                            forme=forme_name(form),
                            required_item=required_item,
-                           obtainable=required_item not in lookups.unplaced_stones,
+                           obtainable=base_obtainable
+                               and form_name not in unobtainable
+                               and required_item not in lookups.unplaced_stones,
                            sprite=_first_existing(mon_dir / 'forms' / form / 'front.png'))
             species[mon.key] = mon
 
+    unknown = unobtainable - {mon.name for mon in species.values()}
+    if unknown:
+        raise ValueError(f'unobtainable species not found in decomp: {sorted(unknown)}')
     return species
 
 def _evolution_fields(evolution: Evolution, prevo: str, species_names: dict[str, str]) -> dict:

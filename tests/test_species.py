@@ -44,6 +44,7 @@ def test_base_species_to_showdown(dex):
         'color': 'Green',
         'eggGroups': ['Monster'],
         'genderRatio': {'M': 0.875, 'F': 0.125},
+        'tier': 'obtainable',
         'evos': ['Ivysaur'],
     }
 
@@ -106,9 +107,9 @@ def test_unknown_evolution_method_is_rejected():
 
 def test_mega_with_unplaced_stone_is_unobtainable(dex):
     assert dex['abomasnowmega']['tier'] == 'unobtainable'
-    assert 'tier' not in dex['abomasnow']
+    assert dex['abomasnow']['tier'] == 'obtainable'
 
-def test_mega_with_placed_stone_has_no_tier(decomp, monkeypatch):
+def test_mega_with_placed_stone_is_obtainable(decomp, monkeypatch):
     monkeypatch.setattr('porydex.decomp.items.load_placed_items', lambda _: {'ITEM_ABOMASITE'})
     species = load_species(
         decomp,
@@ -116,4 +117,28 @@ def test_mega_with_placed_stone_has_no_tier(decomp, monkeypatch):
         load_abilities(decomp, {}),
         load_items(decomp, VANILLA_ITEMS),
     )
-    assert 'tier' not in species_to_showdown(species)['abomasnowmega']
+    assert species_to_showdown(species)['abomasnowmega']['tier'] == 'obtainable'
+
+def _species_with_unobtainable(decomp, unobtainable):
+    return load_species(
+        decomp,
+        load_moves(decomp, {}),
+        load_abilities(decomp, {}),
+        load_items(decomp, VANILLA_ITEMS),
+        frozenset(unobtainable),
+    )
+
+def test_unobtainable_species_and_their_forms(decomp):
+    dex = species_to_showdown(_species_with_unobtainable(decomp, {'Rotom'}))
+    assert dex['rotom']['tier'] == 'unobtainable'
+    assert dex['rotomwash']['tier'] == 'unobtainable'
+    assert dex['bulbasaur']['tier'] == 'obtainable'
+
+def test_unobtainable_form_leaves_base_obtainable(decomp):
+    dex = species_to_showdown(_species_with_unobtainable(decomp, {'Rotom-Wash'}))
+    assert dex['rotom']['tier'] == 'obtainable'
+    assert dex['rotomwash']['tier'] == 'unobtainable'
+
+def test_unknown_unobtainable_name_is_rejected(decomp):
+    with pytest.raises(ValueError, match='Rotomm'):
+        _species_with_unobtainable(decomp, {'Rotomm'})
