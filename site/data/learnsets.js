@@ -6185,9 +6185,6 @@ exports.BattleLearnsets = {
                 "L34",
                 "M"
             ],
-            "grassyterrain": [
-                "L36"
-            ],
             "moonlight": [
                 "L39"
             ],
@@ -6329,9 +6326,6 @@ exports.BattleLearnsets = {
             "petalblizzard": [
                 "L36"
             ],
-            "grassyterrain": [
-                "L38"
-            ],
             "moonlight": [
                 "L44"
             ],
@@ -6456,9 +6450,6 @@ exports.BattleLearnsets = {
             ],
             "luckychant": [
                 "L34"
-            ],
-            "grassyterrain": [
-                "L38"
             ],
             "moonlight": [
                 "L44"
@@ -6681,9 +6672,6 @@ exports.BattleLearnsets = {
                 "E"
             ],
             "fellstinger": [
-                "E"
-            ],
-            "grassyterrain": [
                 "E"
             ]
         }
@@ -11871,9 +11859,6 @@ exports.BattleLearnsets = {
                 "L1",
                 "M"
             ],
-            "electricterrain": [
-                "L1"
-            ],
             "tackle": [
                 "L1"
             ],
@@ -16921,9 +16906,6 @@ exports.BattleLearnsets = {
             "leafstorm": [
                 "L57"
             ],
-            "grassyterrain": [
-                "L59"
-            ],
             "bulletseed": [
                 "M"
             ],
@@ -17979,9 +17961,6 @@ exports.BattleLearnsets = {
                 "L1"
             ],
             "detect": [
-                "L1"
-            ],
-            "mistyterrain": [
                 "L1"
             ],
             "doubleslap": [
@@ -26982,9 +26961,6 @@ exports.BattleLearnsets = {
             ],
             "helpinghand": [
                 "E"
-            ],
-            "electricterrain": [
-                "E"
             ]
         }
     },
@@ -27318,9 +27294,6 @@ exports.BattleLearnsets = {
             ],
             "leafblade": [
                 "L38"
-            ],
-            "grassyterrain": [
-                "L40"
             ],
             "moonlight": [
                 "L44"
@@ -28191,9 +28164,6 @@ exports.BattleLearnsets = {
             ],
             "ragepowder": [
                 "E"
-            ],
-            "grassyterrain": [
-                "E"
             ]
         }
     },
@@ -28752,9 +28722,6 @@ exports.BattleLearnsets = {
                 "E"
             ],
             "ingrain": [
-                "E"
-            ],
-            "grassyterrain": [
                 "E"
             ]
         }
@@ -42320,9 +42287,6 @@ exports.BattleLearnsets = {
             "mysticalfire": [
                 "L1"
             ],
-            "mistyterrain": [
-                "L1"
-            ],
             "charm": [
                 "L1"
             ],
@@ -45706,9 +45670,6 @@ exports.BattleLearnsets = {
                 "E"
             ],
             "thunderfang": [
-                "E"
-            ],
-            "mistyterrain": [
                 "E"
             ]
         }
@@ -61235,9 +61196,6 @@ exports.BattleLearnsets = {
             "thundershock": [
                 "L1"
             ],
-            "electricterrain": [
-                "L1"
-            ],
             "bite": [
                 "L12"
             ],
@@ -63557,9 +63515,6 @@ exports.BattleLearnsets = {
                 "E"
             ],
             "safeguard": [
-                "E"
-            ],
-            "grassyterrain": [
                 "E"
             ]
         }
@@ -69912,9 +69867,6 @@ exports.BattleLearnsets = {
     },
     "magnezone": {
         "learnset": {
-            "electricterrain": [
-                "L1"
-            ],
             "mirrorcoat": [
                 "L1"
             ],
@@ -70537,9 +70489,6 @@ exports.BattleLearnsets = {
             ],
             "leafstorm": [
                 "L57"
-            ],
-            "grassyterrain": [
-                "L59"
             ],
             "bulletseed": [
                 "M"
@@ -75744,9 +75693,6 @@ exports.BattleLearnsets = {
             "playrough": [
                 "L57",
                 "M"
-            ],
-            "grassyterrain": [
-                "L64"
             ],
             "energyball": [
                 "L73",
