@@ -24,7 +24,30 @@ LOCATION_NAME_OVERRIDES: dict[str, str] = {
     'encounters_turnback_cave_pillar_1_room_2': '??? Area 2',
     'encounters_turnback_cave_pillar_1_room_3': '??? Area 3',
     'encounters_turnback_cave_pillar_1_room_5': '??? Area 4',
+    'encounters_route_204_south': 'Route 204',
+    'encounters_route_204_north': 'Route 204',
+    **{
+        f'encounters_old_chateau{room}': 'Old Chateau'
+        for room in (
+            '',
+            '_dining_area',
+            '_side_rooms',
+            '_corridor',
+            '_back_west_room',
+            '_back_middle_west_room',
+            '_back_middle_room',
+            '_back_middle_east_room',
+            '_back_east_room',
+        )
+    },
 }
+
+INACCESSIBLE_LOCATION_FILES: frozenset[str] = frozenset({
+    'encounters_turnback_cave_pillar_1_room_4',
+    'encounters_turnback_cave_pillar_1_room_6',
+    *(f'encounters_turnback_cave_pillar_2_room_{room}' for room in range(1, 7)),
+    *(f'encounters_turnback_cave_pillar_3_room_{room}' for room in range(1, 6)),
+})
 
 MAP_HEADER_ENCOUNTERS = re.compile(
     r'\.wildEncountersArchiveID\s*=\s*(encounters_\w+),.*?\.mapLabelTextID\s*=\s*(\w+),',
@@ -146,6 +169,16 @@ def _honey_tree(decomp: pathlib.Path, species_keys: dict[str, str]) -> Location:
     ])
     return Location(name_key('Honey Trees'), 'Honey Trees', {'honey': slots})
 
+def _add_location(locations: dict[str, Location],
+                  file_stem: str,
+                  name: str,
+                  methods: dict[str, tuple[EncounterSlot, ...]]):
+    key = name_key(name)
+    if key not in locations:
+        locations[key] = Location(key, name, methods)
+    elif locations[key].methods != methods:
+        raise ValueError(f'{file_stem} merges into {name} but its encounters differ')
+
 def load_encounters(decomp: pathlib.Path, species: dict[str, Species]) -> dict[str, Location]:
     species_keys = {mon.constant: mon.key for mon in species.values() if not mon.base_species}
     slot_rates = load_slot_rates(decomp)
@@ -153,6 +186,8 @@ def load_encounters(decomp: pathlib.Path, species: dict[str, Species]) -> dict[s
 
     populated: list[tuple[str, str, dict[str, tuple[EncounterSlot, ...]]]] = []
     for file_stem, label in _location_files(decomp).items():
+        if file_stem in INACCESSIBLE_LOCATION_FILES:
+            continue
         path = decomp / ENCOUNTERS_DIR / f'{file_stem}.json'
         methods = _location_methods(load_json(path), slot_rates, species_keys) if path.exists() else {}
         if methods:
@@ -168,7 +203,7 @@ def load_encounters(decomp: pathlib.Path, species: dict[str, Species]) -> dict[s
             name = LOCATION_NAME_OVERRIDES[file_stem]
         elif name_counts[name] > 1 and (suffix := _suffix(file_stem, name)):
             name = f'{name} ({suffix})'
-        locations[name_key(name)] = Location(name_key(name), name, methods)
+        _add_location(locations, file_stem, name, methods)
 
     honey = _honey_tree(decomp, species_keys)
     locations[honey.key] = honey

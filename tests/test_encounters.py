@@ -3,6 +3,8 @@ import pytest
 from porydex.decomp.abilities import load_abilities
 from porydex.decomp.encounters import (
     LOCATION_NAME_OVERRIDES,
+    EncounterSlot,
+    _add_location,
     load_encounters,
     load_honey_tree_levels,
     load_slot_rates,
@@ -43,6 +45,32 @@ def test_name_overrides_replace_label_and_suffix(decomp, monkeypatch):
     locations = load_encounters(decomp, species)
     assert locations['route212swamp'].name == 'Route 212 (Swamp)'
     assert 'route212south' not in locations
+
+MEADOW = {'land': (EncounterSlot('bulbasaur', 5, 5, 100),)}
+FOREST = {'land': (EncounterSlot('ivysaur', 5, 5, 100),)}
+
+def test_identical_tables_merge_into_one_location():
+    locations = {}
+    _add_location(locations, 'encounters_chateau_hall', 'Old Chateau', MEADOW)
+    _add_location(locations, 'encounters_chateau_attic', 'Old Chateau', MEADOW)
+    assert list(locations) == ['oldchateau']
+    assert locations['oldchateau'].methods == MEADOW
+
+def test_merging_different_tables_is_rejected():
+    locations = {}
+    _add_location(locations, 'encounters_chateau_hall', 'Old Chateau', MEADOW)
+    with pytest.raises(ValueError, match='encounters_chateau_attic'):
+        _add_location(locations, 'encounters_chateau_attic', 'Old Chateau', FOREST)
+
+def test_inaccessible_locations_are_excluded(decomp, monkeypatch):
+    monkeypatch.setattr(
+        'porydex.decomp.encounters.INACCESSIBLE_LOCATION_FILES',
+        frozenset({'encounters_route_212_south'}),
+    )
+    species = load_species(decomp, load_moves(decomp, {}), load_abilities(decomp, {}), load_items(decomp, {}))
+    locations = load_encounters(decomp, species)
+    assert 'route212south' not in locations
+    assert locations['route212'].name == 'Route 212'
 
 def test_land_slots_merge_by_species(locations):
     assert locations['route212north'].to_showdown()['land'] == [
