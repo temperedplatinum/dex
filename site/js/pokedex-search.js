@@ -149,7 +149,7 @@ var PokedexSearchPanel = Panels.Panel.extend({
 				return;
 			}
 			if (this.activeLink) {
-				var path = this.activeLink.pathname.substr(1);
+				var path = $(this.activeLink).attr('href').replace(/^\.\//, '');
 				if (path === 'moves/' || path === 'pokemon/' || path === 'encounters/') {
 					this.app.go(path, this, true);
 					return;
