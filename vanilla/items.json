@@ -36,6 +36,18 @@
     "isNonstandard": "Past",
     "desc": "If held by an Absol, this item allows it to Mega Evolve in battle."
   },
+  "absolitez": {
+    "name": "Absolite Z",
+    "spritenum": 0,
+    "megaStone": "Absol-Mega-Z",
+    "megaEvolves": "Absol",
+    "itemUser": [
+      "Absol"
+    ],
+    "num": 498,
+    "gen": 9,
+    "desc": "If held by an Absol, this item allows it to Mega Evolve in battle."
+  },
   "absorbbulb": {
     "name": "Absorb Bulb",
     "spritenum": 2,
@@ -677,6 +689,18 @@
     "isNonstandard": "Past",
     "desc": "Holder's Techno Blast is Ice type."
   },
+  "chimechite": {
+    "name": "Chimechite",
+    "spritenum": 0,
+    "megaStone": "Chimecho-Mega",
+    "megaEvolves": "Chimecho",
+    "itemUser": [
+      "Chimecho"
+    ],
+    "num": 520,
+    "gen": 9,
+    "desc": "If held by a Chimecho, this item allows it to Mega Evolve in battle."
+  },
   "chippedpot": {
     "name": "Chipped Pot",
     "spritenum": 720,
@@ -754,6 +778,18 @@
     "num": 1882,
     "gen": 9,
     "desc": "Prevents other Pokemon from lowering the holder's stat stages."
+  },
+  "clefablite": {
+    "name": "Clefablite",
+    "spritenum": 0,
+    "megaStone": "Clefable-Mega",
+    "megaEvolves": "Clefable",
+    "itemUser": [
+      "Clefable"
+    ],
+    "num": 495,
+    "gen": 9,
+    "desc": "If held by a Clefable, this item allows it to Mega Evolve in battle."
   },
   "cloversweet": {
     "name": "Clover Sweet",
@@ -907,6 +943,18 @@
     "isNonstandard": "Past",
     "desc": "If holder has a Dark move, this item allows it to use a Dark Z-Move."
   },
+  "darkranite": {
+    "name": "Darkranite",
+    "spritenum": 0,
+    "megaStone": "Darkrai-Mega",
+    "megaEvolves": "Darkrai",
+    "itemUser": [
+      "Darkrai"
+    ],
+    "num": 514,
+    "gen": 9,
+    "desc": "If held by a Darkrai, this item allows it to Mega Evolve in battle."
+  },
   "dawnstone": {
     "name": "Dawn Stone",
     "spritenum": 92,
@@ -1049,6 +1097,18 @@
     "gen": 5,
     "isNonstandard": "Past",
     "desc": "Holder's first successful Dragon-type attack will have 1.3x power. Single use."
+  },
+  "dragoninite": {
+    "name": "Dragoninite",
+    "spritenum": 0,
+    "megaStone": "Dragonite-Mega",
+    "megaEvolves": "Dragonite",
+    "itemUser": [
+      "Dragonite"
+    ],
+    "num": 494,
+    "gen": 9,
+    "desc": "If held by a Dragonite, this item allows it to Mega Evolve in battle."
   },
   "dragonmemory": {
     "name": "Dragon Memory",
@@ -1338,6 +1398,18 @@
     "isPokeball": true,
     "desc": "A Poke Ball that makes it easier to catch Pokemon which are quick to run away."
   },
+  "feraligite": {
+    "name": "Feraligite",
+    "spritenum": 0,
+    "megaStone": "Feraligatr-Mega",
+    "megaEvolves": "Feraligatr",
+    "itemUser": [
+      "Feraligatr"
+    ],
+    "num": 508,
+    "gen": 9,
+    "desc": "If held by a Feraligatr, this item allows it to Mega Evolve in battle."
+  },
   "fightinggem": {
     "name": "Fighting Gem",
     "spritenum": 139,
@@ -1593,6 +1665,18 @@
     "isPokeball": true,
     "desc": "A Poke Ball that makes caught Pokemon more friendly."
   },
+  "froslassite": {
+    "name": "Froslassite",
+    "spritenum": 0,
+    "megaStone": "Froslass-Mega",
+    "megaEvolves": "Froslass",
+    "itemUser": [
+      "Froslass"
+    ],
+    "num": 496,
+    "gen": 9,
+    "desc": "If held by a Froslass, this item allows it to Mega Evolve in battle."
+  },
   "fullincense": {
     "name": "Full Incense",
     "spritenum": 155,
@@ -1661,6 +1745,18 @@
     "num": 683,
     "gen": 6,
     "isNonstandard": "Past",
+    "desc": "If held by a Garchomp, this item allows it to Mega Evolve in battle."
+  },
+  "garchompitez": {
+    "name": "Garchompite Z",
+    "spritenum": 0,
+    "megaStone": "Garchomp-Mega-Z",
+    "megaEvolves": "Garchomp",
+    "itemUser": [
+      "Garchomp"
+    ],
+    "num": 516,
+    "gen": 9,
     "desc": "If held by a Garchomp, this item allows it to Mega Evolve in battle."
   },
   "gardevoirite": {
@@ -1945,6 +2041,18 @@
     "num": 2408,
     "gen": 9,
     "desc": "Ogerpon-Hearthflame: 1.2x power attacks; Terastallize to gain Embody Aspect."
+  },
+  "heatranite": {
+    "name": "Heatranite",
+    "spritenum": 0,
+    "megaStone": "Heatran-Mega",
+    "megaEvolves": "Heatran",
+    "itemUser": [
+      "Heatran"
+    ],
+    "num": 515,
+    "gen": 9,
+    "desc": "If held by a Heatran, this item allows it to Mega Evolve in battle."
   },
   "heatrock": {
     "name": "Heat Rock",
@@ -2496,6 +2604,18 @@
     "isNonstandard": "Past",
     "desc": "If held by a Lucario, this item allows it to Mega Evolve in battle."
   },
+  "lucarionitez": {
+    "name": "Lucarionite Z",
+    "spritenum": 0,
+    "megaStone": "Lucario-Mega-Z",
+    "megaEvolves": "Lucario",
+    "itemUser": [
+      "Lucario"
+    ],
+    "num": 497,
+    "gen": 9,
+    "desc": "If held by a Lucario, this item allows it to Mega Evolve in battle."
+  },
   "luckypunch": {
     "name": "Lucky Punch",
     "spritenum": 261,
@@ -2778,6 +2898,18 @@
     "gen": 6,
     "isNonstandard": "Past",
     "desc": "If held by a Medicham, this item allows it to Mega Evolve in battle."
+  },
+  "meganiumite": {
+    "name": "Meganiumite",
+    "spritenum": 0,
+    "megaStone": "Meganium-Mega",
+    "megaEvolves": "Meganium",
+    "itemUser": [
+      "Meganium"
+    ],
+    "num": 511,
+    "gen": 9,
+    "desc": "If held by a Meganium, this item allows it to Mega Evolve in battle."
   },
   "mentalherb": {
     "name": "Mental Herb",
@@ -3631,6 +3763,30 @@
     "isNonstandard": "Past",
     "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck."
   },
+  "raichunitex": {
+    "name": "Raichunite X",
+    "spritenum": 0,
+    "megaStone": "Raichu-Mega-X",
+    "megaEvolves": "Raichu",
+    "itemUser": [
+      "Raichu"
+    ],
+    "num": 509,
+    "gen": 9,
+    "desc": "If held by a Raichu, this item allows it to Mega Evolve in battle."
+  },
+  "raichunitey": {
+    "name": "Raichunite Y",
+    "spritenum": 0,
+    "megaStone": "Raichu-Mega-Y",
+    "megaEvolves": "Raichu",
+    "itemUser": [
+      "Raichu"
+    ],
+    "num": 500,
+    "gen": 9,
+    "desc": "If held by a Raichu, this item allows it to Mega Evolve in battle."
+  },
   "rarebone": {
     "name": "Rare Bone",
     "spritenum": 379,
@@ -4143,6 +4299,18 @@
     "gen": 3,
     "desc": "Restores 1/4 max HP when at 1/2 max HP or less. Single use."
   },
+  "skarmorite": {
+    "name": "Skarmorite",
+    "spritenum": 0,
+    "megaStone": "Skarmory-Mega",
+    "megaEvolves": "Skarmory",
+    "itemUser": [
+      "Skarmory"
+    ],
+    "num": 512,
+    "gen": 9,
+    "desc": "If held by a Skarmory, this item allows it to Mega Evolve in battle."
+  },
   "skullfossil": {
     "name": "Skull Fossil",
     "spritenum": 449,
@@ -4308,6 +4476,18 @@
     "isPokeball": true,
     "desc": "A special Poke Ball for the Bug-Catching Contest."
   },
+  "staraptite": {
+    "name": "Staraptite",
+    "spritenum": 0,
+    "megaStone": "Staraptor-Mega",
+    "megaEvolves": "Staraptor",
+    "itemUser": [
+      "Staraptor"
+    ],
+    "num": 517,
+    "gen": 9,
+    "desc": "If held by a Staraptor, this item allows it to Mega Evolve in battle."
+  },
   "starfberry": {
     "name": "Starf Berry",
     "spritenum": 472,
@@ -4319,6 +4499,18 @@
     "num": 207,
     "gen": 3,
     "desc": "Raises a random stat by 2 when at 1/4 max HP or less (not acc/eva). Single use."
+  },
+  "starminite": {
+    "name": "Starminite",
+    "spritenum": 0,
+    "megaStone": "Starmie-Mega",
+    "megaEvolves": "Starmie",
+    "itemUser": [
+      "Starmie"
+    ],
+    "num": 519,
+    "gen": 9,
+    "desc": "If held by a Starmie, this item allows it to Mega Evolve in battle."
   },
   "starsweet": {
     "name": "Star Sweet",
@@ -5800,6 +5992,18 @@
     "gen": 6,
     "isNonstandard": "Past",
     "desc": "If held by a Venusaur, this item allows it to Mega Evolve in battle."
+  },
+  "victreebelite": {
+    "name": "Victreebelite",
+    "spritenum": 0,
+    "megaStone": "Victreebel-Mega",
+    "megaEvolves": "Victreebel",
+    "itemUser": [
+      "Victreebel"
+    ],
+    "num": 510,
+    "gen": 9,
+    "desc": "If held by a Victreebel, this item allows it to Mega Evolve in battle."
   },
   "wacanberry": {
     "name": "Wacan Berry",
