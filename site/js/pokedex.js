@@ -1,4 +1,4 @@
-BattleSearch.urlRoot = '/';
+BattleSearch.urlRoot = './';
 
 Dex.escapeHTML = function (str, jsEscapeToo) {
 	str = String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -25,8 +25,8 @@ var PokedexItemPanel = PokedexResultPanel.extend({
 		this.shortTitle = item.name;
 
 		var buf = '<div class="pfx-body dexentry">';
-		buf += '<a href="/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
-		buf += '<h1><span class="itemicon" style="'+Dex.getItemIcon(item)+'"></span> <a href="/items/'+id+'" data-target="push" class="subtle">'+item.name+'</a></h1>';
+		buf += '<a href="./" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
+		buf += '<h1><span class="itemicon" style="'+Dex.getItemIcon(item)+'"></span> <a href="./items/'+id+'" data-target="push" class="subtle">'+item.name+'</a></h1>';
 		buf += '<p>'+Dex.escapeHTML(item.desc||item.shortDesc)+'</p>';
 
 		// past gens
@@ -63,8 +63,8 @@ var PokedexAbilityPanel = PokedexResultPanel.extend({
 		this.shortTitle = ability.name;
 
 		var buf = '<div class="pfx-body dexentry">';
-		buf += '<a href="/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
-		buf += '<h1><a href="/abilities/'+id+'" data-target="push" class="subtle">'+ability.name+'</a></h1>';
+		buf += '<a href="./" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
+		buf += '<h1><a href="./abilities/'+id+'" data-target="push" class="subtle">'+ability.name+'</a></h1>';
 
 		// if (ability.isNonstandard && ability.id !== 'noability') buf += '<div class="warning"><strong>Note:</strong> This is a made-up ability by <a href="http://www.smogon.com/cap/" target="_blank">Smogon CAP</a>.</div>';
 
@@ -124,15 +124,15 @@ var PokedexTypePanel = PokedexResultPanel.extend({
 		this.shortTitle = this.type;
 
 		var buf = '<div class="pfx-body dexentry">';
-		buf += '<a href="/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
-		buf += '<h1><a href="/types/'+id+'" data-target="push" class="subtle">'+this.type+'</a></h1>';
+		buf += '<a href="./" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
+		buf += '<h1><a href="./types/'+id+'" data-target="push" class="subtle">'+this.type+'</a></h1>';
 		buf += '<dl>';
 		var atLeastOne = false;
 
 		buf += '<dt>Weaknesses:</dt> <dd>';
 		for (var attackType in type.damageTaken) {
 			if (type.damageTaken[attackType] == 1) {
-				buf += '<a href="/types/'+toID(attackType)+'" data-target="push">'+Dex.getTypeIcon(attackType)+'</a> ';
+				buf += '<a href="./types/'+toID(attackType)+'" data-target="push">'+Dex.getTypeIcon(attackType)+'</a> ';
 				atLeastOne = true;
 			}
 		}
@@ -145,7 +145,7 @@ var PokedexTypePanel = PokedexResultPanel.extend({
 		atLeastOne = false;
 		for (var attackType in type.damageTaken) {
 			if (type.damageTaken[attackType] == 2) {
-				buf += '<a href="/types/'+toID(attackType)+'" data-target="push">'+Dex.getTypeIcon(attackType)+'</a> ';
+				buf += '<a href="./types/'+toID(attackType)+'" data-target="push">'+Dex.getTypeIcon(attackType)+'</a> ';
 				atLeastOne = true;
 			}
 		}
@@ -161,13 +161,13 @@ var PokedexTypePanel = PokedexResultPanel.extend({
 				if (attackType === attackType.toLowerCase()) {
 					switch (attackType) {
 					case 'hail':
-						buf += '<div><small><a href="/moves/hail" data-target="push">Hail</a> damage</small></div>';
+						buf += '<div><small><a href="./moves/hail" data-target="push">Hail</a> damage</small></div>';
 						break;
 					case 'sandstorm':
-						buf += '<div><small><a href="/moves/sandstorm" data-target="push">Sandstorm</a> damage</small></div>';
+						buf += '<div><small><a href="./moves/sandstorm" data-target="push">Sandstorm</a> damage</small></div>';
 						break;
 					case 'powder':
-						buf += '<div><small><a href="/tags/powder" data-target="push">Powder moves</a></small></div>';
+						buf += '<div><small><a href="./tags/powder" data-target="push">Powder moves</a></small></div>';
 						break;
 					case 'frz':
 						buf += '<div><small>FRZ status</small></div>';
@@ -185,7 +185,7 @@ var PokedexTypePanel = PokedexResultPanel.extend({
 					if (!atLeastOne) atLeastOne = null;
 					continue;
 				}
-				buf += '<a href="/types/'+toID(attackType)+'" data-target="push">'+Dex.getTypeIcon(attackType)+'</a> ';
+				buf += '<a href="./types/'+toID(attackType)+'" data-target="push">'+Dex.getTypeIcon(attackType)+'</a> ';
 				atLeastOne = true;
 			}
 		}
@@ -295,82 +295,82 @@ var PokedexTagPanel = PokedexResultPanel.extend({
 		sound: {
 			name: 'Sound',
 			tag: 'sound',
-			desc: 'Bypasses <a href="/moves/substitute" data-target="push">Substitute</a>. Doesn\'t affect <a href="/abilities/soundproof" data-target="push">Soundproof</a> Pok&eacute;mon.'
+			desc: 'Bypasses <a href="./moves/substitute" data-target="push">Substitute</a>. Doesn\'t affect <a href="./abilities/soundproof" data-target="push">Soundproof</a> Pok&eacute;mon.'
 		},
 		powder: {
 			name: 'Powder',
 			tag: 'powder',
-			desc: 'Doesn\'t affect <a href="/types/grass" data-target="push">Grass-type</a> Pok&eacute;mon, <a href="/abilities/overcoat" data-target="push">Overcoat</a> Pok&eacute;mon, or <a href="/items/safetygoggles" data-target="push">Safety Goggles</a> holders.'
+			desc: 'Doesn\'t affect <a href="./types/grass" data-target="push">Grass-type</a> Pok&eacute;mon, <a href="./abilities/overcoat" data-target="push">Overcoat</a> Pok&eacute;mon, or <a href="./items/safetygoggles" data-target="push">Safety Goggles</a> holders.'
 		},
 		fist: {
 			name: 'Fist',
 			tag: 'punch',
-			desc: 'Boosted 1.2x by <a href="/abilities/ironfist" data-target="push">Iron Fist</a>.'
+			desc: 'Boosted 1.2x by <a href="./abilities/ironfist" data-target="push">Iron Fist</a>.'
 		},
 		pulse: {
 			name: 'Pulse',
 			tag: 'pulse',
-			desc: 'Boosted 1.5x by <a href="/abilities/megalauncher" data-target="push">Mega Launcher</a>.'
+			desc: 'Boosted 1.5x by <a href="./abilities/megalauncher" data-target="push">Mega Launcher</a>.'
 		},
 		bite: {
 			name: 'Bite',
 			tag: 'bite',
-			desc: 'Boosted 1.5x by <a href="/abilities/strongjaw" data-target="push">Strong Jaw</a>.'
+			desc: 'Boosted 1.5x by <a href="./abilities/strongjaw" data-target="push">Strong Jaw</a>.'
 		},
 		ballistic: {
 			name: 'Ballistic',
 			tag: 'bullet',
-			desc: 'Doesn\'t affect <a href="/abilities/bulletproof" data-target="push">Bulletproof</a> Pok&eacute;mon.'
+			desc: 'Doesn\'t affect <a href="./abilities/bulletproof" data-target="push">Bulletproof</a> Pok&eacute;mon.'
 		},
 		slicing: {
 			name: 'Slicing',
 			tag: 'slicing',
-			desc: 'Boosted 1.5x by <a href="/abilities/sharpness" data-target="push">Sharpness</a>.'
+			desc: 'Boosted 1.5x by <a href="./abilities/sharpness" data-target="push">Sharpness</a>.'
 		},
 		wind: {
 			name: 'Wind',
 			tag: 'wind',
-			desc: 'Pok&eacute;mon with <a href="/abilities/windpower" data-target="push">Wind Power</a> gain the charge effect after being hit. Pok&eacute;mon with <a href="/abilities/windrider" data-target="push">Wind Rider</a> have their Attack raised by 1 stage and are immune.'
+			desc: 'Pok&eacute;mon with <a href="./abilities/windpower" data-target="push">Wind Power</a> gain the charge effect after being hit. Pok&eacute;mon with <a href="./abilities/windrider" data-target="push">Wind Rider</a> have their Attack raised by 1 stage and are immune.'
 		},
 		bypassprotect: {
 			name: 'Bypass Protect',
 			tag: '',
-			desc: 'Bypasses <a class="subtle" href="/moves/protect" data-target="push">Protect</a>, <a class="subtle" href="/moves/detect" data-target="push">Detect</a>, <a class="subtle" href="/moves/kingsshield" data-target="push">King\'s Shield</a>, and <a class="subtle" href="/moves/spikyshield" data-target="push">Spiky Shield</a>.'
+			desc: 'Bypasses <a class="subtle" href="./moves/protect" data-target="push">Protect</a>, <a class="subtle" href="./moves/detect" data-target="push">Detect</a>, <a class="subtle" href="./moves/kingsshield" data-target="push">King\'s Shield</a>, and <a class="subtle" href="./moves/spikyshield" data-target="push">Spiky Shield</a>.'
 		},
 		nonreflectable: {
 			name: 'Nonreflectable',
 			tag: '',
-			desc: 'Can\'t be bounced by <a class="subtle" href="/moves/magiccoat" data-target="push">Magic Coat</a> or <a class="subtle" href="/abilities/magicbounce" data-target="push">Magic Bounce</a>.'
+			desc: 'Can\'t be bounced by <a class="subtle" href="./moves/magiccoat" data-target="push">Magic Coat</a> or <a class="subtle" href="./abilities/magicbounce" data-target="push">Magic Bounce</a>.'
 		},
 		nonmirror: {
 			name: 'Nonmirror',
 			tag: '',
-			desc: 'Can\'t be copied by <a class="subtle" href="/moves/mirrormove" data-target="push">Mirror Move</a>.'
+			desc: 'Can\'t be copied by <a class="subtle" href="./moves/mirrormove" data-target="push">Mirror Move</a>.'
 		},
 		nonsnatchable: {
 			name: 'Nonsnatchable',
 			tag: '',
-			desc: 'Can\'t be copied by <a class="subtle" href="/moves/snatch" data-target="push">Snatch</a>.'
+			desc: 'Can\'t be copied by <a class="subtle" href="./moves/snatch" data-target="push">Snatch</a>.'
 		},
 		bypasssub: {
 			name: 'Bypass Substitute',
 			tag: 'bypasssub',
-			desc: 'Bypasses but does not break a <a class="subtle" href="/moves/substitute" data-target="push">Substitute</a>.'
+			desc: 'Bypasses but does not break a <a class="subtle" href="./moves/substitute" data-target="push">Substitute</a>.'
 		},
 		zmove: {
 			name: 'Z-Move',
 			tag: '',
-			desc: 'Is a <a class="subtle" href="/articles/zmoves" data-target="push">Z-Move</a>.'
+			desc: 'Is a <a class="subtle" href="./articles/zmoves" data-target="push">Z-Move</a>.'
 		},
 		maxmove: {
 			name: 'Max Move',
 			tag: '',
-			desc: 'Is a <a class="subtle" href="/articles/maxmoves" data-target="push">Max Move</a>.'
+			desc: 'Is a <a class="subtle" href="./articles/maxmoves" data-target="push">Max Move</a>.'
 		},
 		gmaxmove: {
 			name: 'G-Max Move',
 			tag: '',
-			desc: 'Is a <a class="subtle" href="/articles/gmaxmoves" data-target="push">G-Max Move</a>.'
+			desc: 'Is a <a class="subtle" href="./articles/gmaxmoves" data-target="push">G-Max Move</a>.'
 		}
 	},
 	initialize: function(id) {
@@ -381,8 +381,8 @@ var PokedexTagPanel = PokedexResultPanel.extend({
 
 		var buf = '<div class="pfx-body dexentry">';
 
-		buf += '<a href="/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
-		buf += '<h1><a href="/tags/'+id+'" data-target="push" class="subtle">'+name+'</a></h1>';
+		buf += '<a href="./" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
+		buf += '<h1><a href="./tags/'+id+'" data-target="push" class="subtle">'+name+'</a></h1>';
 
 		if (tag) buf += '<p>'+tag.desc+'</p>';
 
@@ -623,11 +623,11 @@ var PokedexEggGroupPanel = PokedexResultPanel.extend({
 
 		var buf = '<div class="pfx-body dexentry">';
 
-		buf += '<a href="/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
-		buf += '<h1><a href="/egggroups/'+id+'" data-target="push" class="subtle">'+names+'</a></h1>';
+		buf += '<a href="./" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
+		buf += '<h1><a href="./egggroups/'+id+'" data-target="push" class="subtle">'+names+'</a></h1>';
 
 		if (this.id2) {
-			buf += '<p>All Pok&eacute;mon in either the <a href="/egggroups/'+this.id+'" data-target="push">'+this.table[ids[0]].name+'</a> or <a href="/egggroups/'+this.id2+'" data-target="push">'+this.table[ids[1]].name+'</a> egg group.</p>';
+			buf += '<p>All Pok&eacute;mon in either the <a href="./egggroups/'+this.id+'" data-target="push">'+this.table[ids[0]].name+'</a> or <a href="./egggroups/'+this.id2+'" data-target="push">'+this.table[ids[1]].name+'</a> egg group.</p>';
 		} else {
 			buf += '<p>'+this.table[ids[0]].desc+'</p>';
 		}
@@ -778,8 +778,8 @@ var PokedexCategoryPanel = PokedexResultPanel.extend({
 		this.shortTitle = category.name;
 
 		var buf = '<div class="pfx-body dexentry">';
-		buf += '<a href="/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
-		buf += '<h1><a href="/categories/'+id+'" data-target="push" class="subtle">'+category.name+'</a></h1>';
+		buf += '<a href="./" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
+		buf += '<h1><a href="./categories/'+id+'" data-target="push" class="subtle">'+category.name+'</a></h1>';
 		switch (id) {
 		case 'physical':
 			buf += '<p>Physical moves are damaging moves generally calculated with the user\'s Attack stat and the target\'s Defense stat.</p>';
@@ -825,8 +825,8 @@ var PokedexTierPanel = PokedexResultPanel.extend({
 		this.shortTitle = name;
 
 		var buf = '<div class="pfx-body dexentry">';
-		buf += '<a href="/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
-		buf += '<h1><a href="/tiers/'+id+'" data-target="push" class="subtle">'+name+'</a></h1>';
+		buf += '<a href="./" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
+		buf += '<h1><a href="./tiers/'+id+'" data-target="push" class="subtle">'+name+'</a></h1>';
 
 		if (id === 'nfe') {
 			buf += '<p>"NFE" (Not Fully Evolved) as a tier refers to NFE Pokémon that aren\'t legal in LC and don\'t make the usage cutoff for a tier such as PU.</p>';
@@ -867,18 +867,18 @@ var PokedexArticlePanel = PokedexResultPanel.extend({
 		this.shortTitle = id;
 
 		var buf = '<div class="pfx-body dexentry">';
-		buf += '<a href="/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
-		buf += '<h1><a href="/articles/'+id+'" data-target="push" class="subtle">'+id+'</a></h1>';
+		buf += '<a href="./" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
+		buf += '<h1><a href="./articles/'+id+'" data-target="push" class="subtle">'+id+'</a></h1>';
 		buf += '<div class="article-content"><em>Loading...</em></div>';
 		buf += '</div>';
 
 		this.html(buf);
 
 		var self = this;
-		$.get('/.articles-cached/' + id + '.html').done(function (html) {
+		$.get('.articles-cached/' + id + '.html').done(function (html) {
 			var html = html.replace(/<h1[^>]*>([^<]+)<\/h1>/, function (match, innerMatch) {
 				self.shortTitle = innerMatch;
-				self.$('h1').first().html('<a href="/articles/' + id + '" class="subtle" data-target="push">' + innerMatch + '</a>');
+				self.$('h1').first().html('<a href="./articles/' + id + '" class="subtle" data-target="push">' + innerMatch + '</a>');
 				return '';
 			});
 			self.$('.article-content').html(html);

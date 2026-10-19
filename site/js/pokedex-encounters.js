@@ -8,8 +8,8 @@ var PokedexEncountersPanel = PokedexResultPanel.extend({
 
 		var buf = '<div class="pfx-body dexentry">';
 
-		buf += '<a href="/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
-		buf += '<h1><a href="/encounters/'+id+'" data-target="push" class="subtle">'+location.name+'</a></h1>';
+		buf += '<a href="./" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
+		buf += '<h1><a href="./encounters/'+id+'" data-target="push" class="subtle">'+location.name+'</a></h1>';
 
 		// distribution
 		buf += '<ul class="utilichart metricchart nokbd">';

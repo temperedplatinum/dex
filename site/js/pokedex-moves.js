@@ -14,8 +14,8 @@ var PokedexMovePanel = PokedexResultPanel.extend({
 
 		var buf = '<div class="pfx-body dexentry">';
 
-		buf += '<a href="/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
-		buf += '<h1><a href="/moves/'+id+'" data-target="push" class="subtle">'+move.name+'</a></h1>';
+		buf += '<a href="./" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
+		buf += '<h1><a href="./moves/'+id+'" data-target="push" class="subtle">'+move.name+'</a></h1>';
 
 		if (move.id === 'magikarpsrevenge') {
 			buf += '<div class="warning"><strong>Note:</strong> Made for testing on Pok&eacute;mon Showdown, not a real move.</div>';
@@ -52,8 +52,8 @@ var PokedexMovePanel = PokedexResultPanel.extend({
 
 		buf += '<dl class="movetypeentry">';
 		buf += '<dt>Type:</dt> <dd>';
-		buf += '<a class="type '+toID(move.type)+'" href="/types/'+toID(move.type)+'" data-target="push">'+move.type+'</a> ';
-		buf += '<a class="type '+toID(move.category)+'" href="/categories/'+toID(move.category)+'" data-target="push">'+move.category+'</a>';
+		buf += '<a class="type '+toID(move.type)+'" href="./types/'+toID(move.type)+'" data-target="push">'+move.type+'</a> ';
+		buf += '<a class="type '+toID(move.category)+'" href="./categories/'+toID(move.category)+'" data-target="push">'+move.category+'</a>';
 		buf += '</dd></dl>';
 
 		if (move.category !== 'Status') {
@@ -64,22 +64,22 @@ var PokedexMovePanel = PokedexResultPanel.extend({
 		buf += '</dl><div style="clear:left;padding-top:1px"></div>';
 
 		if (move.isZ) {
-			buf += '<p><strong><a href="/tags/zmove" data-target="push">[Z-Move]</a></strong>';
+			buf += '<p><strong><a href="./tags/zmove" data-target="push">[Z-Move]</a></strong>';
 			if (move.isZ !== true) {
 				var zItem = Dex.items.get(move.isZ);
-				buf += ' requiring <a href="/items/' + zItem.id + '" data-target="push">' + zItem.name + '</a>';
+				buf += ' requiring <a href="./items/' + zItem.id + '" data-target="push">' + zItem.name + '</a>';
 			}
 			buf += '</p>';
 		} else if (move.isMax) {
 			if (move.isMax !== true) {
-				buf += '<p><strong><a href="/tags/gmaxmove" data-target="push">[G-Max Move]</a></strong>';
+				buf += '<p><strong><a href="./tags/gmaxmove" data-target="push">[G-Max Move]</a></strong>';
 				var maxUser = Dex.species.get(move.isMax);
-				buf += ' used by <a href="/pokemon/' + maxUser.id + 'gmax" data-target="push">' + maxUser.name + '-Gmax</a>';
+				buf += ' used by <a href="./pokemon/' + maxUser.id + 'gmax" data-target="push">' + maxUser.name + '-Gmax</a>';
 				if (maxUser.name === "Toxtricity") {
-					buf += ' or <a href="/pokemon/' + maxUser.id + 'lowkeygmax" data-target="push">' + maxUser.name + '-Low-Key-Gmax</a>';
+					buf += ' or <a href="./pokemon/' + maxUser.id + 'lowkeygmax" data-target="push">' + maxUser.name + '-Low-Key-Gmax</a>';
 				}
 			} else {
-				buf += '<p><strong><a href="/tags/maxmove" data-target="push">[Max Move]</a></strong>';
+				buf += '<p><strong><a href="./tags/maxmove" data-target="push">[Max Move]</a></strong>';
 			}
 		}
 
@@ -94,50 +94,50 @@ var PokedexMovePanel = PokedexResultPanel.extend({
 		buf += '<p>'+Dex.escapeHTML(move.desc||move.shortDesc)+'</p>';
 
 		if ('defrost' in move.flags) {
-			buf += '<p><a class="subtle" href="/tags/defrost" data-target="push">The user thaws out</a> if it is frozen.</p>';
+			buf += '<p><a class="subtle" href="./tags/defrost" data-target="push">The user thaws out</a> if it is frozen.</p>';
 		}
 		if (!('protect' in move.flags) && move.target !== 'self') {
-			buf += '<p class="movetag"><a href="/tags/bypassprotect" data-target="push">Bypasses Protect</a> <small>(bypasses <a class="subtle" href="/moves/protect" data-target="push">Protect</a>, <a class="subtle" href="/moves/detect" data-target="push">Detect</a>, <a class="subtle" href="/moves/kingsshield" data-target="push">King\'s Shield</a>, and <a class="subtle" href="/moves/spikyshield" data-target="push">Spiky Shield</a>)</small></p>';
+			buf += '<p class="movetag"><a href="./tags/bypassprotect" data-target="push">Bypasses Protect</a> <small>(bypasses <a class="subtle" href="./moves/protect" data-target="push">Protect</a>, <a class="subtle" href="./moves/detect" data-target="push">Detect</a>, <a class="subtle" href="./moves/kingsshield" data-target="push">King\'s Shield</a>, and <a class="subtle" href="./moves/spikyshield" data-target="push">Spiky Shield</a>)</small></p>';
 		}
 		if ('bypasssub' in move.flags) {
-			buf += '<p class="movetag"><a href="/tags/bypasssub" data-target="push">Bypasses Substitute</a> <small>(bypasses but does not break a <a class="subtle" href="/moves/substitute" data-target="push">Substitute</a>)</small></p>';
+			buf += '<p class="movetag"><a href="./tags/bypasssub" data-target="push">Bypasses Substitute</a> <small>(bypasses but does not break a <a class="subtle" href="./moves/substitute" data-target="push">Substitute</a>)</small></p>';
 		}
 		if (!('reflectable' in move.flags) && move.target !== 'self' && move.category === 'Status') {
-			buf += '<p class="movetag"><a href="/tags/nonreflectable" data-target="push">&#x2713; Nonreflectable</a> <small>(can\'t be bounced by <a class="subtle" href="/moves/magiccoat" data-target="push">Magic Coat</a> or <a class="subtle" href="/abilities/magicbounce" data-target="push">Magic Bounce</a>)</small></p>';
+			buf += '<p class="movetag"><a href="./tags/nonreflectable" data-target="push">&#x2713; Nonreflectable</a> <small>(can\'t be bounced by <a class="subtle" href="./moves/magiccoat" data-target="push">Magic Coat</a> or <a class="subtle" href="./abilities/magicbounce" data-target="push">Magic Bounce</a>)</small></p>';
 		}
 		if (!('mirror' in move.flags) && move.target !== 'self') {
-			buf += '<p class="movetag"><a href="/tags/nonmirror" data-target="push">&#x2713; Nonmirror</a> <small>(can\'t be copied by <a class="subtle" href="/moves/mirrormove" data-target="push">Mirror Move</a>)</small></p>';
+			buf += '<p class="movetag"><a href="./tags/nonmirror" data-target="push">&#x2713; Nonmirror</a> <small>(can\'t be copied by <a class="subtle" href="./moves/mirrormove" data-target="push">Mirror Move</a>)</small></p>';
 		}
 		if (!('snatch' in move.flags) && (move.target === 'self' || move.target === 'allyTeam' || move.target === 'adjacentAllyOrSelf')) {
-			buf += '<p class="movetag"><a href="/tags/nonsnatchable" data-target="push">&#x2713; Nonsnatchable</a> <small>(can\'t be copied by <a class="subtle" href="/moves/snatch" data-target="push">Snatch</a>)</small></p>';
+			buf += '<p class="movetag"><a href="./tags/nonsnatchable" data-target="push">&#x2713; Nonsnatchable</a> <small>(can\'t be copied by <a class="subtle" href="./moves/snatch" data-target="push">Snatch</a>)</small></p>';
 		}
 
 		if ('contact' in move.flags) {
-			buf += '<p class="movetag"><a href="/tags/contact" data-target="push">&#x2713; Contact</a> <small>(affected by many abilities like Iron Barbs and moves like Spiky Shield)</small></p>';
+			buf += '<p class="movetag"><a href="./tags/contact" data-target="push">&#x2713; Contact</a> <small>(affected by many abilities like Iron Barbs and moves like Spiky Shield)</small></p>';
 		}
 		if ('sound' in move.flags) {
-			buf += '<p class="movetag"><a href="/tags/sound" data-target="push">&#x2713; Sound</a> <small>(bypasses <a class="subtle" href="/moves/substitute" data-target="push">Substitute</a>, doesn\'t affect <a class="subtle" href="/abilities/soundproof" data-target="push">Soundproof</a> pokemon)</small></p>';
+			buf += '<p class="movetag"><a href="./tags/sound" data-target="push">&#x2713; Sound</a> <small>(bypasses <a class="subtle" href="./moves/substitute" data-target="push">Substitute</a>, doesn\'t affect <a class="subtle" href="./abilities/soundproof" data-target="push">Soundproof</a> pokemon)</small></p>';
 		}
 		if ('powder' in move.flags) {
-			buf += '<p class="movetag"><a href="/tags/powder" data-target="push">&#x2713; Powder</a> <small>(doesn\'t affect <a class="subtle" href="/types/grass" data-target="push">Grass</a>-types, <a class="subtle" href="/abilities/overcoat" data-target="push">Overcoat</a> pokemon, and <a class="subtle" href="/items/safetygoggles" data-target="push">Safety Goggles</a> holders)</small></p>';
+			buf += '<p class="movetag"><a href="./tags/powder" data-target="push">&#x2713; Powder</a> <small>(doesn\'t affect <a class="subtle" href="./types/grass" data-target="push">Grass</a>-types, <a class="subtle" href="./abilities/overcoat" data-target="push">Overcoat</a> pokemon, and <a class="subtle" href="./items/safetygoggles" data-target="push">Safety Goggles</a> holders)</small></p>';
 		}
 		if ('punch' in move.flags) {
-			buf += '<p class="movetag"><a href="/tags/fist" data-target="push">&#x2713; Fist</a> <small>(boosted by <a class="subtle" href="/abilities/ironfist" data-target="push">Iron Fist</a>)</small></p>';
+			buf += '<p class="movetag"><a href="./tags/fist" data-target="push">&#x2713; Fist</a> <small>(boosted by <a class="subtle" href="./abilities/ironfist" data-target="push">Iron Fist</a>)</small></p>';
 		}
 		if ('pulse' in move.flags) {
-			buf += '<p class="movetag"><a href="/tags/pulse" data-target="push">&#x2713; Pulse</a> <small>(boosted by <a class="subtle" href="/abilities/megalauncher" data-target="push">Mega Launcher</a>)</small></p>';
+			buf += '<p class="movetag"><a href="./tags/pulse" data-target="push">&#x2713; Pulse</a> <small>(boosted by <a class="subtle" href="./abilities/megalauncher" data-target="push">Mega Launcher</a>)</small></p>';
 		}
 		if ('bite' in move.flags) {
-			buf += '<p class="movetag"><a href="/tags/bite" data-target="push">&#x2713; Bite</a> <small>(boosted by <a class="subtle" href="/abilities/strongjaw" data-target="push">Strong Jaw</a>)</small></p>';
+			buf += '<p class="movetag"><a href="./tags/bite" data-target="push">&#x2713; Bite</a> <small>(boosted by <a class="subtle" href="./abilities/strongjaw" data-target="push">Strong Jaw</a>)</small></p>';
 		}
 		if ('bullet' in move.flags) {
-			buf += '<p class="movetag"><a href="/tags/ballistic" data-target="push">&#x2713; Ballistic</a> <small>(doesn\'t affect <a class="subtle" href="/abilities/bulletproof" data-target="push">Bulletproof</a> pokemon)</small></p>';
+			buf += '<p class="movetag"><a href="./tags/ballistic" data-target="push">&#x2713; Ballistic</a> <small>(doesn\'t affect <a class="subtle" href="./abilities/bulletproof" data-target="push">Bulletproof</a> pokemon)</small></p>';
 		}
 		if ('slicing' in move.flags) {
-			buf += '<p class="movetag"><a href="/tags/slicing" data-target="push">&#x2713; Slicing</a> <small>(boosted by <a class="subtle" href="/abilities/sharpness" data-target="push">Sharpness</a>)</small></p>';
+			buf += '<p class="movetag"><a href="./tags/slicing" data-target="push">&#x2713; Slicing</a> <small>(boosted by <a class="subtle" href="./abilities/sharpness" data-target="push">Sharpness</a>)</small></p>';
 		}
 		if ('wind' in move.flags) {
-			buf += '<p class="movetag"><a href="/tags/wind" data-target="push">&#x2713; Wind</a> <small>(interacts with <a class="subtle" href="/abilities/windpower" data-target="push">Wind Power</a> and <a class="subtle" href="/abilities/windrider" data-target="push">Wind Rider</a>)</small></p>';
+			buf += '<p class="movetag"><a href="./tags/wind" data-target="push">&#x2713; Wind</a> <small>(interacts with <a class="subtle" href="./abilities/windpower" data-target="push">Wind Power</a> and <a class="subtle" href="./abilities/windrider" data-target="push">Wind Rider</a>)</small></p>';
 		}
 
 		if (move.target === 'allAdjacent') {
@@ -193,7 +193,7 @@ var PokedexMovePanel = PokedexResultPanel.extend({
 		if (!move.isMax && (move.zMovePower || move.zMoveEffect || move.zMoveBoost)) {
 			buf += '<h3>Z-Move(s)</h3>';
 			if (move.zMovePower) {
-				buf += '<p><strong><a href="/moves/' + toID(zMoveTable[move.type]) + '" data-target="push">';
+				buf += '<p><strong><a href="./moves/' + toID(zMoveTable[move.type]) + '" data-target="push">';
 				buf += zMoveTable[move.type];
 				buf += '</a></strong>: ';
 				buf += '' + move.zMovePower + ' base power, ' + move.category + '</p>';
@@ -223,7 +223,7 @@ var PokedexMovePanel = PokedexResultPanel.extend({
 			}
 			if (id in zMoveVersionTable) {
 				var zMove = Dex.moves.get(zMoveVersionTable[id]);
-				buf += '<p><strong><a href="/moves/' + zMove.id + '" data-target="push">' + zMove.name + '</a></strong>: ';
+				buf += '<p><strong><a href="./moves/' + zMove.id + '" data-target="push">' + zMove.name + '</a></strong>: ';
 				if (zMove.basePower) {
 					buf += '' + zMove.basePower + ' base power, ' + zMove.category + '</p>';
 				} else {
@@ -233,7 +233,7 @@ var PokedexMovePanel = PokedexResultPanel.extend({
 			}
 			if ((id + '2') in zMoveVersionTable) {
 				var zMove = Dex.moves.get(zMoveVersionTable[id + '2']);
-				buf += '<p><strong><a href="/moves/' + zMove.id + '" data-target="push">' + zMove.name + '</a></strong>: ';
+				buf += '<p><strong><a href="./moves/' + zMove.id + '" data-target="push">' + zMove.name + '</a></strong>: ';
 				if (zMove.basePower) {
 					buf += '' + zMove.basePower + ' base power, ' + zMove.category + '</p>';
 				} else {
@@ -288,12 +288,12 @@ var PokedexMovePanel = PokedexResultPanel.extend({
 		if (move.gmaxPower && !move.isZ && !move.isMax) {
 			buf += '<h3>Max Move</h3>';
 			if (move.category !== 'Status') {
-				buf += '<p><strong><a href="/moves/max' + toID(maxMoveTable[move.type]) + '" data-target="push">';
+				buf += '<p><strong><a href="./moves/max' + toID(maxMoveTable[move.type]) + '" data-target="push">';
 				buf += 'Max ' + maxMoveTable[move.type];
 				buf += '</a></strong>: ';
 				buf += '' + move.gmaxPower + ' base power, ' + move.category + '</p>';
 			} else {
-				buf += '<p><strong><a href="/moves/maxguard" data-target="push">';
+				buf += '<p><strong><a href="./moves/maxguard" data-target="push">';
 				buf += 'Max Guard';
 				buf += '</a></strong>';
 				buf += move.shortDesc;
@@ -301,10 +301,10 @@ var PokedexMovePanel = PokedexResultPanel.extend({
 			if (move.type in gmaxMoveTable && move.category !== 'Status') {
 				for (let i = 0; i < gmaxMoveTable[move.type].length; i++) {
 					var gmaxMove = Dex.moves.get('gmax' + gmaxMoveTable[move.type][i]);
-					buf += '<p>Becomes <strong><a href="/moves/' + gmaxMove.id + '" data-target="push">' + gmaxMove.name + '</a></strong> ';
-					buf += 'if used by <strong><a href="/pokemon/' + gmaxMove.isMax + 'gmax" data-target="push">' + gmaxMove.isMax + '-Gmax</a></strong>';
+					buf += '<p>Becomes <strong><a href="./moves/' + gmaxMove.id + '" data-target="push">' + gmaxMove.name + '</a></strong> ';
+					buf += 'if used by <strong><a href="./pokemon/' + gmaxMove.isMax + 'gmax" data-target="push">' + gmaxMove.isMax + '-Gmax</a></strong>';
 					if (gmaxMove.isMax === 'Toxtricity') {
-						buf += ' or <strong><a href="/pokemon/' + gmaxMove.isMax + 'lowkeygmax" data-target="push">' + gmaxMove.isMax + '-Low-Key-Gmax</a></strong>';
+						buf += ' or <strong><a href="./pokemon/' + gmaxMove.isMax + 'lowkeygmax" data-target="push">' + gmaxMove.isMax + '-Low-Key-Gmax</a></strong>';
 					}
 					buf += '</p>';
 				}
@@ -371,7 +371,7 @@ var PokedexMovePanel = PokedexResultPanel.extend({
                             if (eg1 === breeder.eggGroups[0] || eg1 === breeder.eggGroups[1] ||
                                 (eg2 && (eg2 === breeder.eggGroups[0] || eg2 === breeder.eggGroups[1]))) {
                                 if (hasBreeders) buf += ', ';
-                                buf += '<a href="/pokemon/' + breederid + '" data-target="push">' + breeder.name + '</a>';
+                                buf += '<a href="./pokemon/' + breederid + '" data-target="push">' + breeder.name + '</a>';
                                 hasBreeders = true;
                             }
                         }

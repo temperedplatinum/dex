@@ -8,13 +8,13 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
         let obtainable = pokemon.tier === "obtainable";
 		var buf = '<div class="pfx-body dexentry">';
 
-		buf += '<a href="/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
+		buf += '<a href="./" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
 
 		buf += '<h1>';
 		if (pokemon.forme) {
-			buf += '<a href="/pokemon/'+id+'" data-target="push" class="subtle">'+pokemon.baseSpecies+'<small>-'+pokemon.forme+'</small></a>';
+			buf += '<a href="./pokemon/'+id+'" data-target="push" class="subtle">'+pokemon.baseSpecies+'<small>-'+pokemon.forme+'</small></a>';
 		} else {
-			buf += '<a href="/pokemon/'+id+'" data-target="push" class="subtle">'+pokemon.name+'</a>';
+			buf += '<a href="./pokemon/'+id+'" data-target="push" class="subtle">'+pokemon.name+'</a>';
 		}
 		if (pokemon.num > 0) buf += ' <code>#'+pokemon.num+'</code>';
 		buf += '</h1>';
@@ -28,7 +28,7 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 		buf += '<dl class="typeentry">';
 		buf += '<dt>Types:</dt> <dd>';
 		for (var i=0; i<pokemon.types.length; i++) {
-			buf += '<a class="type '+toID(pokemon.types[i])+'" href="/types/'+toID(pokemon.types[i])+'" data-target="push">'+pokemon.types[i]+'</a> ';
+			buf += '<a class="type '+toID(pokemon.types[i])+'" href="./types/'+toID(pokemon.types[i])+'" data-target="push">'+pokemon.types[i]+'</a> ';
 		}
 		buf += '</dd>';
 		buf += '</dl>';
@@ -43,7 +43,7 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 			if (weightkg >= 10) return 40;
 			return 20;
 		})(pokemon.weightkg);
-		buf += ''+pokemon.heightm+' m, '+pokemon.weightkg+' kg<br /><small><a class="subtle" href="/moves/grassknot" data-target="push">Grass Knot</a>: '+gkPower+'</small>';
+		buf += ''+pokemon.heightm+' m, '+pokemon.weightkg+' kg<br /><small><a class="subtle" href="./moves/grassknot" data-target="push">Grass Knot</a>: '+gkPower+'</small>';
 		buf += '</dd>';
 		buf += '</dl>';
 
@@ -55,7 +55,7 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 
 			if (i !== '0') buf += ' | ';
 			if (i === 'H') ability = '<em>'+pokemon.abilities[i]+'</em>';
-			buf += '<a href="/abilities/'+toID(pokemon.abilities[i])+'" data-target="push">'+ability+'</a>';
+			buf += '<a href="./abilities/'+toID(pokemon.abilities[i])+'" data-target="push">'+ability+'</a>';
 			if (i === 'H') buf += '<small> (H)</small>';
 			if (i === 'S') buf += '<small> (special)</small>';
 		}
@@ -117,7 +117,7 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 					if (template === pokemon) {
 						buf += '<div><strong>'+name+'</strong></div>';
 					} else {
-						buf += '<div><a href="/pokemon/'+template.id+'" data-target="replace">'+name+'</a></div>';
+						buf += '<div><a href="./pokemon/'+template.id+'" data-target="replace">'+name+'</a></div>';
 					}
 				}
 				evos = template.evos;
@@ -138,7 +138,7 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 			if (template === pokemon) {
 				buf += '<strong>'+name+'</strong>';
 			} else {
-				buf += '<a href="/pokemon/'+template.id+'" data-target="replace">'+name+'</a>';
+				buf += '<a href="./pokemon/'+template.id+'" data-target="replace">'+name+'</a>';
 			}
 			var otherFormes = template.otherFormes;
 			if (otherFormes) for (var i=0; i<otherFormes.length; i++) {
@@ -148,11 +148,11 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 				if (template === pokemon) {
 					buf += ', <strong>'+name+'</strong>';
 				} else {
-					buf += ', <a href="/pokemon/'+template.id+'" data-target="replace">'+name+'</a>';
+					buf += ', <a href="./pokemon/'+template.id+'" data-target="replace">'+name+'</a>';
 				}
 			}
 			if (template.requiredItem) {
-				buf += '<div><small>Must hold <a href="/items/' + toID(template.requiredItem) + '" data-target="push">' + template.requiredItem + '</a></small></div>';
+				buf += '<div><small>Must hold <a href="./items/' + toID(template.requiredItem) + '" data-target="push">' + template.requiredItem + '</a></small></div>';
 			}
 		}
 		if (pokemon.cosmeticFormes) {
@@ -171,7 +171,7 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 		buf += '</dd></dl>';
 
 		if (pokemon.eggGroups) {
-			buf += '<dl class="colentry"><dt>Egg groups:</dt><dd><span class="picon" style="margin-top:-12px;'+Dex.getPokemonIcon('egg')+'"></span><a href="/egggroups/'+pokemon.eggGroups.map(toID).join('+')+'" data-target="push">'+pokemon.eggGroups.join(', ')+'</a></dd></dl>';
+			buf += '<dl class="colentry"><dt>Egg groups:</dt><dd><span class="picon" style="margin-top:-12px;'+Dex.getPokemonIcon('egg')+'"></span><a href="./egggroups/'+pokemon.eggGroups.map(toID).join('+')+'" data-target="push">'+pokemon.eggGroups.join(', ')+'</a></dd></dl>';
 			buf += '<dl class="colentry"><dt>Gender ratio:</dt><dd>';
 			if (pokemon.gender) switch (pokemon.gender) {
 			case 'M':

@@ -59,9 +59,9 @@ if (!Function.prototype.bind) {
 	Panels.App = Backbone.Router.extend({
 		constructor: function(options) {
 			if (!options) options = {};
-			if (options.root) this.root = options.root;
+			this.root = options.root || $('base').attr('href') || this.root;
 			if ((location.search || '').substr(0, 4) === '?_ga' && window.history) {
-				history.replaceState(null, null, '/');
+				history.replaceState(null, null, this.root);
 			}
 			for (var i in this.states) {
 				this.routePanel(i, this.states[i]);
@@ -109,6 +109,9 @@ if (!Function.prototype.bind) {
 		go: function(fragment, loc, replace, source, instant) {
 			if (fragment && fragment.substr(0,this.root.length) === this.root) {
 				fragment = fragment.substr(this.root.length);
+			}
+			if (fragment && fragment.substr(0,2) === './') {
+				fragment = fragment.substr(2);
 			}
 			// no matter what, if the panel exists, we're going straight to it
 			var i = this.getFragmentIndex(fragment);
@@ -210,8 +213,8 @@ if (!Function.prototype.bind) {
 				var leftPanel = this.panels[loc];
 				var rightPanel = this.panels[loc+1];
 				if (rightPanel) leftPanel.whenLoaded(function(){
-					var source = leftPanel.$('a[href="'+this.root+rightPanel.fragment+'"]');
-					// console.log('sources: a[href="'+this.root+rightPanel.fragment+'"] ('+source.length+')');
+					var source = leftPanel.$('a[href="./'+rightPanel.fragment+'"]');
+					// console.log('sources: a[href="./'+rightPanel.fragment+'"] ('+source.length+')');
 					if (!source.length) source = null;
 					rightPanel.setSource(source, leftPanel);
 				});
@@ -259,8 +262,8 @@ if (!Function.prototype.bind) {
 			this.updateURL();
 		},
 		setPanelSource: function() {
-			var source = leftPanel.$('a[href="'+this.root+rightPanel.fragment+'"]');
-			// console.log('sources: a[href="'+this.root+rightPanel.fragment+'"] ('+source.length+')');
+			var source = leftPanel.$('a[href="./'+rightPanel.fragment+'"]');
+			// console.log('sources: a[href="./'+rightPanel.fragment+'"] ('+source.length+')');
 			if (!source.length) source = null;
 			rightPanel.setSource(source, leftPanel);
 		},
