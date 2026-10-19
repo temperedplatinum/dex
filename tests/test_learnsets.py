@@ -1,6 +1,6 @@
 import pytest
 
-from porydex.decomp.learnsets import load_tm_moves, parse_learnset
+from porydex.decomp.learnsets import load_gift_egg_species, load_tm_moves, parse_learnset
 
 MOVE_KEYS = {
     'MOVE_POUND': 'pound',
@@ -28,3 +28,10 @@ def test_parse_learnset_codes_and_dedupes():
 def test_parse_learnset_rejects_unknown_move():
     with pytest.raises(KeyError):
         parse_learnset({'by_tutor': ['MOVE_MISSING']}, {}, MOVE_KEYS)
+
+def test_gift_egg_species_come_from_give_egg_commands_ignoring_comments(decomp):
+    assert load_gift_egg_species(decomp) == {'SPECIES_BULBASAUR'}
+
+def test_parse_learnset_can_drop_egg_moves():
+    raw = {'by_level': [[1, 'MOVE_POUND']], 'egg_moves': ['MOVE_BITE']}
+    assert parse_learnset(raw, {}, MOVE_KEYS, include_egg_moves=False) == {'pound': ['L1']}

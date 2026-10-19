@@ -5,7 +5,7 @@ from porydex.common import name_key
 from porydex.decomp.abilities import Ability
 from porydex.decomp.enums import showdown_color, showdown_egg_groups, showdown_gender, showdown_types
 from porydex.decomp.items import Item
-from porydex.decomp.learnsets import load_tm_moves, parse_learnset
+from porydex.decomp.learnsets import load_gift_egg_species, load_tm_moves, parse_learnset
 from porydex.decomp.loaders import load_constants, load_json
 from porydex.decomp.moves import Move
 from porydex.decomp.names import forme_name, resolve_species
@@ -155,6 +155,7 @@ class _Lookups:
     mega_stones: dict[str, str]
     unplaced_stones: frozenset[str]
     tm_moves: dict[str, str]
+    egg_species: frozenset[str] = frozenset()
 
 def _abilities(constants: list[str], names: dict[str, str]) -> dict[str, str]:
     slots: dict[str, str] = {}
@@ -204,7 +205,12 @@ def _species(constant: str,
         egg_groups=tuple(showdown_egg_groups(data['egg_groups'])),
         gender=showdown_gender(data['gender_ratio']),
         evolutions=tuple(_evolution(entry, lookups) for entry in data.get('evolutions', [])),
-        learnset=None if is_mega else parse_learnset(data['learnset'], lookups.tm_moves, lookups.move_keys),
+        learnset=None if is_mega else parse_learnset(
+            data['learnset'],
+            lookups.tm_moves,
+            lookups.move_keys,
+            include_egg_moves=constant in lookups.egg_species,
+        ),
         **formes,
     )
 
@@ -236,6 +242,7 @@ def load_species(decomp: pathlib.Path,
         mega_stones={i.mega_stone: i.name for i in items.values() if i.mega_stone},
         unplaced_stones=frozenset(i.name for i in items.values() if i.mega_stone and not i.placed),
         tm_moves=load_tm_moves(decomp),
+        egg_species=load_gift_egg_species(decomp),
     )
     registry = load_json(decomp / 'res' / 'pokemon' / 'form_registry.json')
 

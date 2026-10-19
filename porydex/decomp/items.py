@@ -3,7 +3,7 @@ import dataclasses
 import pathlib
 import re
 
-from porydex.decomp.c_tables import COMMENTS, parse_constant_table
+from porydex.decomp.c_tables import parse_constant_table, read_without_comments
 from porydex.decomp.enums import showdown_type
 from porydex.decomp.loaders import load_constants, load_text_bank
 from porydex.decomp.names import resolve_item
@@ -11,7 +11,6 @@ from porydex.decomp.names import resolve_item
 PLACEHOLDER_DESCRIPTION = '???'
 
 ITEM_CONSTANT = re.compile(r'\bITEM_\w+')
-ASM_LINE_COMMENT = re.compile(r'@[^\n]*')
 FIELD_SOURCE_PATTERNS = ('*.s', '*.json')
 
 @dataclasses.dataclass(frozen=True)
@@ -59,19 +58,13 @@ def _load_item_data(decomp: pathlib.Path) -> dict[str, dict[str, str]]:
 def _natural_gift_type(value: str) -> str | None:
     return showdown_type(value) if value.startswith('TYPE_') else None
 
-def _field_source(path: pathlib.Path) -> str:
-    source = path.read_text(encoding='utf-8')
-    if path.suffix == '.s':
-        source = ASM_LINE_COMMENT.sub('', COMMENTS.sub('', source))
-    return source
-
 def load_placed_items(decomp: pathlib.Path) -> set[str]:
     field = decomp / 'res' / 'field'
     placed = {
         constant
         for pattern in FIELD_SOURCE_PATTERNS
         for path in field.rglob(pattern)
-        for constant in ITEM_CONSTANT.findall(_field_source(path))
+        for constant in ITEM_CONSTANT.findall(read_without_comments(path))
     }
     shop = decomp / 'src' / 'overlay007' / 'shop_menu.c'
     return placed | set(parse_constant_table(shop, 'sBPStoreItems', 'ITEM_'))

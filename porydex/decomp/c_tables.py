@@ -2,6 +2,15 @@ import pathlib
 import re
 
 COMMENTS = re.compile(r'//[^\n]*|/\*.*?\*/', re.S)
+ASM_LINE_COMMENT = re.compile(r'@[^\n]*')
+
+def read_without_comments(path: pathlib.Path) -> str:
+    source = path.read_text(encoding='utf-8')
+    if path.suffix in ('.c', '.h', '.s'):
+        source = COMMENTS.sub('', source)
+    if path.suffix == '.s':
+        source = ASM_LINE_COMMENT.sub('', source)
+    return source
 
 def table_body(path: pathlib.Path, table: str) -> str:
     source = COMMENTS.sub('', path.read_text(encoding='utf-8'))

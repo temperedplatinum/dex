@@ -142,3 +142,12 @@ def test_unobtainable_form_leaves_base_obtainable(decomp):
 def test_unknown_unobtainable_name_is_rejected(decomp):
     with pytest.raises(ValueError, match='Rotomm'):
         _species_with_unobtainable(decomp, {'Rotomm'})
+
+def test_egg_moves_only_for_gift_egg_species(decomp, monkeypatch):
+    monkeypatch.setattr('porydex.decomp.species.load_gift_egg_species', lambda _: frozenset())
+    learnsets = learnsets_to_showdown(_species_with_unobtainable(decomp, set()))
+    assert learnsets['bulbasaur'] == {'learnset': {
+        'pound': ['L1', 'L5'],
+        'karatechop': ['M'],
+        'bite': ['T'],
+    }}
