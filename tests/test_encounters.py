@@ -1,7 +1,12 @@
 import pytest
 
 from porydex.decomp.abilities import load_abilities
-from porydex.decomp.encounters import load_encounters, load_honey_tree_levels, load_slot_rates
+from porydex.decomp.encounters import (
+    LOCATION_NAME_OVERRIDES,
+    load_encounters,
+    load_honey_tree_levels,
+    load_slot_rates,
+)
 from porydex.decomp.items import load_items
 from porydex.decomp.moves import load_moves
 from porydex.decomp.species import load_species
@@ -31,6 +36,13 @@ def test_shared_labels_get_file_suffixes(locations):
         'Lost Tower (2F)',
         'Honey Trees',
     ]
+
+def test_name_overrides_replace_label_and_suffix(decomp, monkeypatch):
+    monkeypatch.setitem(LOCATION_NAME_OVERRIDES, 'encounters_route_212_south', 'Route 212 (Swamp)')
+    species = load_species(decomp, load_moves(decomp, {}), load_abilities(decomp, {}), load_items(decomp, {}))
+    locations = load_encounters(decomp, species)
+    assert locations['route212swamp'].name == 'Route 212 (Swamp)'
+    assert 'route212south' not in locations
 
 def test_land_slots_merge_by_species(locations):
     assert locations['route212north'].to_showdown()['land'] == [

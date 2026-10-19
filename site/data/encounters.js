@@ -1111,8 +1111,8 @@ exports.BattleLocationdex = {
             }
         ]
     },
-    "coronetmountaintopmtcoronetoutsidenorth": {
-        "name": "Coronet Mountaintop (Mt Coronet Outside North)",
+    "coronetmountaintopnorth": {
+        "name": "Coronet Mountaintop North",
         "land": [
             {
                 "species": "jynx",
@@ -1188,8 +1188,8 @@ exports.BattleLocationdex = {
             }
         ]
     },
-    "coronetmountaintopmtcoronetoutsidesouth": {
-        "name": "Coronet Mountaintop (Mt Coronet Outside South)",
+    "coronetmountaintopsouth": {
+        "name": "Coronet Mountaintop South",
         "land": [
             {
                 "species": "piloswine",
@@ -1682,8 +1682,8 @@ exports.BattleLocationdex = {
             }
         ]
     },
-    "mtcoronet1fnorthroom2": {
-        "name": "Mt. Coronet (1F North Room 2)",
+    "mtcoronet1fnorthroute216exit": {
+        "name": "Mt. Coronet 1F North (Route 216 Exit)",
         "land": [
             {
                 "species": "crobat",
@@ -1759,8 +1759,8 @@ exports.BattleLocationdex = {
             }
         ]
     },
-    "mtcoronet1fnorthroom1": {
-        "name": "Mt. Coronet (1F North Room 1)",
+    "mtcoronet1fnorth": {
+        "name": "Mt. Coronet 1F North",
         "land": [
             {
                 "species": "zubat",
@@ -3476,8 +3476,8 @@ exports.BattleLocationdex = {
             }
         ]
     },
-    "turnbackcavepillar1room1": {
-        "name": "??? (Turnback Cave Pillar 1 Room 1)",
+    "area1": {
+        "name": "??? Area 1",
         "land": [
             {
                 "species": "hippopotas",
@@ -3553,8 +3553,8 @@ exports.BattleLocationdex = {
             }
         ]
     },
-    "turnbackcavepillar1room2": {
-        "name": "??? (Turnback Cave Pillar 1 Room 2)",
+    "area2": {
+        "name": "??? Area 2",
         "land": [
             {
                 "species": "tentacool",
@@ -3630,8 +3630,8 @@ exports.BattleLocationdex = {
             }
         ]
     },
-    "turnbackcavepillar1room3": {
-        "name": "??? (Turnback Cave Pillar 1 Room 3)",
+    "area3": {
+        "name": "??? Area 3",
         "land": [
             {
                 "species": "granbull",
@@ -11274,8 +11274,8 @@ exports.BattleLocationdex = {
             }
         ]
     },
-    "turnbackcavepillar1room5": {
-        "name": "??? (Turnback Cave Pillar 1 Room 5)",
+    "area4": {
+        "name": "??? Area 4",
         "land": [
             {
                 "species": "shuppet",

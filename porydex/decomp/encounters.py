@@ -15,6 +15,17 @@ SLOT_FUNCTIONS: dict[str, str] = {
     'surf': 'GetWaterEncounterSlot',
 }
 
+LOCATION_NAME_OVERRIDES: dict[str, str] = {
+    'encounters_mt_coronet_1f_north_room_1': 'Mt. Coronet 1F North',
+    'encounters_mt_coronet_1f_north_room_2': 'Mt. Coronet 1F North (Route 216 Exit)',
+    'encounters_mt_coronet_outside_north': 'Coronet Mountaintop North',
+    'encounters_mt_coronet_outside_south': 'Coronet Mountaintop South',
+    'encounters_turnback_cave_pillar_1_room_1': '??? Area 1',
+    'encounters_turnback_cave_pillar_1_room_2': '??? Area 2',
+    'encounters_turnback_cave_pillar_1_room_3': '??? Area 3',
+    'encounters_turnback_cave_pillar_1_room_5': '??? Area 4',
+}
+
 MAP_HEADER_ENCOUNTERS = re.compile(
     r'\.wildEncountersArchiveID\s*=\s*(encounters_\w+),.*?\.mapLabelTextID\s*=\s*(\w+),',
     re.S,
@@ -153,7 +164,9 @@ def load_encounters(decomp: pathlib.Path, species: dict[str, Species]) -> dict[s
 
     locations: dict[str, Location] = {}
     for file_stem, name, methods in populated:
-        if name_counts[name] > 1 and (suffix := _suffix(file_stem, name)):
+        if file_stem in LOCATION_NAME_OVERRIDES:
+            name = LOCATION_NAME_OVERRIDES[file_stem]
+        elif name_counts[name] > 1 and (suffix := _suffix(file_stem, name)):
             name = f'{name} ({suffix})'
         locations[name_key(name)] = Location(name_key(name), name, methods)
 
