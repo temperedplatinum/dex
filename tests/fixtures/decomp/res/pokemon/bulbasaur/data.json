@@ -55,6 +55,7 @@
             "SPECIES_IVYSAUR"
         ]
     ],
+    "catch_rate": 45,
     "pokedex_data": {
         "height_inches": 28,
         "weight_pounds": 15.2,

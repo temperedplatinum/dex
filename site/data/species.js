@@ -30,6 +30,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Ivysaur"
@@ -66,6 +67,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Bulbasaur",
         "evoType": "level",
@@ -105,6 +107,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "otherFormes": [
             "Venusaur-Mega"
         ],
@@ -142,6 +145,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "baseSpecies": "Venusaur",
         "forme": "Mega",
         "requiredItem": "Venusaurite",
@@ -177,6 +181,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Charmeleon"
@@ -211,6 +216,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Charmander",
         "evoType": "level",
@@ -250,6 +256,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "otherFormes": [
             "Charizard-Mega-X",
             "Charizard-Mega-Y"
@@ -288,6 +295,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "baseSpecies": "Charizard",
         "forme": "Mega-X",
         "requiredItem": "Charizardite X",
@@ -323,6 +331,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "baseSpecies": "Charizard",
         "forme": "Mega-Y",
         "requiredItem": "Charizardite Y",
@@ -358,6 +367,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Wartortle"
@@ -392,6 +402,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Squirtle",
         "evoType": "level",
@@ -430,6 +441,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "otherFormes": [
             "Blastoise-Mega"
         ],
@@ -467,6 +479,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "baseSpecies": "Blastoise",
         "forme": "Mega",
         "requiredItem": "Blastoisinite",
@@ -502,6 +515,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Metapod"
@@ -534,6 +548,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 120,
         "tier": "obtainable",
         "prevo": "Caterpie",
         "evoType": "level",
@@ -572,6 +587,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Metapod",
         "evoType": "level",
@@ -607,6 +623,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Kakuna"
@@ -640,6 +657,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 120,
         "tier": "obtainable",
         "prevo": "Weedle",
         "evoType": "level",
@@ -678,6 +696,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "otherFormes": [
             "Beedrill-Mega"
         ],
@@ -714,6 +733,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "baseSpecies": "Beedrill",
         "forme": "Mega",
         "requiredItem": "Beedrillite",
@@ -749,6 +769,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Pidgeotto"
@@ -783,6 +804,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 120,
         "tier": "obtainable",
         "prevo": "Pidgey",
         "evoType": "level",
@@ -820,6 +842,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "otherFormes": [
             "Pidgeot-Mega"
         ],
@@ -855,6 +878,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "baseSpecies": "Pidgeot",
         "forme": "Mega",
         "requiredItem": "Pidgeotite",
@@ -890,6 +914,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Raticate"
@@ -924,6 +949,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 127,
         "tier": "obtainable",
         "prevo": "Rattata",
         "evoType": "level",
@@ -959,6 +985,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Fearow"
@@ -994,6 +1021,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 90,
         "tier": "obtainable",
         "prevo": "Spearow",
         "evoType": "level",
@@ -1029,6 +1057,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Arbok"
@@ -1064,6 +1093,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 90,
         "tier": "obtainable",
         "prevo": "Ekans",
         "evoType": "level",
@@ -1099,6 +1129,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Raichu"
@@ -1137,6 +1168,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "otherFormes": [
             "Raichu-Mega-X",
             "Raichu-Mega-Y"
@@ -1174,6 +1206,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "baseSpecies": "Raichu",
         "forme": "Mega-X",
         "requiredItem": "Raichunite X",
@@ -1208,6 +1241,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "baseSpecies": "Raichu",
         "forme": "Mega-Y",
         "requiredItem": "Raichunite Y",
@@ -1244,6 +1278,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Sandslash"
@@ -1279,6 +1314,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 90,
         "tier": "obtainable",
         "prevo": "Sandshrew",
         "evoType": "level",
@@ -1311,6 +1347,7 @@ exports.BattlePokedex = {
             "Field"
         ],
         "gender": "F",
+        "catchRate": 235,
         "tier": "obtainable",
         "evos": [
             "Nidorina"
@@ -1342,6 +1379,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "F",
+        "catchRate": 120,
         "tier": "obtainable",
         "prevo": "Nidoran-F",
         "evoType": "level",
@@ -1377,6 +1415,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "F",
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Nidorina",
         "evoType": "useItem",
@@ -1409,6 +1448,7 @@ exports.BattlePokedex = {
             "Field"
         ],
         "gender": "M",
+        "catchRate": 235,
         "tier": "obtainable",
         "evos": [
             "Nidorino"
@@ -1441,6 +1481,7 @@ exports.BattlePokedex = {
             "Field"
         ],
         "gender": "M",
+        "catchRate": 120,
         "tier": "obtainable",
         "prevo": "Nidoran-M",
         "evoType": "level",
@@ -1477,6 +1518,7 @@ exports.BattlePokedex = {
             "Field"
         ],
         "gender": "M",
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Nidorino",
         "evoType": "useItem",
@@ -1511,6 +1553,7 @@ exports.BattlePokedex = {
             "M": 0.25,
             "F": 0.75
         },
+        "catchRate": 150,
         "tier": "obtainable",
         "evos": [
             "Clefable"
@@ -1548,6 +1591,7 @@ exports.BattlePokedex = {
             "M": 0.25,
             "F": 0.75
         },
+        "catchRate": 25,
         "otherFormes": [
             "Clefable-Mega"
         ],
@@ -1584,6 +1628,7 @@ exports.BattlePokedex = {
             "M": 0.25,
             "F": 0.75
         },
+        "catchRate": 25,
         "baseSpecies": "Clefable",
         "forme": "Mega",
         "requiredItem": "Clefablite",
@@ -1619,6 +1664,7 @@ exports.BattlePokedex = {
             "M": 0.25,
             "F": 0.75
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Ninetales"
@@ -1653,6 +1699,7 @@ exports.BattlePokedex = {
             "M": 0.25,
             "F": 0.75
         },
+        "catchRate": 75,
         "tier": "obtainable",
         "prevo": "Vulpix",
         "evoType": "useItem",
@@ -1688,6 +1735,7 @@ exports.BattlePokedex = {
             "M": 0.25,
             "F": 0.75
         },
+        "catchRate": 170,
         "tier": "obtainable",
         "evos": [
             "Wigglytuff"
@@ -1726,6 +1774,7 @@ exports.BattlePokedex = {
             "M": 0.25,
             "F": 0.75
         },
+        "catchRate": 50,
         "tier": "obtainable",
         "prevo": "Jigglypuff",
         "evoType": "useItem",
@@ -1761,6 +1810,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Golbat"
@@ -1796,6 +1846,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 90,
         "tier": "obtainable",
         "prevo": "Zubat",
         "evoType": "level",
@@ -1834,6 +1885,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Gloom"
@@ -1869,6 +1921,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 120,
         "tier": "obtainable",
         "prevo": "Oddish",
         "evoType": "level",
@@ -1908,6 +1961,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Gloom",
         "evoType": "useItem",
@@ -1944,6 +1998,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Parasect"
@@ -1980,6 +2035,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "tier": "obtainable",
         "prevo": "Paras",
         "evoType": "level",
@@ -2015,6 +2071,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Venomoth"
@@ -2050,6 +2107,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "tier": "obtainable",
         "prevo": "Venonat",
         "evoType": "level",
@@ -2084,6 +2142,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Dugtrio"
@@ -2118,6 +2177,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 50,
         "tier": "obtainable",
         "prevo": "Diglett",
         "evoType": "level",
@@ -2151,6 +2211,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Persian"
@@ -2186,6 +2247,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 90,
         "tier": "obtainable",
         "prevo": "Meowth",
         "evoType": "level",
@@ -2222,6 +2284,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Golduck"
@@ -2258,6 +2321,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "tier": "obtainable",
         "prevo": "Psyduck",
         "evoType": "level",
@@ -2292,6 +2356,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Primeape"
@@ -2326,6 +2391,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "tier": "obtainable",
         "prevo": "Mankey",
         "evoType": "level",
@@ -2360,6 +2426,7 @@ exports.BattlePokedex = {
             "M": 0.75,
             "F": 0.25
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Arcanine"
@@ -2394,6 +2461,7 @@ exports.BattlePokedex = {
             "M": 0.75,
             "F": 0.25
         },
+        "catchRate": 75,
         "tier": "obtainable",
         "prevo": "Growlithe",
         "evoType": "useItem",
@@ -2428,6 +2496,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Poliwhirl"
@@ -2462,6 +2531,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 120,
         "tier": "obtainable",
         "prevo": "Poliwag",
         "evoType": "level",
@@ -2501,6 +2571,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Poliwhirl",
         "evoType": "useItem",
@@ -2535,6 +2606,7 @@ exports.BattlePokedex = {
             "M": 0.75,
             "F": 0.25
         },
+        "catchRate": 200,
         "tier": "obtainable",
         "evos": [
             "Kadabra"
@@ -2569,6 +2641,7 @@ exports.BattlePokedex = {
             "M": 0.75,
             "F": 0.25
         },
+        "catchRate": 100,
         "tier": "obtainable",
         "prevo": "Abra",
         "evoType": "level",
@@ -2606,6 +2679,7 @@ exports.BattlePokedex = {
             "M": 0.75,
             "F": 0.25
         },
+        "catchRate": 50,
         "otherFormes": [
             "Alakazam-Mega"
         ],
@@ -2641,6 +2715,7 @@ exports.BattlePokedex = {
             "M": 0.75,
             "F": 0.25
         },
+        "catchRate": 50,
         "baseSpecies": "Alakazam",
         "forme": "Mega",
         "requiredItem": "Alakazite",
@@ -2676,6 +2751,7 @@ exports.BattlePokedex = {
             "M": 0.75,
             "F": 0.25
         },
+        "catchRate": 180,
         "tier": "obtainable",
         "evos": [
             "Machoke"
@@ -2710,6 +2786,7 @@ exports.BattlePokedex = {
             "M": 0.75,
             "F": 0.25
         },
+        "catchRate": 90,
         "tier": "obtainable",
         "prevo": "Machop",
         "evoType": "level",
@@ -2747,6 +2824,7 @@ exports.BattlePokedex = {
             "M": 0.75,
             "F": 0.25
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Machoke",
         "evoType": "level",
@@ -2782,6 +2860,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Weepinbell"
@@ -2817,6 +2896,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 120,
         "tier": "obtainable",
         "prevo": "Bellsprout",
         "evoType": "level",
@@ -2855,6 +2935,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "otherFormes": [
             "Victreebel-Mega"
         ],
@@ -2891,6 +2972,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "baseSpecies": "Victreebel",
         "forme": "Mega",
         "requiredItem": "Victreebelite",
@@ -2927,6 +3009,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Tentacruel"
@@ -2962,6 +3045,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 60,
         "tier": "obtainable",
         "prevo": "Tentacool",
         "evoType": "level",
@@ -2997,6 +3081,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Graveler"
@@ -3032,6 +3117,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 120,
         "tier": "obtainable",
         "prevo": "Geodude",
         "evoType": "level",
@@ -3070,6 +3156,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Graveler",
         "evoType": "level",
@@ -3105,6 +3192,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Rapidash"
@@ -3140,6 +3228,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 60,
         "tier": "obtainable",
         "prevo": "Ponyta",
         "evoType": "level",
@@ -3176,6 +3265,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Slowbro",
@@ -3213,6 +3303,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "otherFormes": [
             "Slowbro-Mega"
         ],
@@ -3250,6 +3341,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "baseSpecies": "Slowbro",
         "forme": "Mega",
         "requiredItem": "Slowbronite",
@@ -3283,6 +3375,7 @@ exports.BattlePokedex = {
             "Mineral"
         ],
         "gender": "N",
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Magneton"
@@ -3315,6 +3408,7 @@ exports.BattlePokedex = {
             "Mineral"
         ],
         "gender": "N",
+        "catchRate": 60,
         "tier": "obtainable",
         "prevo": "Magnemite",
         "evoType": "level",
@@ -3354,6 +3448,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable"
     },
     "doduo": {
@@ -3386,6 +3481,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Dodrio"
@@ -3421,6 +3517,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Doduo",
         "evoType": "level",
@@ -3456,6 +3553,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Dewgong"
@@ -3492,6 +3590,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "tier": "obtainable",
         "prevo": "Seel",
         "evoType": "level",
@@ -3526,6 +3625,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Muk"
@@ -3560,6 +3660,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "tier": "obtainable",
         "prevo": "Grimer",
         "evoType": "level",
@@ -3594,6 +3695,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Cloyster"
@@ -3629,6 +3731,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 60,
         "tier": "obtainable",
         "prevo": "Shellder",
         "evoType": "useItem",
@@ -3662,6 +3765,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Haunter"
@@ -3695,6 +3799,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 90,
         "tier": "obtainable",
         "prevo": "Gastly",
         "evoType": "level",
@@ -3731,6 +3836,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "otherFormes": [
             "Gengar-Mega"
         ],
@@ -3767,6 +3873,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "baseSpecies": "Gengar",
         "forme": "Mega",
         "requiredItem": "Gengarite",
@@ -3803,6 +3910,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Steelix"
@@ -3837,6 +3945,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Hypno"
@@ -3872,6 +3981,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "tier": "obtainable",
         "prevo": "Drowzee",
         "evoType": "level",
@@ -3906,6 +4016,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 225,
         "tier": "obtainable",
         "evos": [
             "Kingler"
@@ -3941,6 +4052,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 60,
         "tier": "obtainable",
         "prevo": "Krabby",
         "evoType": "level",
@@ -3972,6 +4084,7 @@ exports.BattlePokedex = {
             "Mineral"
         ],
         "gender": "N",
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Electrode"
@@ -4003,6 +4116,7 @@ exports.BattlePokedex = {
             "Mineral"
         ],
         "gender": "N",
+        "catchRate": 60,
         "tier": "obtainable",
         "prevo": "Voltorb",
         "evoType": "level",
@@ -4037,6 +4151,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 90,
         "tier": "obtainable",
         "evos": [
             "Exeggutor"
@@ -4072,6 +4187,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Exeggcute",
         "evoType": "useItem",
@@ -4106,6 +4222,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Marowak"
@@ -4141,6 +4258,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "tier": "obtainable",
         "prevo": "Cubone",
         "evoType": "level",
@@ -4172,6 +4290,7 @@ exports.BattlePokedex = {
             "Human-Like"
         ],
         "gender": "M",
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Tyrogue",
         "evoType": "level",
@@ -4204,6 +4323,7 @@ exports.BattlePokedex = {
             "Human-Like"
         ],
         "gender": "M",
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Tyrogue",
         "evoType": "level",
@@ -4239,6 +4359,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Lickilicky"
@@ -4272,6 +4393,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Weezing"
@@ -4306,6 +4428,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 60,
         "tier": "obtainable",
         "prevo": "Koffing",
         "evoType": "level",
@@ -4342,6 +4465,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 120,
         "tier": "obtainable",
         "evos": [
             "Rhydon"
@@ -4378,6 +4502,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 60,
         "tier": "obtainable",
         "prevo": "Rhyhorn",
         "evoType": "level",
@@ -4412,6 +4537,7 @@ exports.BattlePokedex = {
             "Fairy"
         ],
         "gender": "F",
+        "catchRate": 30,
         "tier": "unobtainable",
         "evos": [
             "Blissey"
@@ -4449,6 +4575,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Tangrowth"
@@ -4480,6 +4607,7 @@ exports.BattlePokedex = {
             "Monster"
         ],
         "gender": "F",
+        "catchRate": 45,
         "otherFormes": [
             "Kangaskhan-Mega"
         ],
@@ -4509,6 +4637,7 @@ exports.BattlePokedex = {
             "Monster"
         ],
         "gender": "F",
+        "catchRate": 45,
         "baseSpecies": "Kangaskhan",
         "forme": "Mega",
         "requiredItem": "Kangaskhanite",
@@ -4545,6 +4674,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 225,
         "tier": "obtainable",
         "evos": [
             "Seadra"
@@ -4580,6 +4710,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "tier": "obtainable",
         "prevo": "Horsea",
         "evoType": "level",
@@ -4618,6 +4749,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 225,
         "tier": "obtainable",
         "evos": [
             "Seaking"
@@ -4653,6 +4785,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 60,
         "tier": "obtainable",
         "prevo": "Goldeen",
         "evoType": "level",
@@ -4684,6 +4817,7 @@ exports.BattlePokedex = {
             "Water 3"
         ],
         "gender": "N",
+        "catchRate": 225,
         "tier": "obtainable",
         "evos": [
             "Starmie"
@@ -4716,6 +4850,7 @@ exports.BattlePokedex = {
             "Water 3"
         ],
         "gender": "N",
+        "catchRate": 60,
         "otherFormes": [
             "Starmie-Mega"
         ],
@@ -4749,6 +4884,7 @@ exports.BattlePokedex = {
             "Water 3"
         ],
         "gender": "N",
+        "catchRate": 60,
         "baseSpecies": "Starmie",
         "forme": "Mega",
         "requiredItem": "Starminite",
@@ -4785,6 +4921,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Mime Jr.",
         "evoType": "levelMove",
@@ -4820,6 +4957,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Scizor"
@@ -4852,6 +4990,7 @@ exports.BattlePokedex = {
             "Human-Like"
         ],
         "gender": "F",
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Smoochum",
         "evoType": "level",
@@ -4886,6 +5025,7 @@ exports.BattlePokedex = {
             "M": 0.75,
             "F": 0.25
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Electivire"
@@ -4923,6 +5063,7 @@ exports.BattlePokedex = {
             "M": 0.75,
             "F": 0.25
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Magmortar"
@@ -4960,6 +5101,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "otherFormes": [
             "Pinsir-Mega"
         ],
@@ -4993,6 +5135,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "baseSpecies": "Pinsir",
         "forme": "Mega",
         "requiredItem": "Pinsirite",
@@ -5025,6 +5168,7 @@ exports.BattlePokedex = {
             "Field"
         ],
         "gender": "M",
+        "catchRate": 45,
         "tier": "obtainable"
     },
     "magikarp": {
@@ -5056,6 +5200,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Gyarados"
@@ -5091,6 +5236,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "otherFormes": [
             "Gyarados-Mega"
         ],
@@ -5128,6 +5274,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "baseSpecies": "Gyarados",
         "forme": "Mega",
         "requiredItem": "Gyaradosite",
@@ -5165,6 +5312,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 3,
         "tier": "obtainable"
     },
     "ditto": {
@@ -5191,6 +5339,7 @@ exports.BattlePokedex = {
             "Ditto"
         ],
         "gender": "N",
+        "catchRate": 35,
         "tier": "obtainable"
     },
     "eevee": {
@@ -5222,6 +5371,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Leafeon",
@@ -5262,6 +5412,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Eevee",
         "evoType": "useItem",
@@ -5296,6 +5447,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Eevee",
         "evoType": "useItem",
@@ -5330,6 +5482,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Eevee",
         "evoType": "useItem",
@@ -5362,6 +5515,7 @@ exports.BattlePokedex = {
             "Mineral"
         ],
         "gender": "N",
+        "catchRate": 45,
         "tier": "obtainable"
     },
     "omanyte": {
@@ -5395,6 +5549,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Omastar"
@@ -5431,6 +5586,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Omanyte",
         "evoType": "level",
@@ -5467,6 +5623,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Kabutops"
@@ -5503,6 +5660,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Kabuto",
         "evoType": "level",
@@ -5538,6 +5696,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "otherFormes": [
             "Aerodactyl-Mega"
         ],
@@ -5571,6 +5730,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "baseSpecies": "Aerodactyl",
         "forme": "Mega",
         "requiredItem": "Aerodactylite",
@@ -5606,6 +5766,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 25,
         "tier": "obtainable",
         "prevo": "Munchlax",
         "evoType": "level",
@@ -5638,6 +5799,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 3,
         "tier": "obtainable"
     },
     "zapdos": {
@@ -5667,6 +5829,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 3,
         "tier": "obtainable"
     },
     "moltres": {
@@ -5696,6 +5859,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 3,
         "tier": "obtainable"
     },
     "dratini": {
@@ -5728,6 +5892,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Dragonair"
@@ -5763,6 +5928,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Dratini",
         "evoType": "level",
@@ -5802,6 +5968,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "otherFormes": [
             "Dragonite-Mega"
         ],
@@ -5839,6 +6006,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "baseSpecies": "Dragonite",
         "forme": "Mega",
         "requiredItem": "Dragoninite",
@@ -5870,6 +6038,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 3,
         "otherFormes": [
             "Mewtwo-Mega-X",
             "Mewtwo-Mega-Y"
@@ -5901,6 +6070,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 3,
         "baseSpecies": "Mewtwo",
         "forme": "Mega-X",
         "requiredItem": "Mewtwonite X",
@@ -5931,6 +6101,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 3,
         "baseSpecies": "Mewtwo",
         "forme": "Mega-Y",
         "requiredItem": "Mewtwonite Y",
@@ -5961,6 +6132,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 45,
         "tier": "unobtainable"
     },
     "chikorita": {
@@ -5993,6 +6165,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Bayleef"
@@ -6028,6 +6201,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Chikorita",
         "evoType": "level",
@@ -6066,6 +6240,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "otherFormes": [
             "Meganium-Mega"
         ],
@@ -6103,6 +6278,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "baseSpecies": "Meganium",
         "forme": "Mega",
         "requiredItem": "Meganiumite",
@@ -6137,6 +6313,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Quilava"
@@ -6170,6 +6347,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Cyndaquil",
         "evoType": "level",
@@ -6207,6 +6385,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Quilava",
         "evoType": "level",
@@ -6242,6 +6421,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Croconaw"
@@ -6278,6 +6458,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Totodile",
         "evoType": "level",
@@ -6317,6 +6498,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "otherFormes": [
             "Feraligatr-Mega"
         ],
@@ -6353,6 +6535,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "baseSpecies": "Feraligatr",
         "forme": "Mega",
         "requiredItem": "Feraligite",
@@ -6388,6 +6571,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Furret"
@@ -6422,6 +6606,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 90,
         "tier": "obtainable",
         "prevo": "Sentret",
         "evoType": "level",
@@ -6457,6 +6642,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Noctowl"
@@ -6492,6 +6678,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 90,
         "tier": "obtainable",
         "prevo": "Hoothoot",
         "evoType": "level",
@@ -6527,6 +6714,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Ledian"
@@ -6562,6 +6750,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 90,
         "tier": "obtainable",
         "prevo": "Ledyba",
         "evoType": "level",
@@ -6597,6 +6786,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Ariados"
@@ -6632,6 +6822,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 90,
         "tier": "obtainable",
         "prevo": "Spinarak",
         "evoType": "level",
@@ -6667,6 +6858,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 90,
         "tier": "obtainable",
         "prevo": "Golbat",
         "evoType": "level",
@@ -6702,6 +6894,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Lanturn"
@@ -6737,6 +6930,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "tier": "obtainable",
         "prevo": "Chinchou",
         "evoType": "level",
@@ -6771,6 +6965,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Pikachu"
@@ -6805,6 +7000,7 @@ exports.BattlePokedex = {
             "M": 0.25,
             "F": 0.75
         },
+        "catchRate": 150,
         "tier": "obtainable",
         "evos": [
             "Clefairy"
@@ -6840,6 +7036,7 @@ exports.BattlePokedex = {
             "M": 0.25,
             "F": 0.75
         },
+        "catchRate": 170,
         "tier": "obtainable",
         "evos": [
             "Jigglypuff"
@@ -6874,6 +7071,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Togetic"
@@ -6910,6 +7108,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 75,
         "tier": "obtainable",
         "prevo": "Togepi",
         "evoType": "level",
@@ -6948,6 +7147,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Xatu"
@@ -6983,6 +7183,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "tier": "obtainable",
         "prevo": "Natu",
         "evoType": "level",
@@ -7018,6 +7219,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 235,
         "tier": "obtainable",
         "evos": [
             "Flaaffy"
@@ -7053,6 +7255,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 120,
         "tier": "obtainable",
         "prevo": "Mareep",
         "evoType": "level",
@@ -7091,6 +7294,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "otherFormes": [
             "Ampharos-Mega"
         ],
@@ -7128,6 +7332,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "baseSpecies": "Ampharos",
         "forme": "Mega",
         "requiredItem": "Ampharosite",
@@ -7164,6 +7369,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Gloom",
         "evoType": "useItem",
@@ -7199,6 +7405,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Azumarill"
@@ -7238,6 +7445,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "tier": "obtainable",
         "prevo": "Marill",
         "evoType": "level",
@@ -7272,6 +7480,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 65,
         "tier": "obtainable",
         "prevo": "Bonsly",
         "evoType": "levelMove",
@@ -7307,6 +7516,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Poliwhirl",
         "evoType": "useItem",
@@ -7343,6 +7553,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Skiploom"
@@ -7379,6 +7590,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 120,
         "tier": "obtainable",
         "prevo": "Hoppip",
         "evoType": "level",
@@ -7418,6 +7630,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Skiploom",
         "evoType": "level",
@@ -7452,6 +7665,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Ambipom"
@@ -7487,6 +7701,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 235,
         "tier": "obtainable",
         "evos": [
             "Sunflora"
@@ -7522,6 +7737,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 120,
         "tier": "obtainable",
         "prevo": "Sunkern",
         "evoType": "useItem",
@@ -7557,6 +7773,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "tier": "obtainable",
         "evos": [
             "Yanmega"
@@ -7593,6 +7810,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Quagsire"
@@ -7629,6 +7847,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 90,
         "tier": "obtainable",
         "prevo": "Wooper",
         "evoType": "level",
@@ -7663,6 +7882,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Eevee",
         "evoType": "useItem",
@@ -7697,6 +7917,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Eevee",
         "evoType": "useItem",
@@ -7732,6 +7953,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 30,
         "tier": "obtainable",
         "evos": [
             "Honchkrow"
@@ -7768,6 +7990,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 70,
         "tier": "obtainable",
         "prevo": "Slowpoke",
         "evoType": "useItem",
@@ -7801,6 +8024,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Mismagius"
@@ -7830,6 +8054,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 225,
         "cosmeticFormes": [
             "Unown-B",
             "Unown-C",
@@ -7889,6 +8114,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Wynaut",
         "evoType": "level",
@@ -7924,6 +8150,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 60,
         "tier": "obtainable"
     },
     "pineco": {
@@ -7955,6 +8182,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Forretress"
@@ -7990,6 +8218,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "tier": "obtainable",
         "prevo": "Pineco",
         "evoType": "level",
@@ -8025,6 +8254,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable"
     },
     "gligar": {
@@ -8057,6 +8287,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 60,
         "tier": "obtainable",
         "evos": [
             "Gliscor"
@@ -8092,6 +8323,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 25,
         "otherFormes": [
             "Steelix-Mega"
         ],
@@ -8128,6 +8360,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 25,
         "baseSpecies": "Steelix",
         "forme": "Mega",
         "requiredItem": "Steelixite",
@@ -8164,6 +8397,7 @@ exports.BattlePokedex = {
             "M": 0.25,
             "F": 0.75
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Granbull"
@@ -8200,6 +8434,7 @@ exports.BattlePokedex = {
             "M": 0.25,
             "F": 0.75
         },
+        "catchRate": 75,
         "tier": "obtainable",
         "prevo": "Snubbull",
         "evoType": "level",
@@ -8235,6 +8470,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable"
     },
     "scizor": {
@@ -8267,6 +8503,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 25,
         "otherFormes": [
             "Scizor-Mega"
         ],
@@ -8303,6 +8540,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 25,
         "baseSpecies": "Scizor",
         "forme": "Mega",
         "requiredItem": "Scizorite",
@@ -8339,6 +8577,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable"
     },
     "heracross": {
@@ -8371,6 +8610,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "otherFormes": [
             "Heracross-Mega"
         ],
@@ -8404,6 +8644,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "baseSpecies": "Heracross",
         "forme": "Mega",
         "requiredItem": "Heracronite",
@@ -8440,6 +8681,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 60,
         "tier": "obtainable",
         "evos": [
             "Weavile"
@@ -8474,6 +8716,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 120,
         "tier": "obtainable",
         "evos": [
             "Ursaring"
@@ -8508,6 +8751,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 60,
         "tier": "obtainable",
         "prevo": "Teddiursa",
         "evoType": "level",
@@ -8543,6 +8787,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Magcargo"
@@ -8578,6 +8823,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "tier": "obtainable",
         "prevo": "Slugma",
         "evoType": "level",
@@ -8613,6 +8859,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 225,
         "tier": "obtainable",
         "evos": [
             "Piloswine"
@@ -8648,6 +8895,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "tier": "obtainable",
         "prevo": "Swinub",
         "evoType": "level",
@@ -8687,6 +8935,7 @@ exports.BattlePokedex = {
             "M": 0.25,
             "F": 0.75
         },
+        "catchRate": 60,
         "tier": "obtainable"
     },
     "remoraid": {
@@ -8719,6 +8968,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Octillery"
@@ -8754,6 +9004,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "tier": "obtainable",
         "prevo": "Remoraid",
         "evoType": "level",
@@ -8790,6 +9041,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable"
     },
     "mantine": {
@@ -8822,6 +9074,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 25,
         "tier": "obtainable",
         "prevo": "Mantyke",
         "evoType": "level",
@@ -8857,6 +9110,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 25,
         "otherFormes": [
             "Skarmory-Mega"
         ],
@@ -8890,6 +9144,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 25,
         "baseSpecies": "Skarmory",
         "forme": "Mega",
         "requiredItem": "Skarmorite",
@@ -8926,6 +9181,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 120,
         "tier": "obtainable",
         "evos": [
             "Houndoom"
@@ -8961,6 +9217,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "otherFormes": [
             "Houndoom-Mega"
         ],
@@ -8997,6 +9254,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "baseSpecies": "Houndoom",
         "forme": "Mega",
         "requiredItem": "Houndoominite",
@@ -9034,6 +9292,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Seadra",
         "evoType": "useItem",
@@ -9067,6 +9326,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 120,
         "tier": "obtainable",
         "evos": [
             "Donphan"
@@ -9101,6 +9361,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 60,
         "tier": "obtainable",
         "prevo": "Phanpy",
         "evoType": "level",
@@ -9133,6 +9394,7 @@ exports.BattlePokedex = {
             "Mineral"
         ],
         "gender": "N",
+        "catchRate": 45,
         "tier": "obtainable"
     },
     "stantler": {
@@ -9165,6 +9427,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable"
     },
     "smeargle": {
@@ -9196,6 +9459,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable"
     },
     "tyrogue": {
@@ -9223,6 +9487,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "M",
+        "catchRate": 75,
         "tier": "obtainable",
         "evos": [
             "Hitmonchan",
@@ -9256,6 +9521,7 @@ exports.BattlePokedex = {
             "Human-Like"
         ],
         "gender": "M",
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Tyrogue",
         "evoType": "level",
@@ -9289,6 +9555,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "F",
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Jynx"
@@ -9323,6 +9590,7 @@ exports.BattlePokedex = {
             "M": 0.75,
             "F": 0.25
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Electabuzz"
@@ -9357,6 +9625,7 @@ exports.BattlePokedex = {
             "M": 0.75,
             "F": 0.25
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Magmar"
@@ -9388,6 +9657,7 @@ exports.BattlePokedex = {
             "Field"
         ],
         "gender": "F",
+        "catchRate": 45,
         "tier": "obtainable"
     },
     "blissey": {
@@ -9416,6 +9686,7 @@ exports.BattlePokedex = {
             "Fairy"
         ],
         "gender": "F",
+        "catchRate": 30,
         "tier": "unobtainable",
         "prevo": "Chansey",
         "evoType": "level",
@@ -9447,6 +9718,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 3,
         "tier": "obtainable"
     },
     "entei": {
@@ -9475,6 +9747,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 3,
         "tier": "obtainable"
     },
     "suicune": {
@@ -9503,6 +9776,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 3,
         "tier": "obtainable"
     },
     "larvitar": {
@@ -9534,6 +9808,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Pupitar"
@@ -9567,6 +9842,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Larvitar",
         "evoType": "level",
@@ -9605,6 +9881,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "otherFormes": [
             "Tyranitar-Mega"
         ],
@@ -9641,6 +9918,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "baseSpecies": "Tyranitar",
         "forme": "Mega",
         "requiredItem": "Tyranitarite",
@@ -9673,6 +9951,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 3,
         "tier": "unobtainable"
     },
     "hooh": {
@@ -9701,6 +9980,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 3,
         "tier": "unobtainable"
     },
     "celebi": {
@@ -9728,6 +10008,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 45,
         "tier": "unobtainable"
     },
     "treecko": {
@@ -9760,6 +10041,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Grovyle"
@@ -9795,6 +10077,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Treecko",
         "evoType": "level",
@@ -9833,6 +10116,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "otherFormes": [
             "Sceptile-Mega"
         ],
@@ -9870,6 +10154,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "baseSpecies": "Sceptile",
         "forme": "Mega",
         "requiredItem": "Sceptilite",
@@ -9905,6 +10190,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Combusken"
@@ -9940,6 +10226,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Torchic",
         "evoType": "level",
@@ -9978,6 +10265,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "otherFormes": [
             "Blaziken-Mega"
         ],
@@ -10014,6 +10302,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "baseSpecies": "Blaziken",
         "forme": "Mega",
         "requiredItem": "Blazikenite",
@@ -10050,6 +10339,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Marshtomp"
@@ -10086,6 +10376,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Mudkip",
         "evoType": "level",
@@ -10125,6 +10416,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "otherFormes": [
             "Swampert-Mega"
         ],
@@ -10162,6 +10454,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "baseSpecies": "Swampert",
         "forme": "Mega",
         "requiredItem": "Swampertite",
@@ -10197,6 +10490,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Mightyena"
@@ -10231,6 +10525,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 127,
         "tier": "obtainable",
         "prevo": "Poochyena",
         "evoType": "level",
@@ -10264,6 +10559,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Linoone"
@@ -10298,6 +10594,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 90,
         "tier": "obtainable",
         "prevo": "Zigzagoon",
         "evoType": "level",
@@ -10331,6 +10628,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Silcoon",
@@ -10364,6 +10662,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 120,
         "tier": "obtainable",
         "prevo": "Wurmple",
         "evoType": "level",
@@ -10403,6 +10702,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Silcoon",
         "evoType": "level",
@@ -10435,6 +10735,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 120,
         "tier": "obtainable",
         "prevo": "Wurmple",
         "evoType": "level",
@@ -10474,6 +10775,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Cascoon",
         "evoType": "level",
@@ -10510,6 +10812,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Lombre"
@@ -10546,6 +10849,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 120,
         "tier": "obtainable",
         "prevo": "Lotad",
         "evoType": "level",
@@ -10585,6 +10889,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Lombre",
         "evoType": "useItem",
@@ -10620,6 +10925,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Nuzleaf"
@@ -10656,6 +10962,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 120,
         "tier": "obtainable",
         "prevo": "Seedot",
         "evoType": "level",
@@ -10695,6 +11002,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Nuzleaf",
         "evoType": "useItem",
@@ -10730,6 +11038,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 200,
         "tier": "obtainable",
         "evos": [
             "Swellow"
@@ -10765,6 +11074,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Taillow",
         "evoType": "level",
@@ -10801,6 +11111,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Pelipper"
@@ -10837,6 +11148,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Wingull",
         "evoType": "level",
@@ -10872,6 +11184,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 235,
         "tier": "obtainable",
         "evos": [
             "Kirlia"
@@ -10907,6 +11220,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 120,
         "tier": "obtainable",
         "prevo": "Ralts",
         "evoType": "level",
@@ -10946,6 +11260,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "otherFormes": [
             "Gardevoir-Mega"
         ],
@@ -10982,6 +11297,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "baseSpecies": "Gardevoir",
         "forme": "Mega",
         "requiredItem": "Gardevoirite",
@@ -11019,6 +11335,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 200,
         "tier": "obtainable",
         "evos": [
             "Masquerain"
@@ -11055,6 +11372,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "tier": "obtainable",
         "prevo": "Surskit",
         "evoType": "level",
@@ -11090,6 +11408,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Breloom"
@@ -11126,6 +11445,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 90,
         "tier": "obtainable",
         "prevo": "Shroomish",
         "evoType": "level",
@@ -11158,6 +11478,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "unobtainable",
         "evos": [
             "Vigoroth"
@@ -11190,6 +11511,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 120,
         "tier": "unobtainable",
         "prevo": "Slakoth",
         "evoType": "level",
@@ -11226,6 +11548,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "unobtainable",
         "prevo": "Vigoroth",
         "evoType": "level",
@@ -11260,6 +11583,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "unobtainable",
         "evos": [
             "Ninjask",
@@ -11295,6 +11619,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 120,
         "tier": "obtainable",
         "prevo": "Nincada",
         "evoType": "level",
@@ -11325,6 +11650,7 @@ exports.BattlePokedex = {
             "Mineral"
         ],
         "gender": "N",
+        "catchRate": 45,
         "tier": "unobtainable",
         "prevo": "Nincada",
         "evoType": "level",
@@ -11361,6 +11687,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Loudred"
@@ -11396,6 +11723,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 120,
         "tier": "obtainable",
         "prevo": "Whismur",
         "evoType": "level",
@@ -11434,6 +11762,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Loudred",
         "evoType": "level",
@@ -11468,6 +11797,7 @@ exports.BattlePokedex = {
             "M": 0.75,
             "F": 0.25
         },
+        "catchRate": 180,
         "tier": "obtainable",
         "evos": [
             "Hariyama"
@@ -11502,6 +11832,7 @@ exports.BattlePokedex = {
             "M": 0.75,
             "F": 0.25
         },
+        "catchRate": 200,
         "tier": "obtainable",
         "prevo": "Makuhita",
         "evoType": "level",
@@ -11537,6 +11868,7 @@ exports.BattlePokedex = {
             "M": 0.25,
             "F": 0.75
         },
+        "catchRate": 150,
         "tier": "obtainable",
         "evos": [
             "Marill"
@@ -11572,6 +11904,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Probopass"
@@ -11607,6 +11940,7 @@ exports.BattlePokedex = {
             "M": 0.25,
             "F": 0.75
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Delcatty"
@@ -11642,6 +11976,7 @@ exports.BattlePokedex = {
             "M": 0.25,
             "F": 0.75
         },
+        "catchRate": 60,
         "tier": "obtainable",
         "prevo": "Skitty",
         "evoType": "useItem",
@@ -11677,6 +12012,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "otherFormes": [
             "Sableye-Mega"
         ],
@@ -11710,6 +12046,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "baseSpecies": "Sableye",
         "forme": "Mega",
         "requiredItem": "Sablenite",
@@ -11747,6 +12084,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "otherFormes": [
             "Mawile-Mega"
         ],
@@ -11781,6 +12119,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "baseSpecies": "Mawile",
         "forme": "Mega",
         "requiredItem": "Mawilite",
@@ -11817,6 +12156,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 180,
         "tier": "obtainable",
         "evos": [
             "Lairon"
@@ -11852,6 +12192,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 90,
         "tier": "obtainable",
         "prevo": "Aron",
         "evoType": "level",
@@ -11890,6 +12231,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "otherFormes": [
             "Aggron-Mega"
         ],
@@ -11925,6 +12267,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "baseSpecies": "Aggron",
         "forme": "Mega",
         "requiredItem": "Aggronite",
@@ -11961,6 +12304,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 180,
         "tier": "obtainable",
         "evos": [
             "Medicham"
@@ -11996,6 +12340,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 90,
         "otherFormes": [
             "Medicham-Mega"
         ],
@@ -12032,6 +12377,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 90,
         "baseSpecies": "Medicham",
         "forme": "Mega",
         "requiredItem": "Medichamite",
@@ -12067,6 +12413,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 120,
         "tier": "obtainable",
         "evos": [
             "Manectric"
@@ -12101,6 +12448,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "otherFormes": [
             "Manectric-Mega"
         ],
@@ -12136,6 +12484,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "baseSpecies": "Manectric",
         "forme": "Mega",
         "requiredItem": "Manectite",
@@ -12171,6 +12520,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 200,
         "tier": "obtainable"
     },
     "minun": {
@@ -12202,6 +12552,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 200,
         "tier": "obtainable"
     },
     "volbeat": {
@@ -12232,6 +12583,7 @@ exports.BattlePokedex = {
             "Human-Like"
         ],
         "gender": "M",
+        "catchRate": 150,
         "tier": "obtainable"
     },
     "illumise": {
@@ -12262,6 +12614,7 @@ exports.BattlePokedex = {
             "Human-Like"
         ],
         "gender": "F",
+        "catchRate": 150,
         "tier": "obtainable"
     },
     "roselia": {
@@ -12295,6 +12648,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 150,
         "tier": "obtainable",
         "evos": [
             "Roserade"
@@ -12332,6 +12686,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 225,
         "tier": "obtainable",
         "evos": [
             "Swalot"
@@ -12366,6 +12721,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "tier": "obtainable",
         "prevo": "Gulpin",
         "evoType": "level",
@@ -12400,6 +12756,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 225,
         "tier": "obtainable",
         "evos": [
             "Sharpedo"
@@ -12434,6 +12791,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 60,
         "otherFormes": [
             "Sharpedo-Mega"
         ],
@@ -12470,6 +12828,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 60,
         "baseSpecies": "Sharpedo",
         "forme": "Mega",
         "requiredItem": "Sharpedonite",
@@ -12506,6 +12865,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 125,
         "tier": "obtainable",
         "evos": [
             "Wailord"
@@ -12541,6 +12901,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 60,
         "tier": "obtainable",
         "prevo": "Wailmer",
         "evoType": "level",
@@ -12576,6 +12937,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Camerupt"
@@ -12611,6 +12973,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 150,
         "otherFormes": [
             "Camerupt-Mega"
         ],
@@ -12647,6 +13010,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 150,
         "baseSpecies": "Camerupt",
         "forme": "Mega",
         "requiredItem": "Cameruptite",
@@ -12682,6 +13046,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 90,
         "tier": "obtainable"
     },
     "spoink": {
@@ -12713,6 +13078,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Grumpig"
@@ -12747,6 +13113,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 60,
         "tier": "obtainable",
         "prevo": "Spoink",
         "evoType": "level",
@@ -12782,6 +13149,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable"
     },
     "trapinch": {
@@ -12814,6 +13182,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Vibrava"
@@ -12847,6 +13216,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Trapinch",
         "evoType": "level",
@@ -12885,6 +13255,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Vibrava",
         "evoType": "level",
@@ -12919,6 +13290,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Cacturne"
@@ -12954,6 +13326,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 60,
         "tier": "obtainable",
         "prevo": "Cacnea",
         "evoType": "level",
@@ -12990,6 +13363,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Altaria"
@@ -13026,6 +13400,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "otherFormes": [
             "Altaria-Mega"
         ],
@@ -13063,6 +13438,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "baseSpecies": "Altaria",
         "forme": "Mega",
         "requiredItem": "Altarianite",
@@ -13098,6 +13474,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 90,
         "tier": "obtainable"
     },
     "seviper": {
@@ -13130,6 +13507,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 90,
         "tier": "obtainable"
     },
     "lunatone": {
@@ -13159,6 +13537,7 @@ exports.BattlePokedex = {
             "Mineral"
         ],
         "gender": "N",
+        "catchRate": 45,
         "tier": "obtainable"
     },
     "solrock": {
@@ -13188,6 +13567,7 @@ exports.BattlePokedex = {
             "Mineral"
         ],
         "gender": "N",
+        "catchRate": 45,
         "tier": "obtainable"
     },
     "barboach": {
@@ -13220,6 +13600,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Whiscash"
@@ -13255,6 +13636,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "tier": "obtainable",
         "prevo": "Barboach",
         "evoType": "level",
@@ -13290,6 +13672,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 205,
         "tier": "obtainable",
         "evos": [
             "Crawdaunt"
@@ -13326,6 +13709,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 155,
         "tier": "obtainable",
         "prevo": "Corphish",
         "evoType": "level",
@@ -13356,6 +13740,7 @@ exports.BattlePokedex = {
             "Mineral"
         ],
         "gender": "N",
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Claydol"
@@ -13386,6 +13771,7 @@ exports.BattlePokedex = {
             "Mineral"
         ],
         "gender": "N",
+        "catchRate": 90,
         "tier": "obtainable",
         "prevo": "Baltoy",
         "evoType": "level",
@@ -13421,6 +13807,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Cradily"
@@ -13456,6 +13843,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Lileep",
         "evoType": "level",
@@ -13491,6 +13879,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Armaldo"
@@ -13526,6 +13915,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Anorith",
         "evoType": "level",
@@ -13560,6 +13950,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Milotic"
@@ -13596,6 +13987,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 60,
         "tier": "obtainable",
         "prevo": "Feebas",
         "evoType": "level",
@@ -13629,6 +14021,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "cosmeticFormes": [
             "Castform-Sunny",
             "Castform-Rainy",
@@ -13663,6 +14056,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 200,
         "tier": "obtainable"
     },
     "shuppet": {
@@ -13695,6 +14089,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 225,
         "tier": "obtainable",
         "evos": [
             "Banette"
@@ -13730,6 +14125,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "otherFormes": [
             "Banette-Mega"
         ],
@@ -13766,6 +14162,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "baseSpecies": "Banette",
         "forme": "Mega",
         "requiredItem": "Banettite",
@@ -13800,6 +14197,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Dusclops"
@@ -13833,6 +14231,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 90,
         "tier": "obtainable",
         "prevo": "Duskull",
         "evoType": "level",
@@ -13872,6 +14271,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 200,
         "tier": "obtainable"
     },
     "chimecho": {
@@ -13902,6 +14302,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "otherFormes": [
             "Chimecho-Mega"
         ],
@@ -13938,6 +14339,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "baseSpecies": "Chimecho",
         "forme": "Mega",
         "requiredItem": "Chimechite",
@@ -13973,6 +14375,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 30,
         "otherFormes": [
             "Absol-Mega",
             "Absol-Mega-Z"
@@ -14007,6 +14410,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 30,
         "baseSpecies": "Absol",
         "forme": "Mega",
         "requiredItem": "Absolite",
@@ -14041,6 +14445,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 30,
         "baseSpecies": "Absol",
         "forme": "Mega-Z",
         "requiredItem": "Absolite Z",
@@ -14075,6 +14480,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 125,
         "tier": "obtainable",
         "evos": [
             "Wobbuffet"
@@ -14110,6 +14516,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Glalie",
@@ -14147,6 +14554,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "otherFormes": [
             "Glalie-Mega"
         ],
@@ -14184,6 +14592,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "baseSpecies": "Glalie",
         "forme": "Mega",
         "requiredItem": "Glalitite",
@@ -14221,6 +14630,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Sealeo"
@@ -14257,6 +14667,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 120,
         "tier": "obtainable",
         "prevo": "Spheal",
         "evoType": "level",
@@ -14296,6 +14707,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Sealeo",
         "evoType": "level",
@@ -14329,6 +14741,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Huntail",
@@ -14364,6 +14777,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 60,
         "tier": "obtainable",
         "prevo": "Clamperl",
         "evoType": "useItem",
@@ -14398,6 +14812,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 60,
         "tier": "obtainable",
         "prevo": "Clamperl",
         "evoType": "useItem",
@@ -14434,6 +14849,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 25,
         "tier": "obtainable"
     },
     "luvdisc": {
@@ -14466,6 +14882,7 @@ exports.BattlePokedex = {
             "M": 0.25,
             "F": 0.75
         },
+        "catchRate": 225,
         "tier": "obtainable"
     },
     "bagon": {
@@ -14497,6 +14914,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Shelgon"
@@ -14531,6 +14949,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Bagon",
         "evoType": "level",
@@ -14568,6 +14987,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "otherFormes": [
             "Salamence-Mega"
         ],
@@ -14604,6 +15024,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "baseSpecies": "Salamence",
         "forme": "Mega",
         "requiredItem": "Salamencite",
@@ -14637,6 +15058,7 @@ exports.BattlePokedex = {
             "Mineral"
         ],
         "gender": "N",
+        "catchRate": 3,
         "tier": "obtainable",
         "evos": [
             "Metang"
@@ -14669,6 +15091,7 @@ exports.BattlePokedex = {
             "Mineral"
         ],
         "gender": "N",
+        "catchRate": 3,
         "tier": "obtainable",
         "prevo": "Beldum",
         "evoType": "level",
@@ -14704,6 +15127,7 @@ exports.BattlePokedex = {
             "Mineral"
         ],
         "gender": "N",
+        "catchRate": 3,
         "otherFormes": [
             "Metagross-Mega"
         ],
@@ -14737,6 +15161,7 @@ exports.BattlePokedex = {
             "Mineral"
         ],
         "gender": "N",
+        "catchRate": 3,
         "baseSpecies": "Metagross",
         "forme": "Mega",
         "requiredItem": "Metagrossite",
@@ -14769,6 +15194,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 3,
         "tier": "obtainable"
     },
     "regice": {
@@ -14797,6 +15223,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 3,
         "tier": "obtainable"
     },
     "registeel": {
@@ -14825,6 +15252,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 3,
         "tier": "obtainable"
     },
     "latias": {
@@ -14852,6 +15280,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "F",
+        "catchRate": 3,
         "otherFormes": [
             "Latias-Mega"
         ],
@@ -14882,6 +15311,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "F",
+        "catchRate": 3,
         "baseSpecies": "Latias",
         "forme": "Mega",
         "requiredItem": "Latiasite",
@@ -14913,6 +15343,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "M",
+        "catchRate": 3,
         "otherFormes": [
             "Latios-Mega"
         ],
@@ -14943,6 +15374,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "M",
+        "catchRate": 3,
         "baseSpecies": "Latios",
         "forme": "Mega",
         "requiredItem": "Latiosite",
@@ -14973,6 +15405,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 5,
         "tier": "unobtainable"
     },
     "groudon": {
@@ -14999,6 +15432,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 5,
         "tier": "unobtainable"
     },
     "rayquaza": {
@@ -15026,6 +15460,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 3,
         "tier": "unobtainable"
     },
     "jirachi": {
@@ -15053,6 +15488,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 3,
         "tier": "unobtainable"
     },
     "deoxys": {
@@ -15079,6 +15515,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 3,
         "baseForme": "Normal",
         "otherFormes": [
             "Deoxys-Attack",
@@ -15111,6 +15548,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 3,
         "baseSpecies": "Deoxys",
         "forme": "Attack",
         "tier": "unobtainable"
@@ -15139,6 +15577,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 3,
         "baseSpecies": "Deoxys",
         "forme": "Defense",
         "tier": "unobtainable"
@@ -15167,6 +15606,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 3,
         "baseSpecies": "Deoxys",
         "forme": "Speed",
         "tier": "unobtainable"
@@ -15201,6 +15641,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Grotle"
@@ -15236,6 +15677,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Turtwig",
         "evoType": "level",
@@ -15275,6 +15717,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Grotle",
         "evoType": "level",
@@ -15309,6 +15752,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Monferno"
@@ -15344,6 +15788,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Chimchar",
         "evoType": "level",
@@ -15383,6 +15828,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Monferno",
         "evoType": "level",
@@ -15418,6 +15864,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Prinplup"
@@ -15453,6 +15900,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Piplup",
         "evoType": "level",
@@ -15492,6 +15940,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Prinplup",
         "evoType": "level",
@@ -15527,6 +15976,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Staravia"
@@ -15562,6 +16012,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 120,
         "tier": "obtainable",
         "prevo": "Starly",
         "evoType": "level",
@@ -15600,6 +16051,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "otherFormes": [
             "Staraptor-Mega"
         ],
@@ -15636,6 +16088,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "baseSpecies": "Staraptor",
         "forme": "Mega",
         "requiredItem": "Staraptite",
@@ -15672,6 +16125,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Bibarel"
@@ -15708,6 +16162,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 127,
         "tier": "obtainable",
         "prevo": "Bidoof",
         "evoType": "level",
@@ -15741,6 +16196,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Kricketune"
@@ -15775,6 +16231,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Kricketot",
         "evoType": "level",
@@ -15809,6 +16266,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 235,
         "tier": "obtainable",
         "evos": [
             "Luxio"
@@ -15843,6 +16301,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 120,
         "tier": "obtainable",
         "prevo": "Shinx",
         "evoType": "level",
@@ -15880,6 +16339,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Luxio",
         "evoType": "level",
@@ -15915,6 +16375,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Roselia"
@@ -15951,6 +16412,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "tier": "obtainable",
         "prevo": "Roselia",
         "evoType": "useItem",
@@ -15985,6 +16447,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Rampardos"
@@ -16019,6 +16482,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Cranidos",
         "evoType": "level",
@@ -16053,6 +16517,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Bastiodon"
@@ -16087,6 +16552,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Shieldon",
         "evoType": "level",
@@ -16121,6 +16587,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 120,
         "baseForme": "Plant",
         "cosmeticFormes": [
             "Burmy-Sandy",
@@ -16159,6 +16626,7 @@ exports.BattlePokedex = {
             "Bug"
         ],
         "gender": "F",
+        "catchRate": 45,
         "baseForme": "Plant",
         "otherFormes": [
             "Wormadam-Sandy",
@@ -16196,6 +16664,7 @@ exports.BattlePokedex = {
             "Bug"
         ],
         "gender": "F",
+        "catchRate": 45,
         "baseSpecies": "Wormadam",
         "forme": "Sandy",
         "tier": "obtainable"
@@ -16227,6 +16696,7 @@ exports.BattlePokedex = {
             "Bug"
         ],
         "gender": "F",
+        "catchRate": 45,
         "baseSpecies": "Wormadam",
         "forme": "Trash",
         "tier": "obtainable"
@@ -16258,6 +16728,7 @@ exports.BattlePokedex = {
             "Bug"
         ],
         "gender": "M",
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Burmy",
         "evoType": "useItem",
@@ -16292,6 +16763,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 120,
         "tier": "obtainable",
         "evos": [
             "Vespiquen"
@@ -16324,6 +16796,7 @@ exports.BattlePokedex = {
             "Bug"
         ],
         "gender": "F",
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Combee",
         "evoType": "level",
@@ -16360,6 +16833,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 200,
         "tier": "obtainable"
     },
     "buizel": {
@@ -16392,6 +16866,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Floatzel"
@@ -16427,6 +16902,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "tier": "obtainable",
         "prevo": "Buizel",
         "evoType": "level",
@@ -16460,6 +16936,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Cherrim"
@@ -16494,6 +16971,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "baseForme": "Overcast",
         "cosmeticFormes": [
             "Cherrim-Sunshine"
@@ -16533,6 +17011,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "baseForme": "West",
         "cosmeticFormes": [
             "Shellos-East"
@@ -16573,6 +17052,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "baseForme": "West",
         "cosmeticFormes": [
             "Gastrodon-East"
@@ -16611,6 +17091,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Aipom",
         "evoType": "levelMove",
@@ -16646,6 +17127,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 125,
         "tier": "obtainable",
         "evos": [
             "Drifblim"
@@ -16681,6 +17163,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 60,
         "tier": "obtainable",
         "prevo": "Drifloon",
         "evoType": "level",
@@ -16716,6 +17199,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Lopunny"
@@ -16752,6 +17236,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 60,
         "otherFormes": [
             "Lopunny-Mega"
         ],
@@ -16789,6 +17274,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 60,
         "baseSpecies": "Lopunny",
         "forme": "Mega",
         "requiredItem": "Lopunnite",
@@ -16823,6 +17309,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Misdreavus",
         "evoType": "useItem",
@@ -16858,6 +17345,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 30,
         "tier": "obtainable",
         "prevo": "Murkrow",
         "evoType": "useItem",
@@ -16892,6 +17380,7 @@ exports.BattlePokedex = {
             "M": 0.25,
             "F": 0.75
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Purugly"
@@ -16926,6 +17415,7 @@ exports.BattlePokedex = {
             "M": 0.25,
             "F": 0.75
         },
+        "catchRate": 75,
         "tier": "obtainable",
         "prevo": "Glameow",
         "evoType": "level",
@@ -16958,6 +17448,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 120,
         "tier": "obtainable",
         "evos": [
             "Chimecho"
@@ -16993,6 +17484,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 225,
         "tier": "obtainable",
         "evos": [
             "Skuntank"
@@ -17028,6 +17520,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 60,
         "tier": "obtainable",
         "prevo": "Stunky",
         "evoType": "level",
@@ -17060,6 +17553,7 @@ exports.BattlePokedex = {
             "Mineral"
         ],
         "gender": "N",
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Bronzong"
@@ -17092,6 +17586,7 @@ exports.BattlePokedex = {
             "Mineral"
         ],
         "gender": "N",
+        "catchRate": 90,
         "tier": "obtainable",
         "prevo": "Bronzor",
         "evoType": "level",
@@ -17126,6 +17621,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 255,
         "tier": "obtainable",
         "evos": [
             "Sudowoodo"
@@ -17161,6 +17657,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 145,
         "tier": "obtainable",
         "evos": [
             "Mr. Mime"
@@ -17192,6 +17689,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "F",
+        "catchRate": 130,
         "tier": "unobtainable",
         "evos": [
             "Chansey"
@@ -17227,6 +17725,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 30,
         "tier": "obtainable"
     },
     "spiritomb": {
@@ -17259,6 +17758,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 100,
         "tier": "obtainable"
     },
     "gible": {
@@ -17291,6 +17791,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "evos": [
             "Gabite"
@@ -17326,6 +17827,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Gible",
         "evoType": "level",
@@ -17364,6 +17866,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "otherFormes": [
             "Garchomp-Mega",
             "Garchomp-Mega-Z"
@@ -17402,6 +17905,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "baseSpecies": "Garchomp",
         "forme": "Mega",
         "requiredItem": "Garchompite",
@@ -17436,6 +17940,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "baseSpecies": "Garchomp",
         "forme": "Mega-Z",
         "requiredItem": "Garchompite Z",
@@ -17471,6 +17976,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 50,
         "tier": "obtainable",
         "evos": [
             "Snorlax"
@@ -17505,6 +18011,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 75,
         "tier": "obtainable",
         "evos": [
             "Lucario"
@@ -17541,6 +18048,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "otherFormes": [
             "Lucario-Mega",
             "Lucario-Mega-Z"
@@ -17579,6 +18087,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "baseSpecies": "Lucario",
         "forme": "Mega",
         "requiredItem": "Lucarionite",
@@ -17614,6 +18123,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "baseSpecies": "Lucario",
         "forme": "Mega-Z",
         "requiredItem": "Lucarionite Z",
@@ -17649,6 +18159,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 140,
         "tier": "obtainable",
         "evos": [
             "Hippowdon"
@@ -17683,6 +18194,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 60,
         "tier": "obtainable",
         "prevo": "Hippopotas",
         "evoType": "level",
@@ -17719,6 +18231,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 120,
         "tier": "obtainable",
         "evos": [
             "Drapion"
@@ -17755,6 +18268,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Skorupi",
         "evoType": "level",
@@ -17790,6 +18304,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 140,
         "tier": "obtainable",
         "evos": [
             "Toxicroak"
@@ -17825,6 +18340,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "tier": "obtainable",
         "prevo": "Croagunk",
         "evoType": "level",
@@ -17859,6 +18375,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 200,
         "tier": "obtainable"
     },
     "finneon": {
@@ -17890,6 +18407,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 190,
         "tier": "obtainable",
         "evos": [
             "Lumineon"
@@ -17924,6 +18442,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "tier": "obtainable",
         "prevo": "Finneon",
         "evoType": "level",
@@ -17959,6 +18478,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 25,
         "tier": "obtainable",
         "evos": [
             "Mantine"
@@ -17995,6 +18515,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 120,
         "tier": "obtainable",
         "evos": [
             "Abomasnow"
@@ -18031,6 +18552,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 60,
         "otherFormes": [
             "Abomasnow-Mega"
         ],
@@ -18068,6 +18590,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 60,
         "baseSpecies": "Abomasnow",
         "forme": "Mega",
         "requiredItem": "Abomasite",
@@ -18104,6 +18627,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Sneasel",
         "evoType": "useItem",
@@ -18136,6 +18660,7 @@ exports.BattlePokedex = {
             "Mineral"
         ],
         "gender": "N",
+        "catchRate": 30,
         "tier": "obtainable",
         "prevo": "Magneton",
         "evoType": "useItem",
@@ -18170,6 +18695,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 30,
         "tier": "obtainable",
         "prevo": "Lickitung",
         "evoType": "levelMove",
@@ -18206,6 +18732,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 30,
         "tier": "obtainable",
         "prevo": "Rhydon",
         "evoType": "useItem",
@@ -18240,6 +18767,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 30,
         "tier": "obtainable",
         "prevo": "Tangela",
         "evoType": "levelMove",
@@ -18274,6 +18802,7 @@ exports.BattlePokedex = {
             "M": 0.75,
             "F": 0.25
         },
+        "catchRate": 30,
         "tier": "obtainable",
         "prevo": "Electabuzz",
         "evoType": "useItem",
@@ -18308,6 +18837,7 @@ exports.BattlePokedex = {
             "M": 0.75,
             "F": 0.25
         },
+        "catchRate": 30,
         "tier": "obtainable",
         "prevo": "Magmar",
         "evoType": "useItem",
@@ -18344,6 +18874,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 30,
         "tier": "obtainable",
         "prevo": "Togetic",
         "evoType": "useItem",
@@ -18379,6 +18910,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 30,
         "tier": "obtainable",
         "prevo": "Yanma",
         "evoType": "levelMove",
@@ -18413,6 +18945,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Eevee",
         "evoType": "levelExtra",
@@ -18447,6 +18980,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Eevee",
         "evoType": "levelExtra",
@@ -18482,6 +19016,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 30,
         "tier": "obtainable",
         "prevo": "Gligar",
         "evoType": "useItem",
@@ -18517,6 +19052,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 50,
         "tier": "obtainable",
         "prevo": "Piloswine",
         "evoType": "levelMove",
@@ -18549,6 +19085,7 @@ exports.BattlePokedex = {
             "Mineral"
         ],
         "gender": "N",
+        "catchRate": 30,
         "tier": "obtainable"
     },
     "gallade": {
@@ -18578,6 +19115,7 @@ exports.BattlePokedex = {
             "Amorphous"
         ],
         "gender": "M",
+        "catchRate": 45,
         "otherFormes": [
             "Gallade-Mega"
         ],
@@ -18614,6 +19152,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "baseSpecies": "Gallade",
         "forme": "Mega",
         "requiredItem": "Galladite",
@@ -18650,6 +19189,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 60,
         "tier": "obtainable",
         "prevo": "Nosepass",
         "evoType": "useItem",
@@ -18685,6 +19225,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 45,
         "tier": "obtainable",
         "prevo": "Dusclops",
         "evoType": "useItem",
@@ -18717,6 +19258,7 @@ exports.BattlePokedex = {
             "Mineral"
         ],
         "gender": "F",
+        "catchRate": 75,
         "otherFormes": [
             "Froslass-Mega"
         ],
@@ -18754,6 +19296,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 75,
         "baseSpecies": "Froslass",
         "forme": "Mega",
         "requiredItem": "Froslassite",
@@ -18785,6 +19328,7 @@ exports.BattlePokedex = {
             "Amorphous"
         ],
         "gender": "N",
+        "catchRate": 45,
         "otherFormes": [
             "Rotom-Heat",
             "Rotom-Wash",
@@ -18819,6 +19363,7 @@ exports.BattlePokedex = {
             "Amorphous"
         ],
         "gender": "N",
+        "catchRate": 45,
         "baseSpecies": "Rotom",
         "forme": "Heat",
         "tier": "obtainable"
@@ -18848,6 +19393,7 @@ exports.BattlePokedex = {
             "Amorphous"
         ],
         "gender": "N",
+        "catchRate": 45,
         "baseSpecies": "Rotom",
         "forme": "Wash",
         "tier": "obtainable"
@@ -18877,6 +19423,7 @@ exports.BattlePokedex = {
             "Amorphous"
         ],
         "gender": "N",
+        "catchRate": 45,
         "baseSpecies": "Rotom",
         "forme": "Frost",
         "tier": "obtainable"
@@ -18906,6 +19453,7 @@ exports.BattlePokedex = {
             "Amorphous"
         ],
         "gender": "N",
+        "catchRate": 45,
         "baseSpecies": "Rotom",
         "forme": "Fan",
         "tier": "obtainable"
@@ -18935,6 +19483,7 @@ exports.BattlePokedex = {
             "Amorphous"
         ],
         "gender": "N",
+        "catchRate": 45,
         "baseSpecies": "Rotom",
         "forme": "Mow",
         "tier": "obtainable"
@@ -18963,6 +19512,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 3,
         "tier": "obtainable"
     },
     "mesprit": {
@@ -18989,6 +19539,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 3,
         "tier": "obtainable"
     },
     "azelf": {
@@ -19015,6 +19566,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 3,
         "tier": "obtainable"
     },
     "dialga": {
@@ -19043,6 +19595,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 30,
         "tier": "unobtainable"
     },
     "palkia": {
@@ -19071,6 +19624,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 30,
         "tier": "unobtainable"
     },
     "heatran": {
@@ -19102,6 +19656,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 3,
         "otherFormes": [
             "Heatran-Mega"
         ],
@@ -19135,6 +19690,7 @@ exports.BattlePokedex = {
             "M": 0.5,
             "F": 0.5
         },
+        "catchRate": 3,
         "baseSpecies": "Heatran",
         "forme": "Mega",
         "requiredItem": "Heatranite",
@@ -19166,6 +19722,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 3,
         "tier": "unobtainable"
     },
     "giratina": {
@@ -19194,6 +19751,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 3,
         "baseForme": "Altered",
         "otherFormes": [
             "Giratina-Origin"
@@ -19225,6 +19783,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 3,
         "baseSpecies": "Giratina",
         "forme": "Origin",
         "tier": "unobtainable"
@@ -19253,6 +19812,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "F",
+        "catchRate": 3,
         "tier": "obtainable"
     },
     "phione": {
@@ -19280,6 +19840,7 @@ exports.BattlePokedex = {
             "Fairy"
         ],
         "gender": "N",
+        "catchRate": 30,
         "tier": "obtainable"
     },
     "manaphy": {
@@ -19307,6 +19868,7 @@ exports.BattlePokedex = {
             "Fairy"
         ],
         "gender": "N",
+        "catchRate": 3,
         "tier": "unobtainable"
     },
     "darkrai": {
@@ -19333,6 +19895,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 3,
         "otherFormes": [
             "Darkrai-Mega"
         ],
@@ -19362,6 +19925,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 3,
         "baseSpecies": "Darkrai",
         "forme": "Mega",
         "requiredItem": "Darkranite",
@@ -19392,6 +19956,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 45,
         "baseForme": "Land",
         "otherFormes": [
             "Shaymin-Sky"
@@ -19423,6 +19988,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 45,
         "baseSpecies": "Shaymin",
         "forme": "Sky",
         "tier": "unobtainable"
@@ -19451,6 +20017,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
+        "catchRate": 3,
         "baseForme": "Normal",
         "cosmeticFormes": [
             "Arceus-Fighting",

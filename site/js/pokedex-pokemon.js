@@ -195,6 +195,11 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 			buf += '<div style="clear:left"></div>';
 		}
 
+		if (pokemon.catchRate && pokemon.tier === 'obtainable' && !pokemon.battleOnly) {
+			buf += '<dl class="colentry"><dt>Catch rate:</dt><dd>' + pokemon.catchRate + '</dd></dl>';
+			buf += '<div style="clear:left"></div>';
+		}
+
 		// learnset
         if (this.getEncounterLocations(pokemon.id).length) {
 			buf += '<ul class="tabbar"><li><button class="button nav-first cur" value="move">Moves</button></li><li><button class="button" value="details">Flavor</button></li><li><button class="button" value="encounters">Encounters</button></li></ul>';

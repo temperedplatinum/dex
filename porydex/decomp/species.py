@@ -107,6 +107,7 @@ class Species:
     color: str
     egg_groups: tuple[str, ...]
     gender: dict
+    catch_rate: int = 0
     evolutions: tuple[Evolution, ...] = ()
     learnset: dict[str, list[str]] | None = None
     base_species: str | None = None
@@ -131,6 +132,8 @@ class Species:
             'eggGroups': list(self.egg_groups),
             **self.gender,
         }
+        if self.catch_rate:
+            mon['catchRate'] = self.catch_rate
         if self.base_species:
             mon['baseSpecies'] = self.base_species
             mon['forme'] = self.forme
@@ -204,6 +207,7 @@ def _species(constant: str,
         color=showdown_color(data['body_color']),
         egg_groups=tuple(showdown_egg_groups(data['egg_groups'])),
         gender=showdown_gender(data['gender_ratio']),
+        catch_rate=data.get('catch_rate', 0),
         evolutions=tuple(_evolution(entry, lookups) for entry in data.get('evolutions', [])),
         learnset=None if is_mega else parse_learnset(
             data['learnset'],

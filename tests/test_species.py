@@ -44,6 +44,7 @@ def test_base_species_to_showdown(dex):
         'color': 'Green',
         'eggGroups': ['Monster'],
         'genderRatio': {'M': 0.875, 'F': 0.125},
+        'catchRate': 45,
         'tier': 'obtainable',
         'evos': ['Ivysaur'],
     }

@@ -2859,6 +2859,7 @@ this.evoSpecies=data.evoSpecies||'';
 this.evoCondition=data.evoCondition||'';
 this.requiredItems=data.requiredItems||(data.requiredItem?[data.requiredItem]:[]);
 this.tier=data.tier||'';
+this.catchRate=data.catchRate||0;
 
 this.isTotem=false;
 this.isMega=!!(this.forme&&['-mega','-megax','-megay'].includes(this.formeid));
