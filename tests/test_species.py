@@ -4,6 +4,7 @@ from porydex.decomp.abilities import load_abilities
 from porydex.decomp.items import load_items
 from porydex.decomp.moves import load_moves
 from porydex.decomp.species import (
+    _abilities,
     _evolution,
     _Lookups,
     learnsets_to_showdown,
@@ -90,6 +91,14 @@ def test_learnsets_skip_megas_but_keep_other_forms(species):
         'karatechop': ['M', 'E'],
         'bite': ['T'],
     }}
+
+@pytest.mark.parametrize('constants, expected', [
+    (['ABILITY_A', 'ABILITY_B', 'ABILITY_B'], {'0': 'A', '1': 'B', 'H': 'B'}),
+    (['ABILITY_A', 'ABILITY_NONE', 'ABILITY_A'], {'0': 'A', 'H': 'A'}),
+    (['ABILITY_A', 'ABILITY_A', 'ABILITY_NONE'], {'0': 'A'}),
+])
+def test_hidden_ability_kept_even_when_duplicated(constants, expected):
+    assert _abilities(constants, {'ABILITY_A': 'A', 'ABILITY_B': 'B'}) == expected
 
 def test_unknown_evolution_method_is_rejected():
     with pytest.raises(ValueError):

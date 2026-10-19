@@ -476,7 +476,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Shield Dust",
-            "1": "Run Away"
+            "1": "Run Away",
+            "H": "Shield Dust"
         },
         "heightm": 0.3,
         "weightkg": 2.9,
@@ -577,7 +578,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Shield Dust",
-            "1": "Run Away"
+            "1": "Run Away",
+            "H": "Shield Dust"
         },
         "heightm": 0.3,
         "weightkg": 3.2,
@@ -714,7 +716,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Keen Eye",
-            "1": "Big Pecks"
+            "1": "Big Pecks",
+            "H": "Keen Eye"
         },
         "heightm": 0.3,
         "weightkg": 1.8,
@@ -746,7 +749,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Keen Eye",
-            "1": "Big Pecks"
+            "1": "Big Pecks",
+            "H": "Keen Eye"
         },
         "heightm": 1.1,
         "weightkg": 30.0,
@@ -781,7 +785,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Aerilate",
-            "1": "Big Pecks"
+            "1": "Big Pecks",
+            "H": "Aerilate"
         },
         "heightm": 1.5,
         "weightkg": 39.5,
@@ -915,7 +920,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Keen Eye",
-            "1": "Sniper"
+            "1": "Sniper",
+            "H": "Keen Eye"
         },
         "heightm": 0.3,
         "weightkg": 2.0,
@@ -948,7 +954,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Intimidate",
-            "1": "Sniper"
+            "1": "Sniper",
+            "H": "Intimidate"
         },
         "heightm": 1.2,
         "weightkg": 38.0,
@@ -1048,7 +1055,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Static",
-            "1": "Lightning Rod"
+            "1": "Lightning Rod",
+            "H": "Static"
         },
         "heightm": 0.4,
         "weightkg": 6.0,
@@ -1084,7 +1092,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Static",
-            "1": "Lightning Rod"
+            "1": "Lightning Rod",
+            "H": "Static"
         },
         "heightm": 0.8,
         "weightkg": 30.0,
@@ -1690,7 +1699,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Inner Focus",
-            "1": "Infiltrator"
+            "1": "Infiltrator",
+            "H": "Inner Focus"
         },
         "heightm": 0.8,
         "weightkg": 7.5,
@@ -1723,7 +1733,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Inner Focus",
-            "1": "Infiltrator"
+            "1": "Infiltrator",
+            "H": "Inner Focus"
         },
         "heightm": 1.6,
         "weightkg": 55.0,
@@ -1793,7 +1804,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Chlorophyll",
-            "1": "Stench"
+            "1": "Stench",
+            "H": "Chlorophyll"
         },
         "heightm": 0.8,
         "weightkg": 8.6,
@@ -2679,7 +2691,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Chlorophyll",
-            "1": "Gluttony"
+            "1": "Gluttony",
+            "H": "Chlorophyll"
         },
         "heightm": 0.7,
         "weightkg": 4.0,
@@ -2712,7 +2725,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Chlorophyll",
-            "1": "Gluttony"
+            "1": "Gluttony",
+            "H": "Chlorophyll"
         },
         "heightm": 1.0,
         "weightkg": 6.4,
@@ -2748,7 +2762,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Chlorophyll",
-            "1": "Gluttony"
+            "1": "Gluttony",
+            "H": "Chlorophyll"
         },
         "heightm": 1.7,
         "weightkg": 15.5,
@@ -4857,7 +4872,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Intimidate",
-            "1": "Sheer Force"
+            "1": "Sheer Force",
+            "H": "Intimidate"
         },
         "heightm": 1.4,
         "weightkg": 88.4,
@@ -5537,7 +5553,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Shed Skin",
-            "1": "Marvel Scale"
+            "1": "Marvel Scale",
+            "H": "Shed Skin"
         },
         "heightm": 1.8,
         "weightkg": 3.3,
@@ -5570,7 +5587,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Shed Skin",
-            "1": "Marvel Scale"
+            "1": "Marvel Scale",
+            "H": "Shed Skin"
         },
         "heightm": 4.0,
         "weightkg": 16.5,
@@ -6034,7 +6052,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Torrent",
-            "1": "Sheer Force"
+            "1": "Sheer Force",
+            "H": "Torrent"
         },
         "heightm": 0.6,
         "weightkg": 9.5,
@@ -6068,7 +6087,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Torrent",
-            "1": "Sheer Force"
+            "1": "Sheer Force",
+            "H": "Torrent"
         },
         "heightm": 1.1,
         "weightkg": 25.0,
@@ -6105,7 +6125,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Torrent",
-            "1": "Sheer Force"
+            "1": "Sheer Force",
+            "H": "Torrent"
         },
         "heightm": 2.3,
         "weightkg": 88.8,
@@ -6445,7 +6466,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Inner Focus",
-            "1": "Infiltrator"
+            "1": "Infiltrator",
+            "H": "Inner Focus"
         },
         "heightm": 1.8,
         "weightkg": 75.0,
@@ -6545,7 +6567,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Static",
-            "1": "Lightning Rod"
+            "1": "Lightning Rod",
+            "H": "Static"
         },
         "heightm": 0.3,
         "weightkg": 2.0,
@@ -6644,7 +6667,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Super Luck",
-            "1": "Serene Grace"
+            "1": "Serene Grace",
+            "H": "Super Luck"
         },
         "heightm": 0.3,
         "weightkg": 1.5,
@@ -7205,7 +7229,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Skill Link",
-            "1": "Technician"
+            "1": "Technician",
+            "H": "Skill Link"
         },
         "heightm": 0.8,
         "weightkg": 11.5,
@@ -7693,7 +7718,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Sturdy",
-            "1": "Overcoat"
+            "1": "Overcoat",
+            "H": "Sturdy"
         },
         "heightm": 0.6,
         "weightkg": 7.2,
@@ -7726,7 +7752,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Sturdy",
-            "1": "Overcoat"
+            "1": "Overcoat",
+            "H": "Sturdy"
         },
         "heightm": 1.2,
         "weightkg": 125.8,
@@ -8195,7 +8222,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Honey Gather",
-            "1": "Quick Feet"
+            "1": "Quick Feet",
+            "H": "Honey Gather"
         },
         "heightm": 0.6,
         "weightkg": 8.8,
@@ -8295,7 +8323,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Filter",
-            "1": "Weak Armor"
+            "1": "Weak Armor",
+            "H": "Weak Armor"
         },
         "heightm": 0.8,
         "weightkg": 55.0,
@@ -9146,7 +9175,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Pressure",
-            "1": "Inner Focus"
+            "1": "Inner Focus",
+            "H": "Pressure"
         },
         "heightm": 1.9,
         "weightkg": 178.0,
@@ -9172,7 +9202,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Pressure",
-            "1": "Inner Focus"
+            "1": "Inner Focus",
+            "H": "Pressure"
         },
         "heightm": 2.1,
         "weightkg": 198.0,
@@ -9198,7 +9229,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Pressure",
-            "1": "Inner Focus"
+            "1": "Inner Focus",
+            "H": "Pressure"
         },
         "heightm": 2.0,
         "weightkg": 187.0,
@@ -9442,7 +9474,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Overgrow",
-            "1": "Unburden"
+            "1": "Unburden",
+            "H": "Overgrow"
         },
         "heightm": 0.5,
         "weightkg": 5.0,
@@ -9475,7 +9508,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Overgrow",
-            "1": "Unburden"
+            "1": "Unburden",
+            "H": "Overgrow"
         },
         "heightm": 0.9,
         "weightkg": 21.6,
@@ -9511,7 +9545,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Overgrow",
-            "1": "Unburden"
+            "1": "Unburden",
+            "H": "Overgrow"
         },
         "heightm": 1.7,
         "weightkg": 52.2,
@@ -9721,7 +9756,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Torrent",
-            "1": "Damp"
+            "1": "Damp",
+            "H": "Torrent"
         },
         "heightm": 0.4,
         "weightkg": 7.6,
@@ -9755,7 +9791,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Torrent",
-            "1": "Damp"
+            "1": "Damp",
+            "H": "Torrent"
         },
         "heightm": 0.7,
         "weightkg": 28.0,
@@ -9961,7 +9998,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Quick Feet",
-            "1": "Gluttony"
+            "1": "Gluttony",
+            "H": "Quick Feet"
         },
         "heightm": 0.5,
         "weightkg": 32.5,
@@ -10062,7 +10100,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Rivalry",
-            "1": "Tinted Lens"
+            "1": "Tinted Lens",
+            "H": "Rivalry"
         },
         "heightm": 1.0,
         "weightkg": 28.4,
@@ -10130,7 +10169,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Shield Dust",
-            "1": "Compound Eyes"
+            "1": "Compound Eyes",
+            "H": "Shield Dust"
         },
         "heightm": 1.2,
         "weightkg": 31.6,
@@ -10378,7 +10418,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Guts",
-            "1": "Scrappy"
+            "1": "Scrappy",
+            "H": "Guts"
         },
         "heightm": 0.3,
         "weightkg": 2.3,
@@ -10411,7 +10452,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Guts",
-            "1": "Scrappy"
+            "1": "Scrappy",
+            "H": "Guts"
         },
         "heightm": 0.7,
         "weightkg": 19.8,
@@ -10656,7 +10698,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Swift Swim",
-            "1": "Rain Dish"
+            "1": "Rain Dish",
+            "H": "Swift Swim"
         },
         "heightm": 0.5,
         "weightkg": 1.7,
@@ -10690,7 +10733,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Intimidate",
-            "1": "Unnerve"
+            "1": "Unnerve",
+            "H": "Intimidate"
         },
         "heightm": 0.8,
         "weightkg": 3.6,
@@ -10758,7 +10802,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Technician",
-            "1": "Poison Heal"
+            "1": "Poison Heal",
+            "H": "Technician"
         },
         "heightm": 1.2,
         "weightkg": 39.2,
@@ -11569,7 +11614,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Pure Power",
-            "1": "Telepathy"
+            "1": "Telepathy",
+            "H": "Pure Power"
         },
         "heightm": 0.6,
         "weightkg": 11.2,
@@ -11602,7 +11648,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Pure Power",
-            "1": "Telepathy"
+            "1": "Telepathy",
+            "H": "Pure Power"
         },
         "heightm": 1.3,
         "weightkg": 31.5,
@@ -11771,7 +11818,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Plus",
-            "1": "Lightning Rod"
+            "1": "Lightning Rod",
+            "H": "Plus"
         },
         "heightm": 0.4,
         "weightkg": 4.2,
@@ -11800,7 +11848,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Minus",
-            "1": "Volt Absorb"
+            "1": "Volt Absorb",
+            "H": "Minus"
         },
         "heightm": 0.4,
         "weightkg": 4.2,
@@ -12462,7 +12511,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Levitate",
-            "1": "Compound Eyes"
+            "1": "Compound Eyes",
+            "H": "Levitate"
         },
         "heightm": 2.0,
         "weightkg": 82.0,
@@ -12698,7 +12748,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Shed Skin",
-            "1": "Infiltrator"
+            "1": "Infiltrator",
+            "H": "Shed Skin"
         },
         "heightm": 2.7,
         "weightkg": 52.5,
@@ -12729,7 +12780,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Levitate",
-            "1": "Power Spot"
+            "1": "Power Spot",
+            "H": "Levitate"
         },
         "heightm": 1.0,
         "weightkg": 168.0,
@@ -12756,7 +12808,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Levitate",
-            "1": "Power Spot"
+            "1": "Power Spot",
+            "H": "Levitate"
         },
         "heightm": 1.2,
         "weightkg": 154.0,
@@ -12885,7 +12938,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Adaptability",
-            "1": "Shell Armor"
+            "1": "Shell Armor",
+            "H": "Adaptability"
         },
         "heightm": 1.1,
         "weightkg": 32.8,
@@ -13243,7 +13297,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Insomnia",
-            "1": "Cursed Body"
+            "1": "Cursed Body",
+            "H": "Insomnia"
         },
         "heightm": 0.6,
         "weightkg": 2.3,
@@ -13276,7 +13331,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Insomnia",
-            "1": "Cursed Body"
+            "1": "Cursed Body",
+            "H": "Insomnia"
         },
         "heightm": 1.1,
         "weightkg": 12.5,
@@ -13990,7 +14046,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Swift Swim",
-            "1": "Misty Surge"
+            "1": "Misty Surge",
+            "H": "Swift Swim"
         },
         "heightm": 0.6,
         "weightkg": 8.7,
@@ -14019,7 +14076,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Rock Head",
-            "1": "Sheer Force"
+            "1": "Sheer Force",
+            "H": "Rock Head"
         },
         "heightm": 0.6,
         "weightkg": 42.1,
@@ -14051,7 +14109,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Rock Head",
-            "1": "Overcoat"
+            "1": "Overcoat",
+            "H": "Rock Head"
         },
         "heightm": 1.1,
         "weightkg": 110.5,
@@ -14156,7 +14215,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Clear Body",
-            "1": "Light Metal"
+            "1": "Light Metal",
+            "H": "Clear Body"
         },
         "heightm": 0.6,
         "weightkg": 95.2,
@@ -14186,7 +14246,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Clear Body",
-            "1": "Light Metal"
+            "1": "Light Metal",
+            "H": "Clear Body"
         },
         "heightm": 1.2,
         "weightkg": 202.5,
@@ -14219,7 +14280,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Clear Body",
-            "1": "Light Metal"
+            "1": "Light Metal",
+            "H": "Clear Body"
         },
         "heightm": 1.6,
         "weightkg": 550.0,
@@ -14281,7 +14343,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Clear Body",
-            "1": "Sturdy"
+            "1": "Sturdy",
+            "H": "Clear Body"
         },
         "heightm": 1.7,
         "weightkg": 230.0,
@@ -14307,7 +14370,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Clear Body",
-            "1": "Ice Body"
+            "1": "Ice Body",
+            "H": "Clear Body"
         },
         "heightm": 1.8,
         "weightkg": 175.0,
@@ -14333,7 +14397,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Clear Body",
-            "1": "Light Metal"
+            "1": "Light Metal",
+            "H": "Clear Body"
         },
         "heightm": 1.9,
         "weightkg": 205.0,
@@ -15009,7 +15074,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Keen Eye",
-            "1": "Reckless"
+            "1": "Reckless",
+            "H": "Keen Eye"
         },
         "heightm": 0.3,
         "weightkg": 2.0,
@@ -15042,7 +15108,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Intimidate",
-            "1": "Reckless"
+            "1": "Reckless",
+            "H": "Intimidate"
         },
         "heightm": 0.6,
         "weightkg": 15.5,
@@ -15078,7 +15145,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Intimidate",
-            "1": "Reckless"
+            "1": "Reckless",
+            "H": "Intimidate"
         },
         "heightm": 1.2,
         "weightkg": 24.9,
@@ -15247,7 +15315,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Punk Rock",
-            "1": "Technician"
+            "1": "Technician",
+            "H": "Punk Rock"
         },
         "heightm": 1.0,
         "weightkg": 25.5,
@@ -15312,7 +15381,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Guts",
-            "1": "Intimidate"
+            "1": "Intimidate",
+            "H": "Guts"
         },
         "heightm": 0.9,
         "weightkg": 30.5,
@@ -15347,7 +15417,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Guts",
-            "1": "Intimidate"
+            "1": "Intimidate",
+            "H": "Guts"
         },
         "heightm": 1.4,
         "weightkg": 42.0,
@@ -15448,7 +15519,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Mold Breaker",
-            "1": "Sheer Force"
+            "1": "Sheer Force",
+            "H": "Mold Breaker"
         },
         "heightm": 0.9,
         "weightkg": 31.5,
@@ -15480,7 +15552,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Mold Breaker",
-            "1": "Sheer Force"
+            "1": "Sheer Force",
+            "H": "Mold Breaker"
         },
         "heightm": 1.6,
         "weightkg": 102.5,
@@ -15578,7 +15651,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Shed Skin",
-            "1": "Overcoat"
+            "1": "Overcoat",
+            "H": "Shed Skin"
         },
         "heightm": 0.2,
         "weightkg": 3.4,
@@ -15617,7 +15691,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Leaf Guard",
-            "1": "Overcoat"
+            "1": "Overcoat",
+            "H": "Leaf Guard"
         },
         "heightm": 0.5,
         "weightkg": 6.5,
@@ -15652,7 +15727,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Sand Force",
-            "1": "Overcoat"
+            "1": "Overcoat",
+            "H": "Sand Force"
         },
         "heightm": 0.5,
         "weightkg": 6.5,
@@ -15681,7 +15757,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Battle Armor",
-            "1": "Overcoat"
+            "1": "Overcoat",
+            "H": "Battle Armor"
         },
         "heightm": 0.5,
         "weightkg": 6.5,
@@ -15805,7 +15882,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Volt Absorb",
-            "1": "Fur Coat"
+            "1": "Fur Coat",
+            "H": "Volt Absorb"
         },
         "heightm": 0.4,
         "weightkg": 3.9,
@@ -15835,7 +15913,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Swift Swim",
-            "1": "Water Veil"
+            "1": "Water Veil",
+            "H": "Swift Swim"
         },
         "heightm": 0.7,
         "weightkg": 29.5,
@@ -15868,7 +15947,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Swift Swim",
-            "1": "Stakeout"
+            "1": "Stakeout",
+            "H": "Swift Swim"
         },
         "heightm": 1.1,
         "weightkg": 33.5,
@@ -16047,7 +16127,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Skill Link",
-            "1": "Technician"
+            "1": "Technician",
+            "H": "Skill Link"
         },
         "heightm": 1.2,
         "weightkg": 20.3,
@@ -16147,7 +16228,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Cute Charm",
-            "1": "Limber"
+            "1": "Limber",
+            "H": "Limber"
         },
         "heightm": 0.4,
         "weightkg": 5.5,
@@ -16181,7 +16263,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Inner Focus",
-            "1": "Limber"
+            "1": "Limber",
+            "H": "Limber"
         },
         "heightm": 1.2,
         "weightkg": 33.3,
@@ -16673,7 +16756,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Pressure",
-            "1": "Infiltrator"
+            "1": "Infiltrator",
+            "H": "Pressure"
         },
         "heightm": 1.0,
         "weightkg": 108.0,
@@ -16878,7 +16962,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Gluttony",
-            "1": "Thick Fat"
+            "1": "Thick Fat",
+            "H": "Gluttony"
         },
         "heightm": 0.6,
         "weightkg": 105.0,
@@ -17187,7 +17272,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Poison Touch",
-            "1": "Dry Skin"
+            "1": "Dry Skin",
+            "H": "Poison Touch"
         },
         "heightm": 0.7,
         "weightkg": 23.0,
@@ -17220,7 +17306,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Poison Touch",
-            "1": "Dry Skin"
+            "1": "Dry Skin",
+            "H": "Poison Touch"
         },
         "heightm": 1.3,
         "weightkg": 44.4,
@@ -17315,7 +17402,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Swift Swim",
-            "1": "Water Veil"
+            "1": "Water Veil",
+            "H": "Water Veil"
         },
         "heightm": 1.2,
         "weightkg": 24.0,

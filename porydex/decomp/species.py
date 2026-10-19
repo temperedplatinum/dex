@@ -148,7 +148,7 @@ def _abilities(constants: list[str], names: dict[str, str]) -> dict[str, str]:
     slots: dict[str, str] = {}
     for slot, constant in zip(('0', '1', 'H'), constants):
         name = names.get(constant)
-        if name and name not in slots.values():
+        if name and (slot == 'H' or name not in slots.values()):
             slots[slot] = name
     return slots
 
