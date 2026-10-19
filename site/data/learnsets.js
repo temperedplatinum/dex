@@ -19937,6 +19937,9 @@ exports.BattleLearnsets = {
                 "L55",
                 "T"
             ],
+            "extremespeed": [
+                "L70"
+            ],
             "trailblaze": [
                 "M"
             ],
@@ -29421,6 +29424,9 @@ exports.BattleLearnsets = {
             "lastresort": [
                 "L55",
                 "T"
+            ],
+            "expandingforce": [
+                "L70"
             ],
             "trailblaze": [
                 "M"
@@ -61765,11 +61771,8 @@ exports.BattleLearnsets = {
             "assurance": [
                 "L24"
             ],
-            "accelerock": [
-                "L31"
-            ],
             "ancientpower": [
-                "L36",
+                "L33",
                 "T"
             ],
             "crunch": [
@@ -61794,6 +61797,9 @@ exports.BattleLearnsets = {
             ],
             "headsmash": [
                 "L67"
+            ],
+            "accelerock": [
+                "L89"
             ],
             "focuspunch": [
                 "M"
@@ -71320,12 +71326,15 @@ exports.BattleLearnsets = {
                 "L40",
                 "M"
             ],
-            "leafblade": [
+            "sacredsword": [
                 "L50"
             ],
             "lastresort": [
                 "L55",
                 "T"
+            ],
+            "leafblade": [
+                "L70"
             ],
             "trailblaze": [
                 "M"

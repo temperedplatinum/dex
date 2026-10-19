@@ -5362,10 +5362,7 @@ exports.BattlePokedex = {
             "Mineral"
         ],
         "gender": "N",
-        "tier": "obtainable",
-        "evos": [
-            "Porygon2"
-        ]
+        "tier": "obtainable"
     },
     "omanyte": {
         "num": 138,
@@ -9136,13 +9133,7 @@ exports.BattlePokedex = {
             "Mineral"
         ],
         "gender": "N",
-        "tier": "obtainable",
-        "prevo": "Porygon",
-        "evoType": "useItem",
-        "evoItem": "Up-Grade",
-        "evos": [
-            "Porygon-Z"
-        ]
+        "tier": "obtainable"
     },
     "stantler": {
         "num": 234,
@@ -18558,10 +18549,7 @@ exports.BattlePokedex = {
             "Mineral"
         ],
         "gender": "N",
-        "tier": "obtainable",
-        "prevo": "Porygon2",
-        "evoType": "useItem",
-        "evoItem": "Dubious Disc"
+        "tier": "obtainable"
     },
     "gallade": {
         "num": 475,
