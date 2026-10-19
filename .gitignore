@@ -4,13 +4,7 @@ porydex.ini
 # Python virtual environment and cache
 .venv/
 __pycache__/
-
-# libc overrides for the preprocessor
-pycparser/
-fake_libc_include/
-
-# Cache output
-.pickled/
+.pytest_cache/
 
 # Output / testing directories
 tst/

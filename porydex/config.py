@@ -20,8 +20,7 @@ class OutputFormat(enum.Enum):
         except KeyError:
             return s
 
-compiler: pathlib.Path = pathlib.Path('gcc')
-expansion: pathlib.Path = pathlib.Path('../pokeemerald-expansion').resolve()
+decomp: pathlib.Path = pathlib.Path('../plat-hack-decomp').resolve()
 output: pathlib.Path = pathlib.Path('./site/data').resolve()
 format: OutputFormat = OutputFormat.showdown
 included_mons_file: pathlib.Path | None = None
@@ -34,8 +33,7 @@ _SUB_KEYS = ['pokedex', 'abilities']
 def save():
     config = configparser.ConfigParser()
     config['default'] = {
-        'compiler': str(compiler),
-        'expansion': str(expansion),
+        'decomp': str(decomp),
         'output': str(output),
         'format': str(format),
     }
@@ -53,8 +51,7 @@ def save():
         config.write(cfgfile)
 
 def load():
-    global compiler
-    global expansion
+    global decomp
     global output
     global format
     global included_mons_file
@@ -68,8 +65,7 @@ def load():
         config = configparser.ConfigParser()
         config.read(_CONFIG_FILE)
 
-        compiler = pathlib.Path(config['default']['compiler'])
-        expansion = pathlib.Path(config['default']['expansion'])
+        decomp = pathlib.Path(config['default'].get('decomp', str(decomp)))
         output = pathlib.Path(config['default']['output'])
         format = OutputFormat[config['default']['format']]
 
@@ -81,4 +77,3 @@ def load():
 
 def clear():
     os.remove(_CONFIG_FILE)
-
