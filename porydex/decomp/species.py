@@ -107,6 +107,7 @@ class Species:
     other_formes: tuple[str, ...] = ()
     cosmetic_formes: tuple[str, ...] = ()
     required_item: str | None = None
+    obtainable: bool = True
 
     def to_showdown(self) -> dict:
         mon: dict = {
@@ -133,6 +134,8 @@ class Species:
         if self.required_item:
             mon['requiredItem'] = self.required_item
             mon['battleOnly'] = self.base_species
+        if not self.obtainable:
+            mon['tier'] = 'unobtainable'
         return mon
 
 @dataclasses.dataclass(frozen=True)
@@ -142,6 +145,7 @@ class _Lookups:
     move_keys: dict[str, str]
     move_names: dict[str, str]
     mega_stones: dict[str, str]
+    unplaced_stones: frozenset[str]
     tm_moves: dict[str, str]
 
 def _abilities(constants: list[str], names: dict[str, str]) -> dict[str, str]:
@@ -218,6 +222,7 @@ def load_species(decomp: pathlib.Path,
         move_keys={m.constant: m.key for m in moves.values()},
         move_names={m.constant: m.name for m in moves.values()},
         mega_stones={i.mega_stone: i.name for i in items.values() if i.mega_stone},
+        unplaced_stones=frozenset(i.name for i in items.values() if i.mega_stone and not i.placed),
         tm_moves=load_tm_moves(decomp),
     )
     registry = load_json(decomp / 'res' / 'pokemon' / 'form_registry.json')
@@ -248,10 +253,12 @@ def load_species(decomp: pathlib.Path,
         species[base.key] = base
 
         for form_name, (form, form_data) in forms.items():
+            required_item = lookups.mega_stones.get(form_name)
             mon = _species(f'{constant}_{form.upper()}', num, form_name, form_data, height_m, weight_kg, lookups,
                            base_species=name,
                            forme=forme_name(form),
-                           required_item=lookups.mega_stones.get(form_name))
+                           required_item=required_item,
+                           obtainable=required_item not in lookups.unplaced_stones)
             species[mon.key] = mon
 
     return species

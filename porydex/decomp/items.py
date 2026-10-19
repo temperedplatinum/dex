@@ -1,12 +1,18 @@
 import csv
 import dataclasses
 import pathlib
+import re
 
+from porydex.decomp.c_tables import COMMENTS, parse_constant_table
 from porydex.decomp.enums import showdown_type
 from porydex.decomp.loaders import load_constants, load_text_bank
 from porydex.decomp.names import resolve_item
 
 PLACEHOLDER_DESCRIPTION = '???'
+
+ITEM_CONSTANT = re.compile(r'\bITEM_\w+')
+ASM_LINE_COMMENT = re.compile(r'@[^\n]*')
+FIELD_SOURCE_PATTERNS = ('*.s', '*.json')
 
 @dataclasses.dataclass(frozen=True)
 class Item:
@@ -23,6 +29,7 @@ class Item:
     mega_stone: str | None = None
     mega_evolves: str | None = None
     item_user: tuple[str, ...] = ()
+    placed: bool = False
 
     def to_showdown(self) -> dict:
         item: dict = {
@@ -52,10 +59,28 @@ def _load_item_data(decomp: pathlib.Path) -> dict[str, dict[str, str]]:
 def _natural_gift_type(value: str) -> str | None:
     return showdown_type(value) if value.startswith('TYPE_') else None
 
+def _field_source(path: pathlib.Path) -> str:
+    source = path.read_text(encoding='utf-8')
+    if path.suffix == '.s':
+        source = ASM_LINE_COMMENT.sub('', COMMENTS.sub('', source))
+    return source
+
+def load_placed_items(decomp: pathlib.Path) -> set[str]:
+    field = decomp / 'res' / 'field'
+    placed = {
+        constant
+        for pattern in FIELD_SOURCE_PATTERNS
+        for path in field.rglob(pattern)
+        for constant in ITEM_CONSTANT.findall(_field_source(path))
+    }
+    shop = decomp / 'src' / 'overlay007' / 'shop_menu.c'
+    return placed | set(parse_constant_table(shop, 'sBPStoreItems', 'ITEM_'))
+
 def load_items(decomp: pathlib.Path, vanilla: dict[str, dict]) -> dict[str, Item]:
     names = load_text_bank(decomp, 'item_names')
     descriptions = load_text_bank(decomp, 'item_descriptions')
     item_data = _load_item_data(decomp)
+    placed = load_placed_items(decomp)
     items: dict[str, Item] = {}
     for num, constant in enumerate(load_constants(decomp, 'items')):
         if constant == 'ITEM_NONE' or not constant.startswith('ITEM_'):
@@ -79,5 +104,6 @@ def load_items(decomp: pathlib.Path, vanilla: dict[str, dict]) -> dict[str, Item
             mega_stone=known.get('megaStone'),
             mega_evolves=known.get('megaEvolves'),
             item_user=tuple(known.get('itemUser', ())),
+            placed=constant in placed,
         )
     return items

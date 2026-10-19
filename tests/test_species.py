@@ -102,4 +102,18 @@ def test_hidden_ability_kept_even_when_duplicated(constants, expected):
 
 def test_unknown_evolution_method_is_rejected():
     with pytest.raises(ValueError):
-        _evolution(['EVO_SOMETHING_NEW', 'SPECIES_IVYSAUR'], _Lookups({}, {}, {}, {}, {}, {}))
+        _evolution(['EVO_SOMETHING_NEW', 'SPECIES_IVYSAUR'], _Lookups({}, {}, {}, {}, {}, frozenset(), {}))
+
+def test_mega_with_unplaced_stone_is_unobtainable(dex):
+    assert dex['abomasnowmega']['tier'] == 'unobtainable'
+    assert 'tier' not in dex['abomasnow']
+
+def test_mega_with_placed_stone_has_no_tier(decomp, monkeypatch):
+    monkeypatch.setattr('porydex.decomp.items.load_placed_items', lambda _: {'ITEM_ABOMASITE'})
+    species = load_species(
+        decomp,
+        load_moves(decomp, {}),
+        load_abilities(decomp, {}),
+        load_items(decomp, VANILLA_ITEMS),
+    )
+    assert 'tier' not in species_to_showdown(species)['abomasnowmega']

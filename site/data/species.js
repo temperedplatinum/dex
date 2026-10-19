@@ -318,7 +318,8 @@ exports.BattlePokedex = {
         "baseSpecies": "Charizard",
         "forme": "Mega-Y",
         "requiredItem": "Charizardite Y",
-        "battleOnly": "Charizard"
+        "battleOnly": "Charizard",
+        "tier": "unobtainable"
     },
     "squirtle": {
         "num": 7,
@@ -5738,7 +5739,8 @@ exports.BattlePokedex = {
         "baseSpecies": "Mewtwo",
         "forme": "Mega-X",
         "requiredItem": "Mewtwonite X",
-        "battleOnly": "Mewtwo"
+        "battleOnly": "Mewtwo",
+        "tier": "unobtainable"
     },
     "mewtwomegay": {
         "num": 150,
@@ -5767,7 +5769,8 @@ exports.BattlePokedex = {
         "baseSpecies": "Mewtwo",
         "forme": "Mega-Y",
         "requiredItem": "Mewtwonite Y",
-        "battleOnly": "Mewtwo"
+        "battleOnly": "Mewtwo",
+        "tier": "unobtainable"
     },
     "mew": {
         "num": 151,
@@ -9376,7 +9379,8 @@ exports.BattlePokedex = {
         "baseSpecies": "Tyranitar",
         "forme": "Mega",
         "requiredItem": "Tyranitarite",
-        "battleOnly": "Tyranitar"
+        "battleOnly": "Tyranitar",
+        "tier": "unobtainable"
     },
     "lugia": {
         "num": 249,
@@ -9738,7 +9742,8 @@ exports.BattlePokedex = {
         "baseSpecies": "Blaziken",
         "forme": "Mega",
         "requiredItem": "Blazikenite",
-        "battleOnly": "Blaziken"
+        "battleOnly": "Blaziken",
+        "tier": "unobtainable"
     },
     "mudkip": {
         "num": 258,
@@ -11386,7 +11391,8 @@ exports.BattlePokedex = {
         "baseSpecies": "Sableye",
         "forme": "Mega",
         "requiredItem": "Sablenite",
-        "battleOnly": "Sableye"
+        "battleOnly": "Sableye",
+        "tier": "unobtainable"
     },
     "mawile": {
         "num": 303,
@@ -13649,7 +13655,8 @@ exports.BattlePokedex = {
         "baseSpecies": "Absol",
         "forme": "Mega-Z",
         "requiredItem": "Absolite Z",
-        "battleOnly": "Absol"
+        "battleOnly": "Absol",
+        "tier": "unobtainable"
     },
     "wynaut": {
         "num": 360,
@@ -14465,7 +14472,8 @@ exports.BattlePokedex = {
         "baseSpecies": "Latias",
         "forme": "Mega",
         "requiredItem": "Latiasite",
-        "battleOnly": "Latias"
+        "battleOnly": "Latias",
+        "tier": "unobtainable"
     },
     "latios": {
         "num": 381,
@@ -14524,7 +14532,8 @@ exports.BattlePokedex = {
         "baseSpecies": "Latios",
         "forme": "Mega",
         "requiredItem": "Latiosite",
-        "battleOnly": "Latios"
+        "battleOnly": "Latios",
+        "tier": "unobtainable"
     },
     "kyogre": {
         "num": 382,
@@ -15196,7 +15205,8 @@ exports.BattlePokedex = {
         "baseSpecies": "Staraptor",
         "forme": "Mega",
         "requiredItem": "Staraptite",
-        "battleOnly": "Staraptor"
+        "battleOnly": "Staraptor",
+        "tier": "unobtainable"
     },
     "bidoof": {
         "num": 399,
@@ -16944,7 +16954,8 @@ exports.BattlePokedex = {
         "baseSpecies": "Garchomp",
         "forme": "Mega-Z",
         "requiredItem": "Garchompite Z",
-        "battleOnly": "Garchomp"
+        "battleOnly": "Garchomp",
+        "tier": "unobtainable"
     },
     "munchlax": {
         "num": 446,
@@ -17083,7 +17094,8 @@ exports.BattlePokedex = {
         "baseSpecies": "Lucario",
         "forme": "Mega",
         "requiredItem": "Lucarionite",
-        "battleOnly": "Lucario"
+        "battleOnly": "Lucario",
+        "tier": "unobtainable"
     },
     "lucariomegaz": {
         "num": 448,
@@ -17117,7 +17129,8 @@ exports.BattlePokedex = {
         "baseSpecies": "Lucario",
         "forme": "Mega-Z",
         "requiredItem": "Lucarionite Z",
-        "battleOnly": "Lucario"
+        "battleOnly": "Lucario",
+        "tier": "unobtainable"
     },
     "hippopotas": {
         "num": 449,
@@ -17558,7 +17571,8 @@ exports.BattlePokedex = {
         "baseSpecies": "Abomasnow",
         "forme": "Mega",
         "requiredItem": "Abomasite",
-        "battleOnly": "Abomasnow"
+        "battleOnly": "Abomasnow",
+        "tier": "unobtainable"
     },
     "weavile": {
         "num": 461,
@@ -18227,7 +18241,8 @@ exports.BattlePokedex = {
         "baseSpecies": "Froslass",
         "forme": "Mega",
         "requiredItem": "Froslassite",
-        "battleOnly": "Froslass"
+        "battleOnly": "Froslass",
+        "tier": "unobtainable"
     },
     "rotom": {
         "num": 479,
@@ -18595,7 +18610,8 @@ exports.BattlePokedex = {
         "baseSpecies": "Heatran",
         "forme": "Mega",
         "requiredItem": "Heatranite",
-        "battleOnly": "Heatran"
+        "battleOnly": "Heatran",
+        "tier": "unobtainable"
     },
     "regigigas": {
         "num": 486,
@@ -18814,7 +18830,8 @@ exports.BattlePokedex = {
         "baseSpecies": "Darkrai",
         "forme": "Mega",
         "requiredItem": "Darkranite",
-        "battleOnly": "Darkrai"
+        "battleOnly": "Darkrai",
+        "tier": "unobtainable"
     },
     "shaymin": {
         "num": 492,

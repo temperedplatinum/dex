@@ -1,6 +1,6 @@
 import pytest
 
-from porydex.decomp.items import load_items
+from porydex.decomp.items import load_items, load_placed_items
 
 VANILLA_ITEMS = {
     'masterball': {'name': 'Master Ball', 'spritenum': 276, 'isNonstandard': 'Past'},
@@ -61,3 +61,11 @@ def test_item_missing_from_csv_and_placeholder_description(items):
         'desc': '',
         'shortDesc': '',
     }
+
+def test_placed_items_come_from_field_scripts_and_bp_store_ignoring_comments(decomp):
+    assert load_placed_items(decomp) == {'ITEM_ORAN_BERRY', 'ITEM_MASTER_BALL'}
+
+def test_items_carry_placed_flag(items):
+    assert items['oranberry'].placed
+    assert items['masterball'].placed
+    assert not items['abomasite'].placed

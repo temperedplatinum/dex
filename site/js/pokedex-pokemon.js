@@ -19,7 +19,9 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 		if (pokemon.num > 0) buf += ' <code>#'+pokemon.num+'</code>';
 		buf += '</h1>';
 
-        if (pokemon.tier === "unobtainable") {
+        if (pokemon.tier === "unobtainable" && pokemon.requiredItems.length) {
+            buf += '<div class="warning"><strong>Note:</strong> Its Mega Stone, ' + pokemon.requiredItems[0] + ', cannot be obtained.</div>';
+        } else if (pokemon.tier === "unobtainable") {
             buf += '<div class="warning"><strong>Note:</strong> This Pok&eacute;mon cannot be obtained.</div>';
 		}
 
