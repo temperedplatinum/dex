@@ -1,159 +1,60 @@
-# `porydex`
+# Tempered Platinum Dex
 
-`porydex` is a simple utility for exporting data from `pokeemerald-expansion`
-for use in a custom Pokémon Showdown Pokédex for your fan-game. Additionally,
-it provides a modified version of the official Pokémon Showdown Pokédex as
-a base for extracted data.
+A fork of [Porydex](https://github.com/lhearachel/porydex)'s Showdown Dex, rebuilt to support Tempered Platinum. All data is extracted directly from the game's [pokeplatinum](https://github.com/pret/pokeplatinum) decomp.
 
-Thanks to [the original Pokémon Showdown Pokédex](https://dex.pokemonshowdown.com) for the base implementation.
+**Expanded Features**:
 
-## Requirements
+- **Decomp-sourced data**: species, moves, abilities, items and learnsets are read straight from the decomp's JSON data, text banks and C tables, so the dex always matches the game.
 
-* `python >= 3.10.6`
-* one of the following C compilers:
-  * `arm-none-eabi-gcc` (tested: `v13.2.1`)
-  * `clang` (tested: `v15.0`)
-  * `gcc` (tested: `v14.1.1`)
+- **Updated Move Data**: base power, accuracy, PP, priority, targets and flags (sound, punch, bite, slicing, wind, pulse, powder) match in-game values, with in-game descriptions.
 
-## Setup
+- **Updated Pokémon Data**: stats, types, hidden abilities, evolutions, alternate forms and Mega Evolutions (including new Mega Stones), plus level-up, TM/HM, tutor and egg move learnsets.
 
-Setup is simple; run the following commands:
+- **In-game text**: ability and item descriptions come from the game's own text banks.
+
+Live dex:
+
+- https://temperedplatinum.github.io/dex/
+
+## Features
+
+- **Instant search**: results appear as you type.
+- **Filter search**: type a filter like `prankster, twave` and press Enter to find Pokémon matching every condition.
+- **Panel UI**: pages open side by side, so you can compare without losing your place.
+- **Inexact search**: typos still find what you meant.
+- **Abbreviation search**: `tbolt` finds Thunderbolt, `bp` finds Baton Pass.
+
+## Updating the data
+
+The dex is a static site. The extractor reads the decomp locally and writes the generated data files to `site/data/`; neither the decomp nor the ROM is ever deployed.
 
 ```bash
 make setup
 source .venv/bin/activate
-```
-
-## Usage
-
-```txt
-usage: porydex [-h] {config,extract} ...
-
-generate data exports from pokeemerald-expansion for showdown dex
-
-positional arguments:
-  {config,extract}
-    config          setup configuration options for porydex
-    extract         run data extraction
-
-options:
-  -h, --help        show this help message and exit
-```
-
-### `config`
-
-`porydex` is configurable according to your system. By default, it assumes the
-following options:
-
-* Your expansion repository is located at `../pokeemerald-expansion`
-* Your compiler is invoked by the command `gcc`
-* Your desired directory for output files is `./out`
-
-If any of these are not true, use the `config set` command to update them to
-the proper values:
-
-```text
-usage: porydex config set [-h] [-e EXPANSION] [-c COMPILER] [-o OUTPUT] [-f {json,showdown}] [-i INCLUDED_SPECIES_FILE] [-a CUSTOM_ABILITY_DEFS]
-
-options:
-  -h, --help            show this help message and exit
-  -e EXPANSION, --expansion EXPANSION
-                        path to the root of your pokeemerald-expansion repository; default: ../pokeemerald-expansion
-  -c COMPILER, --compiler COMPILER
-                        command for or path to the compiler to be used for pre-processing; default: gcc
-  -o OUTPUT, --output OUTPUT
-                        path to output directory for extracted data files; default: ./out
-  -f {json,showdown}, --format {json,showdown}
-                        format for output files
-  -i INCLUDED_SPECIES_FILE, --included-species-file INCLUDED_SPECIES_FILE
-                        text file describing species to be included in the pokedex
-  -a CUSTOM_ABILITY_DEFS, --custom-ability-defs CUSTOM_ABILITY_DEFS
-                        JSON file describing custom ability definitions and descriptions for a Showdown Dex
-```
-
-Configuration is persisted in `porydex.ini`; to view configured options, either
-view `porydex.ini` via your favorite text editor, or use the `config show`
-command.
-
-#### Specifying Obtainable Pokemon
-
-Your game may not give a player access to all species of Pokémon. In such cases,
-you can specify a text-file of obtainable species using `config set --included-species-file`.
-This file is expected to be a text-based list with one entry per line and each
-entry being the name of an available Pokémon using Showdown-recognized names, e.g.,
-
-```text
-Bulbasaur
-Ivysaur
-Venusaur
-Venusaur-Mega
-Venusaur-Gmax
-...
-```
-
-#### Specifying Descriptions for Custom Abilities
-
-`vanilla/abilities.json` specifies the latest version of the data file used by
-the official Showdown Pokédex for ability descriptions. For abilities which
-already exist in a vanilla Expansion repository, this file can be edited to
-modify those descriptions. If there are custom abilities in your game, then
-you will need to specify a file with those ability names and descriptions
-using `config set --custom-ability-defs`. The provided file should be in JSON
-format and adhere to the following schema:
-
-```json
-{
-    "<NAME OF ABILITY>": {
-        "desc": "<LONG-FORM DESCRIPTION>",
-        "short": "<SHORT-FORM DESCRIPTION>"
-    }
-}
-```
-
-If `short` is not provided, then the value for `desc` will be used instead. To
-illustrate with an ability in the vanilla Expansion:
-
-```json
-{
-    "Aerilate": {
-        "desc": "This Pokemon's Normal-type moves become Flying-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
-        "short": "This Pokemon's Normal-type moves become Flying type and have 1.2x power."
-    }
-}
-```
-
-### `extract`
-
-Extraction with `porydex` is easy; just run:
-
-```bash
+porydex config set --decomp ../plat-hack-decomp
 porydex extract
 ```
 
-And that's it! Your output data files will be located in the configured output
-directory.
+Commit the regenerated `site/data/` and push to `main`. GitHub Actions deploys `site/` to GitHub Pages.
 
-`porydex` maintains a cache of pre-processed files that it parses from your
-repository. If you need to reload this cache -- e.g., if you make a change to
-any of the files that it reads -- then you will need to force it to reload the
-cache:
+Edit the decomp, not the files in `site/data/`, as they are overwritten on every extract. The only hand-maintained data lives in `vanilla/`.
+
+## Testing
+
+Serve `site/` locally and open http://localhost:8000:
 
 ```bash
-porydex extract --reload
+python -m http.server -d site
 ```
 
-## Current Features and Backlog
+Run the extractor's tests with:
 
-**Supported:**
+```bash
+make test
+```
 
-* Move data
-* Species data (including forms, evolutions, and learnable movessets)
-* Encounter data
-* Configurable expansion target and compiler support
-* Custom Pokédex web-app (based on Showdown fork)
-* Descriptions for custom Abilities
+## License
 
-**Backlog:**
+This dex is distributed under the terms of the [AGPLv3](./LICENSE), inherited from [Porydex](https://github.com/lhearachel/porydex) by Lhea.
 
-* Trainer data and teams (in Showdown damage calculator format)
-* Custom Item data and descriptions
+The frontend is based on the [Pokémon Showdown Dex](https://github.com/Zarel/Pokemon-Showdown-Dex), which is MIT-licensed.
