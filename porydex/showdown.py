@@ -5,37 +5,8 @@ import porydex.config
 
 from porydex.common import name_key
 
-def index(moves: dict, species: dict, learnsets: dict, encounters: dict):
-    vanilla_data_dir = pathlib.Path('vanilla')
-    abilities = json.load(open(vanilla_data_dir / 'abilities.json', 'r', encoding='utf-8'))
-    items = json.load(open(vanilla_data_dir / 'items.json', 'r', encoding='utf-8'))
-    typechart = json.load(open(vanilla_data_dir / 'typechart.json', 'r', encoding='utf-8'))
-    vanilla_moves = json.load(open(vanilla_data_dir / 'moves.json', 'r', encoding='utf-8'))
-
-    if porydex.config.custom_ability_defs:
-        custom_abilities = json.load(open(porydex.config.custom_ability_defs, 'r', encoding='utf-8'))
-    else:
-        custom_abilities = {}
-
-    if custom_abilities:
-        num = max(map(lambda abil: abil.get('num', 0), abilities.values())) + 1
-        for name, descs in custom_abilities.items():
-            abilities[name_key(name)] = {
-                'flags': {},
-                'name': name,
-                'rating': 1,
-                'num': num,
-                'desc': descs.get('desc', ''),
-                'shortDesc': descs.get('short', descs.get('desc', '')),
-            }
-
-    for key, vanilla in vanilla_moves.items():
-        if key.startswith('gmax') or (key.startswith('hiddenpower') and len(key) > 11) or vanilla.get('isNonstandard', '') == 'CAP':
-            continue
-
-        assert key in moves, f'Failed to find move {key} in loaded moves data!'
-        moves[key]['desc'] = vanilla['desc']
-        moves[key]['shortDesc'] = vanilla['shortDesc']
+def index(moves: dict, species: dict, learnsets: dict, encounters: dict, abilities: dict, items: dict):
+    typechart = json.load(open(pathlib.Path('vanilla') / 'typechart.json', 'r', encoding='utf-8'))
 
     index = []
     index.extend(list(map(lambda s: s + ' pokemon', species.keys())))
@@ -272,7 +243,7 @@ def index(moves: dict, species: dict, learnsets: dict, encounters: dict):
     battle_count_index = {}
     for T in typechart.keys():
         battle_count_index[f'{T} move'] = sum(map(lambda m: int(m['type'].lower() == T), moves.values()))
-        battle_count_index[f'{T} pokemon'] = sum(map(lambda s: int(T.upper() in s['types']), species.values()))
+        battle_count_index[f'{T} pokemon'] = sum(map(lambda s: int(T in map(str.lower, s['types'])), species.values()))
 
     with open(porydex.config.output / 'search-index.js', 'w', encoding='utf-8') as outf:
         print('// DO NOT EDIT - automatically built by porydex', file=outf, end='\n\n')

@@ -9,7 +9,6 @@ __pycache__/
 # Output / testing directories
 tst/
 out/
-site/data/
 
 # pyinstaller
 build/
