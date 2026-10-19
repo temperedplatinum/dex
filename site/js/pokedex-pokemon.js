@@ -25,7 +25,8 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
             buf += '<div class="warning"><strong>Note:</strong> This Pok&eacute;mon cannot be obtained.</div>';
 		}
 
-		buf += '<img src="'+Dex.resourcePrefix+'sprites/gen5/' + pokemon.spriteid + '.png'+'" alt="" width="96" height="96" class="sprite" />';
+		var showdownSprite = Dex.resourcePrefix + 'sprites/gen5/' + pokemon.spriteid + '.png';
+		buf += '<img src="sprites/' + pokemon.id + '.png" onerror="this.onerror=null;this.src=\'' + showdownSprite + '\'" alt="" width="96" height="96" class="sprite" />';
 
 		buf += '<dl class="typeentry">';
 		buf += '<dt>Types:</dt> <dd>';

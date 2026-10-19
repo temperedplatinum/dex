@@ -108,6 +108,7 @@ class Species:
     cosmetic_formes: tuple[str, ...] = ()
     required_item: str | None = None
     obtainable: bool = True
+    sprite: pathlib.Path | None = None
 
     def to_showdown(self) -> dict:
         mon: dict = {
@@ -212,6 +213,9 @@ def _cosmetic_formes(species_dir: str, base_name: str, registry: dict[str, str])
         if kind != 'data' and not form.startswith("__")
     )
 
+def _first_existing(*paths: pathlib.Path) -> pathlib.Path | None:
+    return next((path for path in paths if path.exists()), None)
+
 def load_species(decomp: pathlib.Path,
                  moves: dict[str, Move],
                  abilities: dict[str, Ability],
@@ -249,7 +253,8 @@ def load_species(decomp: pathlib.Path,
         base = _species(constant, num, name, data, height_m, weight_kg, lookups,
                         base_forme=BASE_FORMES.get(species_dir),
                         other_formes=tuple(forms),
-                        cosmetic_formes=_cosmetic_formes(species_dir, name, mon_registry))
+                        cosmetic_formes=_cosmetic_formes(species_dir, name, mon_registry),
+                        sprite=_first_existing(mon_dir / 'male_front.png', mon_dir / 'female_front.png'))
         species[base.key] = base
 
         for form_name, (form, form_data) in forms.items():
@@ -258,7 +263,8 @@ def load_species(decomp: pathlib.Path,
                            base_species=name,
                            forme=forme_name(form),
                            required_item=required_item,
-                           obtainable=required_item not in lookups.unplaced_stones)
+                           obtainable=required_item not in lookups.unplaced_stones,
+                           sprite=_first_existing(mon_dir / 'forms' / form / 'front.png'))
             species[mon.key] = mon
 
     return species

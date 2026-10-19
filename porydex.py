@@ -11,6 +11,7 @@ from porydex.decomp.items import load_items
 from porydex.decomp.loaders import load_json
 from porydex.decomp.moves import load_moves
 from porydex.decomp.species import learnsets_to_showdown, load_species, species_to_showdown
+from porydex.decomp.sprites import export_sprites
 
 VANILLA_DIR = pathlib.Path('vanilla')
 
@@ -87,6 +88,7 @@ def extract(_):
                 json.dump(contents, outf, indent=4, ensure_ascii=False)
     else:
         porydex.showdown.index(**data)
+        export_sprites(species, porydex.config.output.parent / 'sprites')
 
 def main():
     argp = argparse.ArgumentParser(prog='porydex',
