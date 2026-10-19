@@ -1,0 +1,22 @@
+{
+    "name": "Frost Breath",
+    "class": "CLASS_SPECIAL",
+    "type": "TYPE_ICE",
+    "power": 60,
+    "accuracy": 100,
+    "pp": 10,
+    "effect": {
+        "type": "BATTLE_EFFECT_ALWAYS_CRIT",
+        "chance": 100
+    },
+    "range": "RANGE_SINGLE_TARGET",
+    "priority": 0,
+    "flags": [
+        "MOVE_FLAG_CAN_PROTECT",
+        "MOVE_FLAG_CAN_MIRROR_MOVE"
+    ],
+    "contest": {
+        "effect": "CONTEST_EFFECT_STEAL_VOLTAGE",
+        "type": "CONTEST_TYPE_CUTE"
+    }
+}

@@ -20,7 +20,7 @@ def test_load_text_bank_reads_single_line_messages(decomp):
     assert load_text_bank(decomp, 'move_names') == ['-', 'Pound', 'Karate Chop']
 
 def test_load_text_bank_joins_wrapped_lines(decomp):
-    assert load_text_bank(decomp, 'move_descriptions') == [
+    assert load_text_bank(decomp, 'move_descriptions')[:3] == [
         '',
         'The foe is physically pounded with a long tail or a foreleg, etc.',
         '',

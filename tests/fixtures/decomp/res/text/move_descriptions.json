@@ -21,6 +21,18 @@
     },
     {
       "id": "pl_msg_00000646_00002"
+    },
+    {
+      "id": "pl_msg_00000646_00003",
+      "en_US": "The foe is bitten."
+    },
+    {
+      "id": "pl_msg_00000646_00004",
+      "en_US": "A retaliation move."
+    },
+    {
+      "id": "pl_msg_00000646_00005",
+      "en_US": "Always results in a critical hit."
     }
   ]
 }
