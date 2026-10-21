@@ -5492,8 +5492,7 @@ exports.BattlePokedex = {
         "num": 137,
         "name": "Porygon",
         "types": [
-            "Normal",
-            "Electric"
+            "Normal"
         ],
         "baseStats": {
             "hp": 65,
@@ -5504,7 +5503,7 @@ exports.BattlePokedex = {
             "spd": 75
         },
         "abilities": {
-            "0": "Trace",
+            "0": "Power Spot",
             "1": "Download",
             "H": "Analytic"
         },
@@ -19063,7 +19062,7 @@ exports.BattlePokedex = {
         "name": "Porygon-Z",
         "types": [
             "Normal",
-            "Electric"
+            "Psychic"
         ],
         "baseStats": {
             "hp": 85,
