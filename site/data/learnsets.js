@@ -811,6 +811,10 @@ exports.BattleLearnsets = {
             "crunch": [
                 "L42"
             ],
+            "dualwingbeat": [
+                "L43",
+                "M"
+            ],
             "scaryface": [
                 "L44"
             ],
@@ -855,9 +859,6 @@ exports.BattleLearnsets = {
                 "M"
             ],
             "earthquake": [
-                "M"
-            ],
-            "dualwingbeat": [
                 "M"
             ],
             "dig": [
@@ -1815,6 +1816,9 @@ exports.BattleLearnsets = {
             "wingattack": [
                 "L33"
             ],
+            "dualwingbeat": [
+                "L34"
+            ],
             "roost": [
                 "L37"
             ],
@@ -1916,6 +1920,9 @@ exports.BattleLearnsets = {
             ],
             "mirrormove": [
                 "L32"
+            ],
+            "dualwingbeat": [
+                "L34"
             ],
             "wingattack": [
                 "L37"
@@ -2023,6 +2030,9 @@ exports.BattleLearnsets = {
             ],
             "mirrormove": [
                 "L32"
+            ],
+            "dualwingbeat": [
+                "L35"
             ],
             "wingattack": [
                 "L38"
@@ -5704,6 +5714,10 @@ exports.BattleLearnsets = {
             "bite": [
                 "L30"
             ],
+            "dualwingbeat": [
+                "L31",
+                "M"
+            ],
             "haze": [
                 "L35"
             ],
@@ -5733,9 +5747,6 @@ exports.BattleLearnsets = {
                 "M"
             ],
             "gigadrain": [
-                "M"
-            ],
-            "dualwingbeat": [
                 "M"
             ],
             "shadowball": [
@@ -5827,6 +5838,10 @@ exports.BattleLearnsets = {
             "bite": [
                 "L34"
             ],
+            "dualwingbeat": [
+                "L37",
+                "M"
+            ],
             "haze": [
                 "L41"
             ],
@@ -5862,9 +5877,6 @@ exports.BattleLearnsets = {
                 "M"
             ],
             "gigadrain": [
-                "M"
-            ],
-            "dualwingbeat": [
                 "M"
             ],
             "shadowball": [
@@ -17401,6 +17413,10 @@ exports.BattleLearnsets = {
             "slash": [
                 "L27"
             ],
+            "dualwingbeat": [
+                "L28",
+                "M"
+            ],
             "focusenergy": [
                 "L29"
             ],
@@ -17436,9 +17452,6 @@ exports.BattleLearnsets = {
                 "M"
             ],
             "hyperbeam": [
-                "M"
-            ],
-            "dualwingbeat": [
                 "M"
             ],
             "aerialace": [
@@ -19863,6 +19876,10 @@ exports.BattleLearnsets = {
                 "L50",
                 "M"
             ],
+            "dualwingbeat": [
+                "L52",
+                "M"
+            ],
             "meteorbeam": [
                 "L53"
             ],
@@ -19888,9 +19905,6 @@ exports.BattleLearnsets = {
                 "M"
             ],
             "irontail": [
-                "M"
-            ],
-            "dualwingbeat": [
                 "M"
             ],
             "flamethrower": [
@@ -24329,6 +24343,10 @@ exports.BattleLearnsets = {
             "bite": [
                 "L34"
             ],
+            "dualwingbeat": [
+                "L37",
+                "M"
+            ],
             "haze": [
                 "L41"
             ],
@@ -24367,9 +24385,6 @@ exports.BattleLearnsets = {
                 "M"
             ],
             "gigadrain": [
-                "M"
-            ],
-            "dualwingbeat": [
                 "M"
             ],
             "shadowball": [
@@ -25339,6 +25354,10 @@ exports.BattleLearnsets = {
             "triattack": [
                 "L31"
             ],
+            "dualwingbeat": [
+                "L35",
+                "M"
+            ],
             "safeguard": [
                 "L37"
             ],
@@ -25375,9 +25394,6 @@ exports.BattleLearnsets = {
                 "M"
             ],
             "solarbeam": [
-                "M"
-            ],
-            "dualwingbeat": [
                 "M"
             ],
             "psychic": [
@@ -27755,6 +27771,9 @@ exports.BattleLearnsets = {
             ],
             "supersonic": [
                 "L24"
+            ],
+            "dualwingbeat": [
+                "L28"
             ],
             "bugbite": [
                 "L30"
@@ -30691,6 +30710,10 @@ exports.BattleLearnsets = {
             "slash": [
                 "L25"
             ],
+            "dualwingbeat": [
+                "L27",
+                "M"
+            ],
             "focusenergy": [
                 "L28"
             ],
@@ -30730,9 +30753,6 @@ exports.BattleLearnsets = {
                 "M"
             ],
             "hyperbeam": [
-                "M"
-            ],
-            "dualwingbeat": [
                 "M"
             ],
             "aerialace": [
@@ -48065,6 +48085,10 @@ exports.BattleLearnsets = {
             "sing": [
                 "L28"
             ],
+            "dualwingbeat": [
+                "L32",
+                "M"
+            ],
             "mirrormove": [
                 "L33"
             ],
@@ -48098,9 +48122,6 @@ exports.BattleLearnsets = {
                 "M"
             ],
             "solarbeam": [
-                "M"
-            ],
-            "dualwingbeat": [
                 "M"
             ],
             "aerialace": [
@@ -48231,6 +48252,10 @@ exports.BattleLearnsets = {
             "sing": [
                 "L31"
             ],
+            "dualwingbeat": [
+                "L32",
+                "M"
+            ],
             "mirrormove": [
                 "L33"
             ],
@@ -48288,9 +48313,6 @@ exports.BattleLearnsets = {
                 "M"
             ],
             "earthquake": [
-                "M"
-            ],
-            "dualwingbeat": [
                 "M"
             ],
             "flamethrower": [
@@ -57619,6 +57641,10 @@ exports.BattleLearnsets = {
             "whirlwind": [
                 "L21"
             ],
+            "dualwingbeat": [
+                "L22",
+                "M"
+            ],
             "airslash": [
                 "L23"
             ],
@@ -57645,9 +57671,6 @@ exports.BattleLearnsets = {
                 "M"
             ],
             "hurricane": [
-                "M"
-            ],
-            "dualwingbeat": [
                 "M"
             ],
             "facade": [
@@ -57727,6 +57750,10 @@ exports.BattleLearnsets = {
             "featherdance": [
                 "L28"
             ],
+            "dualwingbeat": [
+                "L29",
+                "M"
+            ],
             "aerialace": [
                 "L31",
                 "M"
@@ -57747,9 +57774,6 @@ exports.BattleLearnsets = {
                 "M"
             ],
             "hurricane": [
-                "M"
-            ],
-            "dualwingbeat": [
                 "M"
             ],
             "facade": [
@@ -57833,6 +57857,10 @@ exports.BattleLearnsets = {
                 "L28",
                 "M"
             ],
+            "dualwingbeat": [
+                "L29",
+                "M"
+            ],
             "takedown": [
                 "L33"
             ],
@@ -57864,9 +57892,6 @@ exports.BattleLearnsets = {
                 "M"
             ],
             "hurricane": [
-                "M"
-            ],
-            "dualwingbeat": [
                 "M"
             ],
             "facade": [
@@ -60266,6 +60291,10 @@ exports.BattleLearnsets = {
             "bugbuzz": [
                 "L41"
             ],
+            "dualwingbeat": [
+                "L43",
+                "M"
+            ],
             "destinybond": [
                 "L45"
             ],
@@ -60285,9 +60314,6 @@ exports.BattleLearnsets = {
                 "M"
             ],
             "hurricane": [
-                "M"
-            ],
-            "dualwingbeat": [
                 "M"
             ],
             "infestation": [
@@ -68075,6 +68101,10 @@ exports.BattleLearnsets = {
             "helpinghand": [
                 "L28"
             ],
+            "dualwingbeat": [
+                "L35",
+                "M"
+            ],
             "safeguard": [
                 "L36"
             ],
@@ -68111,9 +68141,6 @@ exports.BattleLearnsets = {
                 "M"
             ],
             "solarbeam": [
-                "M"
-            ],
-            "dualwingbeat": [
                 "M"
             ],
             "psychic": [
@@ -68264,6 +68291,10 @@ exports.BattleLearnsets = {
             "uproar": [
                 "L27"
             ],
+            "dualwingbeat": [
+                "L29",
+                "M"
+            ],
             "bugbite": [
                 "L30"
             ],
@@ -68299,9 +68330,6 @@ exports.BattleLearnsets = {
                 "M"
             ],
             "solarbeam": [
-                "M"
-            ],
-            "dualwingbeat": [
                 "M"
             ],
             "psychic": [
