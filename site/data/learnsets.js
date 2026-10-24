@@ -19197,27 +19197,30 @@ exports.BattleLearnsets = {
                 "L10",
                 "T"
             ],
+            "disable": [
+                "L13"
+            ],
             "thundershock": [
-                "L15"
+                "L16"
             ],
             "psybeam": [
-                "L20"
+                "L19"
             ],
-            "eerieimpulse": [
-                "L23"
+            "block": [
+                "L22"
             ],
             "voltswitch": [
                 "L24"
             ],
-            "conversion2": [
-                "L25"
-            ],
-            "lockon": [
-                "L28"
-            ],
             "electroweb": [
-                "L30",
+                "L26",
                 "M"
+            ],
+            "followme": [
+                "L29"
+            ],
+            "helpinghand": [
+                "L32"
             ],
             "recover": [
                 "L35"
@@ -19225,17 +19228,36 @@ exports.BattleLearnsets = {
             "gravity": [
                 "L38"
             ],
-            "discharge": [
-                "L40"
+            "teleport": [
+                "L41"
+            ],
+            "imprison": [
+                "L44",
+                "M"
+            ],
+            "healbell": [
+                "L47"
             ],
             "triattack": [
-                "L45"
-            ],
-            "doubleedge": [
                 "L50"
             ],
-            "zapcannon": [
+            "copycat": [
+                "L53"
+            ],
+            "hypervoice": [
+                "L56"
+            ],
+            "mefirst": [
                 "L60"
+            ],
+            "magiccoat": [
+                "L63"
+            ],
+            "transform": [
+                "L66"
+            ],
+            "snarl": [
+                "M"
             ],
             "hiddenpower": [
                 "M"
@@ -19279,7 +19301,7 @@ exports.BattleLearnsets = {
             "rest": [
                 "M"
             ],
-            "wildcharge": [
+            "skillswap": [
                 "M"
             ],
             "gigaimpact": [
@@ -33756,47 +33778,60 @@ exports.BattleLearnsets = {
             "conversion": [
                 "L1"
             ],
-            "recycle": [
-                "L1",
-                "M"
+            "thundershock": [
+                "L1"
             ],
             "magnetrise": [
                 "L1",
                 "T"
             ],
-            "thundershock": [
-                "L15"
+            "recycle": [
+                "L5",
+                "M"
             ],
-            "psybeam": [
+            "nuzzle": [
+                "L10"
+            ],
+            "shockwave": [
+                "L15",
+                "M"
+            ],
+            "eerieimpulse": [
                 "L20"
             ],
             "conversion2": [
-                "L25"
-            ],
-            "lockon": [
-                "L28"
-            ],
-            "eerieimpulse": [
-                "L31"
+                "L24"
             ],
             "electroweb": [
-                "L33",
+                "L27",
                 "M"
             ],
-            "recover": [
-                "L35"
+            "painsplit": [
+                "L30"
             ],
-            "gravity": [
-                "L39"
+            "recover": [
+                "L32"
             ],
             "discharge": [
-                "L41"
+                "L36"
+            ],
+            "wish": [
+                "L39"
+            ],
+            "foulplay": [
+                "L42"
             ],
             "triattack": [
                 "L45"
             ],
             "voltswitch": [
                 "L48"
+            ],
+            "magiccoat": [
+                "L51"
+            ],
+            "lockon": [
+                "L53"
             ],
             "zapcannon": [
                 "L55"
@@ -33806,6 +33841,9 @@ exports.BattleLearnsets = {
                 "M"
             ],
             "hiddenpower": [
+                "M"
+            ],
+            "nightshade": [
                 "M"
             ],
             "icebeam": [
@@ -33832,9 +33870,6 @@ exports.BattleLearnsets = {
             "shadowball": [
                 "M"
             ],
-            "shockwave": [
-                "M"
-            ],
             "aerialace": [
                 "M"
             ],
@@ -33842,6 +33877,9 @@ exports.BattleLearnsets = {
                 "M"
             ],
             "rest": [
+                "M"
+            ],
+            "hex": [
                 "M"
             ],
             "wildcharge": [
@@ -33857,6 +33895,9 @@ exports.BattleLearnsets = {
                 "M"
             ],
             "psyshock": [
+                "M"
+            ],
+            "bodypress": [
                 "M"
             ],
             "sleeptalk": [
@@ -69063,6 +69104,9 @@ exports.BattleLearnsets = {
     },
     "porygonz": {
         "learnset": {
+            "tackle": [
+                "L1"
+            ],
             "conversion": [
                 "L1"
             ],
@@ -69074,48 +69118,63 @@ exports.BattleLearnsets = {
                 "L1",
                 "M"
             ],
-            "tackle": [
-                "L1"
+            "swift": [
+                "L10",
+                "T"
+            ],
+            "confusion": [
+                "L14"
             ],
             "thundershock": [
-                "L15"
+                "L17"
             ],
             "psybeam": [
-                "L20"
+                "L22"
             ],
             "conversion2": [
-                "L25"
+                "L26"
             ],
-            "lockon": [
-                "L28"
-            ],
-            "eerieimpulse": [
+            "extrasensory": [
                 "L30"
             ],
-            "electroweb": [
-                "L32",
-                "M"
-            ],
-            "recover": [
+            "triattack": [
                 "L35"
             ],
+            "mysticalfire": [
+                "L39"
+            ],
+            "weatherball": [
+                "L42"
+            ],
             "discharge": [
-                "L40"
-            ],
-            "gravity": [
-                "L43"
-            ],
-            "triattack": [
                 "L45"
             ],
-            "doubleedge": [
-                "L50"
+            "expandingforce": [
+                "L48"
             ],
-            "zapcannon": [
+            "futuresight": [
+                "L51"
+            ],
+            "hypervoice": [
+                "L54"
+            ],
+            "lusterpurge": [
+                "L57"
+            ],
+            "lockon": [
                 "L60"
             ],
+            "zapcannon": [
+                "L63"
+            ],
+            "boomburst": [
+                "L66"
+            ],
+            "psychoboost": [
+                "L69"
+            ],
             "hyperbeam": [
-                "L65",
+                "L72",
                 "M"
             ],
             "hiddenpower": [
@@ -69157,6 +69216,9 @@ exports.BattleLearnsets = {
             "rest": [
                 "M"
             ],
+            "focusblast": [
+                "M"
+            ],
             "wildcharge": [
                 "M"
             ],
@@ -69170,6 +69232,9 @@ exports.BattleLearnsets = {
                 "M"
             ],
             "thunderwave": [
+                "M"
+            ],
+            "electroweb": [
                 "M"
             ],
             "psyshock": [
@@ -69187,6 +69252,12 @@ exports.BattleLearnsets = {
             "swagger": [
                 "M"
             ],
+            "earthpower": [
+                "M"
+            ],
+            "flashcannon": [
+                "M"
+            ],
             "icywind": [
                 "T"
             ],
@@ -69200,9 +69271,6 @@ exports.BattleLearnsets = {
                 "T"
             ],
             "lastresort": [
-                "T"
-            ],
-            "swift": [
                 "T"
             ],
             "thunderpunch": [
