@@ -6516,7 +6516,8 @@ exports.BattlePokedex = {
         "num": 160,
         "name": "Feraligatr-Mega",
         "types": [
-            "Water"
+            "Water",
+            "Dragon"
         ],
         "baseStats": {
             "hp": 85,
@@ -15421,7 +15422,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
-        "catchRate": 5,
+        "catchRate": 3,
         "tier": "unobtainable"
     },
     "groudon": {
@@ -15448,7 +15449,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
-        "catchRate": 5,
+        "catchRate": 3,
         "tier": "unobtainable"
     },
     "rayquaza": {
@@ -19614,7 +19615,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
-        "catchRate": 30,
+        "catchRate": 3,
         "tier": "unobtainable"
     },
     "palkia": {
@@ -19643,7 +19644,7 @@ exports.BattlePokedex = {
             "Undiscovered"
         ],
         "gender": "N",
-        "catchRate": 30,
+        "catchRate": 3,
         "tier": "unobtainable"
     },
     "heatran": {
