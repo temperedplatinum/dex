@@ -8188,7 +8188,7 @@ exports.BattleMovedex = {
         "name": "Shadow Punch",
         "type": "Ghost",
         "category": "Physical",
-        "basePower": 60,
+        "basePower": 80,
         "accuracy": true,
         "pp": 20,
         "priority": 0,

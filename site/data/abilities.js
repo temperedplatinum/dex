@@ -284,8 +284,8 @@ exports.BattleAbilities = {
         "flags": {
             "breakable": 1
         },
-        "desc": "The Pokémon draws in all Electric-type moves.",
-        "shortDesc": "The Pokémon draws in all Electric-type moves."
+        "desc": "Draws in Electric-type moves to up Sp. Attack.",
+        "shortDesc": "Draws in Electric-type moves to up Sp. Attack."
     },
     "serenegrace": {
         "num": 32,

@@ -1865,7 +1865,7 @@ exports.BattleLocationdex = {
         "name": "Oreburgh City",
         "land": [
             {
-                "species": "farfetchd",
+                "species": "makuhita",
                 "minLvl": 26,
                 "maxLvl": 26,
                 "rate": 20
@@ -1913,7 +1913,7 @@ exports.BattleLocationdex = {
                 "rate": 5
             },
             {
-                "species": "makuhita",
+                "species": "farfetchd",
                 "minLvl": 26,
                 "maxLvl": 26,
                 "rate": 5

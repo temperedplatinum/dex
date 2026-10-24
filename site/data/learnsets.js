@@ -17559,6 +17559,9 @@ exports.BattleLearnsets = {
                 "L58",
                 "M"
             ],
+            "auroraveil": [
+                "L66"
+            ],
             "focuspunch": [
                 "M"
             ],
