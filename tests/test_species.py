@@ -1,12 +1,16 @@
+import dataclasses
+
 import pytest
 
 from porydex.decomp.abilities import load_abilities
 from porydex.decomp.items import load_items
 from porydex.decomp.moves import load_moves
 from porydex.decomp.species import (
+    EVO_METHODS,
     _abilities,
     _evolution,
     _Lookups,
+    Evolution,
     learnsets_to_showdown,
     load_species,
     species_to_showdown,
@@ -64,6 +68,20 @@ def test_first_evolution_method_per_target_wins(dex):
 def test_move_evolution_uses_move_name(dex):
     assert dex['rotom']['evoType'] == 'levelMove'
     assert dex['rotom']['evoMove'] == 'Bite'
+
+def _with_item_evolution(species, item):
+    evolution = Evolution(EVO_METHODS['EVO_USE_ITEM'], 'SPECIES_IVYSAUR', item=item)
+    return {**species, 'bulbasaur': dataclasses.replace(species['bulbasaur'], evolutions=(evolution,))}
+
+def test_unobtainable_evo_item_flagged_on_prevo(species):
+    dex = species_to_showdown(_with_item_evolution(species, 'Up-Grade'))
+    assert dex['bulbasaur']['unobtainableEvoItems'] == ['Up-Grade']
+    assert dex['ivysaur']['evoItem'] == 'Up-Grade'
+    assert 'unobtainableEvoItems' not in dex['ivysaur']
+
+def test_obtainable_evo_item_not_flagged(species):
+    dex = species_to_showdown(_with_item_evolution(species, 'Fire Stone'))
+    assert 'unobtainableEvoItems' not in dex['bulbasaur']
 
 def test_mega_form_links_stone_and_inherits_size(dex):
     mega = dex['abomasnowmega']

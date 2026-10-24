@@ -29,6 +29,8 @@ UNOBTAINABLE_SPECIES: frozenset[str] = frozenset({
     'Happiny', 'Dialga', 'Palkia', 'Heatran', 'Regigigas', 'Giratina', 'Manaphy', 'Darkrai', 'Shaymin', 'Arceus',
 })
 
+UNOBTAINABLE_EVO_ITEMS: frozenset[str] = frozenset({'Up-Grade', 'Dubious Disc'})
+
 BASE_FORMES: dict[str, str] = {
     'deoxys': 'Normal',
     'burmy': 'Plant',
@@ -322,6 +324,8 @@ def species_to_showdown(species: dict[str, Species]) -> dict[str, dict]:
                 continue
             evos.append(target.name)
             showdown[target.key].update(_evolution_fields(evolution, mon.name, species_names))
+            if evolution.item in UNOBTAINABLE_EVO_ITEMS:
+                showdown[mon.key].setdefault('unobtainableEvoItems', []).append(evolution.item)
 
     return showdown
 

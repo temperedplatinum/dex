@@ -24,6 +24,9 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
         } else if (pokemon.tier === "unobtainable") {
             buf += '<div class="warning"><strong>Note:</strong> This Pok&eacute;mon cannot be obtained.</div>';
 		}
+		for (const item of pokemon.unobtainableEvoItems) {
+			buf += '<div class="warning"><strong>Note:</strong> Its evolution item, ' + item + ', cannot be obtained.</div>';
+		}
 
 		var showdownSprite = Dex.resourcePrefix + 'sprites/gen5/' + pokemon.spriteid + '.png';
 		buf += '<img src="sprites/' + pokemon.id + '.png" onerror="this.onerror=null;this.src=\'' + showdownSprite + '\'" alt="" width="96" height="96" class="sprite" />';

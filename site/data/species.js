@@ -5518,6 +5518,9 @@ exports.BattlePokedex = {
         "tier": "obtainable",
         "evos": [
             "Porygon2"
+        ],
+        "unobtainableEvoItems": [
+            "Up-Grade"
         ]
     },
     "omanyte": {
@@ -9403,6 +9406,9 @@ exports.BattlePokedex = {
         "evoItem": "Up-Grade",
         "evos": [
             "Porygon-Z"
+        ],
+        "unobtainableEvoItems": [
+            "Dubious Disc"
         ]
     },
     "stantler": {
