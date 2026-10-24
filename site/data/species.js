@@ -9474,7 +9474,7 @@ exports.BattlePokedex = {
             "F": 0.5
         },
         "catchRate": 45,
-        "tier": "obtainable"
+        "tier": "unobtainable"
     },
     "tyrogue": {
         "num": 236,

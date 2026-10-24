@@ -23,7 +23,7 @@ SKIPPED_SPECIES: frozenset[str] = frozenset({'SPECIES_NONE', 'SPECIES_EGG', 'SPE
 
 UNOBTAINABLE_SPECIES: frozenset[str] = frozenset({
     'Chansey', 'Mewtwo', 'Mew',
-    'Blissey', 'Lugia', 'Ho-Oh', 'Celebi',
+    'Smeargle', 'Blissey', 'Lugia', 'Ho-Oh', 'Celebi',
     'Slakoth', 'Vigoroth', 'Slaking', 'Nincada', 'Shedinja', 'Kyogre', 'Groudon', 'Rayquaza', 'Jirachi',
     'Deoxys', 'Deoxys-Attack', 'Deoxys-Defense', 'Deoxys-Speed',
     'Happiny', 'Dialga', 'Palkia', 'Heatran', 'Regigigas', 'Giratina', 'Manaphy', 'Darkrai', 'Shaymin', 'Arceus',
