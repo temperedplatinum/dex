@@ -8238,12 +8238,12 @@ exports.BattlePokedex = {
             "Ground"
         ],
         "baseStats": {
-            "hp": 100,
-            "atk": 70,
-            "def": 70,
+            "hp": 120,
+            "atk": 80,
+            "def": 75,
             "spe": 45,
             "spa": 65,
-            "spd": 65
+            "spd": 70
         },
         "abilities": {
             "0": "Serene Grace",
@@ -9062,7 +9062,7 @@ exports.BattlePokedex = {
             "atk": 40,
             "def": 70,
             "spe": 70,
-            "spa": 80,
+            "spa": 95,
             "spd": 140
         },
         "abilities": {
@@ -9452,12 +9452,12 @@ exports.BattlePokedex = {
             "Normal"
         ],
         "baseStats": {
-            "hp": 55,
+            "hp": 90,
             "atk": 20,
-            "def": 35,
+            "def": 60,
             "spe": 75,
             "spa": 20,
-            "spd": 45
+            "spd": 60
         },
         "abilities": {
             "0": "Own Tempo",
@@ -12578,11 +12578,11 @@ exports.BattlePokedex = {
             "Electric"
         ],
         "baseStats": {
-            "hp": 65,
+            "hp": 85,
             "atk": 73,
             "def": 75,
             "spe": 85,
-            "spa": 47,
+            "spa": 77,
             "spd": 85
         },
         "abilities": {
@@ -12609,8 +12609,8 @@ exports.BattlePokedex = {
             "Fairy"
         ],
         "baseStats": {
-            "hp": 65,
-            "atk": 47,
+            "hp": 85,
+            "atk": 77,
             "def": 75,
             "spe": 85,
             "spa": 73,
@@ -13630,11 +13630,11 @@ exports.BattlePokedex = {
         ],
         "baseStats": {
             "hp": 110,
-            "atk": 78,
-            "def": 73,
-            "spe": 60,
-            "spa": 76,
-            "spd": 71
+            "atk": 83,
+            "def": 78,
+            "spe": 65,
+            "spa": 81,
+            "spd": 76
         },
         "abilities": {
             "0": "Oblivious",

@@ -41924,16 +41924,15 @@ exports.BattleLearnsets = {
     },
     "ninjask": {
         "learnset": {
+            "firstimpression": [
+                "L1"
+            ],
             "furycutter": [
                 "L1",
                 "T"
             ],
             "screech": [
                 "L1"
-            ],
-            "aerialace": [
-                "L1",
-                "M"
             ],
             "batonpass": [
                 "L1"
@@ -41959,21 +41958,26 @@ exports.BattleLearnsets = {
             "scratch": [
                 "L1"
             ],
-            "absorb": [
-                "L23"
+            "bugbite": [
+                "L1"
             ],
-            "dualwingbeat": [
-                "L26",
+            "aerialace": [
+                "L20",
                 "M"
             ],
-            "furyswipes": [
+            "dualwingbeat": [
+                "L23",
+                "M"
+            ],
+            "nightslash": [
+                "L26"
+            ],
+            "leechlife": [
                 "L29"
             ],
-            "bugbite": [
-                "L32"
-            ],
-            "mindreader": [
-                "L43"
+            "acrobatics": [
+                "L32",
+                "M"
             ],
             "uturn": [
                 "L46"
@@ -41984,14 +41988,8 @@ exports.BattleLearnsets = {
             "bugbuzz": [
                 "L55"
             ],
-            "leechlife": [
-                "L59"
-            ],
             "xscissor": [
                 "L64",
-                "M"
-            ],
-            "acrobatics": [
                 "M"
             ],
             "hiddenpower": [
@@ -66097,6 +66095,9 @@ exports.BattleLearnsets = {
             "ingrain": [
                 "L21"
             ],
+            "poisonfang": [
+                "L24"
+            ],
             "grassknot": [
                 "L27",
                 "M"
@@ -66107,7 +66108,13 @@ exports.BattleLearnsets = {
             "wringout": [
                 "L37"
             ],
-            "slam": [
+            "icefang": [
+                "L40"
+            ],
+            "thunderfang": [
+                "L40"
+            ],
+            "firefang": [
                 "L40"
             ],
             "energyball": [
@@ -66120,6 +66127,9 @@ exports.BattleLearnsets = {
             "seedbomb": [
                 "L47",
                 "T"
+            ],
+            "slam": [
+                "L51"
             ],
             "powerwhip": [
                 "L58"
