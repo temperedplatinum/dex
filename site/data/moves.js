@@ -8644,7 +8644,7 @@ exports.BattleMovedex = {
         "type": "Poison",
         "category": "Special",
         "basePower": 30,
-        "accuracy": 70,
+        "accuracy": 80,
         "pp": 20,
         "priority": 0,
         "target": "normal",

@@ -8,13 +8,13 @@ exports.BattleLearnsets = {
                 "L1"
             ],
             "vinewhip": [
-                "L3"
-            ],
-            "naturepower": [
                 "L6"
             ],
+            "naturepower": [
+                "L8"
+            ],
             "leechseed": [
-                "L9"
+                "L10"
             ],
             "razorleaf": [
                 "L12"
@@ -443,13 +443,13 @@ exports.BattleLearnsets = {
                 "L1"
             ],
             "ember": [
-                "L4"
+                "L6"
             ],
             "metalclaw": [
-                "L7"
+                "L8"
             ],
             "smokescreen": [
-                "L9"
+                "L10"
             ],
             "firespin": [
                 "L12"
@@ -977,7 +977,7 @@ exports.BattleLearnsets = {
                 "L1"
             ],
             "watergun": [
-                "L3"
+                "L6"
             ],
             "rapidspin": [
                 "L9",
@@ -1462,13 +1462,17 @@ exports.BattleLearnsets = {
             "electroweb": [
                 "L1",
                 "M"
+            ],
+            "tackle": [
+                "L1"
             ]
         }
     },
     "butterfree": {
         "learnset": {
             "gust": [
-                "L1"
+                "L1",
+                "L10"
             ],
             "bugbite": [
                 "L1"
@@ -22185,10 +22189,10 @@ exports.BattleLearnsets = {
             "leer": [
                 "L1"
             ],
-            "smokescreen": [
+            "ember": [
                 "L6"
             ],
-            "ember": [
+            "smokescreen": [
                 "L10"
             ],
             "quickattack": [
@@ -27014,9 +27018,6 @@ exports.BattleLearnsets = {
                 "L33",
                 "T"
             ],
-            "grassyglide": [
-                "L36"
-            ],
             "uturn": [
                 "L38"
             ],
@@ -27135,9 +27136,6 @@ exports.BattleLearnsets = {
             "acrobatics": [
                 "L29",
                 "M"
-            ],
-            "grassyglide": [
-                "L31"
             ],
             "cottonspore": [
                 "L33"
@@ -27267,9 +27265,6 @@ exports.BattleLearnsets = {
             ],
             "cottonspore": [
                 "L35"
-            ],
-            "grassyglide": [
-                "L38"
             ],
             "uturn": [
                 "L40"
@@ -36594,13 +36589,13 @@ exports.BattleLearnsets = {
                 "L1"
             ],
             "leafage": [
-                "L3"
-            ],
-            "quickattack": [
                 "L6"
             ],
+            "quickattack": [
+                "L8"
+            ],
             "megadrain": [
-                "L9"
+                "L10"
             ],
             "detect": [
                 "L12"
@@ -37117,13 +37112,13 @@ exports.BattleLearnsets = {
                 "L1"
             ],
             "ember": [
-                "L3"
-            ],
-            "quickattack": [
                 "L6"
             ],
+            "quickattack": [
+                "L8"
+            ],
             "flamecharge": [
-                "L9",
+                "L10",
                 "M"
             ],
             "detect": [
@@ -37598,20 +37593,20 @@ exports.BattleLearnsets = {
                 "L1"
             ],
             "watergun": [
-                "L3"
-            ],
-            "iceball": [
-                "L5"
+                "L6"
             ],
             "rocksmash": [
-                "L7",
+                "L8",
                 "M"
             ],
             "rockthrow": [
-                "L9"
+                "L10"
+            ],
+            "iceball": [
+                "L12"
             ],
             "protect": [
-                "L12"
+                "L14"
             ],
             "supersonic": [
                 "L15"
@@ -45479,6 +45474,9 @@ exports.BattleLearnsets = {
             ],
             "leechseed": [
                 "L10"
+            ],
+            "sludge": [
+                "L13"
             ],
             "magicalleaf": [
                 "L15"
@@ -56297,6 +56295,12 @@ exports.BattleLearnsets = {
             "tackle": [
                 "L1"
             ],
+            "growl": [
+                "L5"
+            ],
+            "leafage": [
+                "L7"
+            ],
             "absorb": [
                 "L9"
             ],
@@ -57182,11 +57186,11 @@ exports.BattleLearnsets = {
             "pound": [
                 "L1"
             ],
-            "growl": [
-                "L4"
+            "tailwhip": [
+                "L5"
             ],
             "watergun": [
-                "L8"
+                "L7"
             ],
             "charm": [
                 "L11"
@@ -57319,7 +57323,7 @@ exports.BattleLearnsets = {
             "tackle": [
                 "L1"
             ],
-            "growl": [
+            "tailwhip": [
                 "L1"
             ],
             "watergun": [
@@ -57465,7 +57469,7 @@ exports.BattleLearnsets = {
             "tackle": [
                 "L1"
             ],
-            "growl": [
+            "tailwhip": [
                 "L1"
             ],
             "watergun": [

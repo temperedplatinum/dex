@@ -30,7 +30,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
-        "catchRate": 45,
+        "catchRate": 100,
         "tier": "obtainable",
         "evos": [
             "Ivysaur"
@@ -181,7 +181,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
-        "catchRate": 45,
+        "catchRate": 100,
         "tier": "obtainable",
         "evos": [
             "Charmeleon"
@@ -367,7 +367,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
-        "catchRate": 45,
+        "catchRate": 100,
         "tier": "obtainable",
         "evos": [
             "Wartortle"
@@ -6170,7 +6170,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
-        "catchRate": 45,
+        "catchRate": 100,
         "tier": "obtainable",
         "evos": [
             "Bayleef"
@@ -6318,7 +6318,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
-        "catchRate": 45,
+        "catchRate": 100,
         "tier": "obtainable",
         "evos": [
             "Quilava"
@@ -6426,7 +6426,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
-        "catchRate": 45,
+        "catchRate": 100,
         "tier": "obtainable",
         "evos": [
             "Croconaw"
@@ -10056,7 +10056,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
-        "catchRate": 45,
+        "catchRate": 100,
         "tier": "obtainable",
         "evos": [
             "Grovyle"
@@ -10205,7 +10205,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
-        "catchRate": 45,
+        "catchRate": 100,
         "tier": "obtainable",
         "evos": [
             "Combusken"
@@ -10354,7 +10354,7 @@ exports.BattlePokedex = {
             "M": 0.875,
             "F": 0.125
         },
-        "catchRate": 45,
+        "catchRate": 100,
         "tier": "obtainable",
         "evos": [
             "Marshtomp"
@@ -15698,7 +15698,7 @@ exports.BattlePokedex = {
         "tier": "obtainable",
         "prevo": "Turtwig",
         "evoType": "level",
-        "evoLevel": 18,
+        "evoLevel": 16,
         "evos": [
             "Torterra"
         ]
@@ -19956,7 +19956,8 @@ exports.BattlePokedex = {
         "num": 492,
         "name": "Shaymin",
         "types": [
-            "Grass"
+            "Grass",
+            "Fairy"
         ],
         "baseStats": {
             "hp": 100,
@@ -19967,7 +19968,8 @@ exports.BattlePokedex = {
             "spd": 100
         },
         "abilities": {
-            "0": "Natural Cure"
+            "0": "Natural Cure",
+            "H": "Grassy Surge"
         },
         "heightm": 0.2,
         "weightkg": 2.1,

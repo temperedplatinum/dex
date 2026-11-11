@@ -116,74 +116,74 @@ exports.BattleLocationdex = {
         "land": [
             {
                 "species": "wingull",
-                "minLvl": 3,
-                "maxLvl": 3,
+                "minLvl": 5,
+                "maxLvl": 5,
                 "rate": 20
             },
             {
                 "species": "psyduck",
-                "minLvl": 3,
-                "maxLvl": 3,
+                "minLvl": 5,
+                "maxLvl": 5,
                 "rate": 15
             },
             {
                 "species": "buizel",
-                "minLvl": 3,
-                "maxLvl": 3,
+                "minLvl": 5,
+                "maxLvl": 5,
                 "rate": 10
             },
             {
                 "species": "shellos",
-                "minLvl": 3,
-                "maxLvl": 3,
+                "minLvl": 5,
+                "maxLvl": 5,
                 "rate": 10
             },
             {
                 "species": "lotad",
-                "minLvl": 3,
-                "maxLvl": 3,
+                "minLvl": 5,
+                "maxLvl": 5,
                 "rate": 10
             },
             {
                 "species": "seedot",
-                "minLvl": 3,
-                "maxLvl": 3,
+                "minLvl": 5,
+                "maxLvl": 5,
                 "rate": 10
             },
             {
                 "species": "hoppip",
-                "minLvl": 3,
-                "maxLvl": 3,
+                "minLvl": 5,
+                "maxLvl": 5,
                 "rate": 5
             },
             {
                 "species": "bidoof",
-                "minLvl": 3,
-                "maxLvl": 3,
+                "minLvl": 5,
+                "maxLvl": 5,
                 "rate": 5
             },
             {
                 "species": "surskit",
-                "minLvl": 3,
-                "maxLvl": 3,
+                "minLvl": 5,
+                "maxLvl": 5,
                 "rate": 5
             },
             {
                 "species": "wooper",
-                "minLvl": 3,
-                "maxLvl": 3,
+                "minLvl": 5,
+                "maxLvl": 5,
                 "rate": 5
             },
             {
                 "species": "azurill",
-                "minLvl": 3,
-                "maxLvl": 3,
+                "minLvl": 5,
+                "maxLvl": 5,
                 "rate": 4
             },
             {
                 "species": "slowpoke",
-                "minLvl": 3,
-                "maxLvl": 3,
+                "minLvl": 5,
+                "maxLvl": 5,
                 "rate": 1
             }
         ],
@@ -511,7 +511,7 @@ exports.BattleLocationdex = {
                 "rate": 10
             },
             {
-                "species": "oddish",
+                "species": "burmy",
                 "minLvl": 7,
                 "maxLvl": 7,
                 "rate": 10
@@ -523,7 +523,7 @@ exports.BattleLocationdex = {
                 "rate": 5
             },
             {
-                "species": "burmy",
+                "species": "oddish",
                 "minLvl": 7,
                 "maxLvl": 7,
                 "rate": 5
@@ -9808,97 +9808,97 @@ exports.BattleLocationdex = {
             {
                 "species": "wurmple",
                 "minLvl": 5,
-                "maxLvl": 15,
+                "maxLvl": 12,
                 "rate": 13.2
             },
             {
                 "species": "weedle",
                 "minLvl": 5,
-                "maxLvl": 15,
+                "maxLvl": 12,
                 "rate": 13.2
             },
             {
                 "species": "caterpie",
                 "minLvl": 5,
-                "maxLvl": 15,
+                "maxLvl": 12,
                 "rate": 13.2
             },
             {
                 "species": "burmy",
                 "minLvl": 5,
-                "maxLvl": 15,
+                "maxLvl": 12,
                 "rate": 9.9
             },
             {
                 "species": "combee",
                 "minLvl": 5,
-                "maxLvl": 15,
+                "maxLvl": 12,
                 "rate": 9.9
             },
             {
                 "species": "spinarak",
                 "minLvl": 5,
-                "maxLvl": 15,
+                "maxLvl": 12,
                 "rate": 6.6
             },
             {
                 "species": "ledyba",
                 "minLvl": 5,
-                "maxLvl": 15,
+                "maxLvl": 12,
                 "rate": 6.6
             },
             {
                 "species": "silcoon",
                 "minLvl": 5,
-                "maxLvl": 15,
+                "maxLvl": 12,
                 "rate": 4.6
             },
             {
                 "species": "cascoon",
                 "minLvl": 5,
-                "maxLvl": 15,
+                "maxLvl": 12,
                 "rate": 4.6
             },
             {
                 "species": "pineco",
                 "minLvl": 5,
-                "maxLvl": 15,
+                "maxLvl": 12,
                 "rate": 4.6
             },
             {
                 "species": "cherubi",
                 "minLvl": 5,
-                "maxLvl": 15,
+                "maxLvl": 12,
                 "rate": 3.3
             },
             {
                 "species": "aipom",
                 "minLvl": 5,
-                "maxLvl": 15,
+                "maxLvl": 12,
                 "rate": 3.3
             },
             {
                 "species": "scyther",
                 "minLvl": 5,
-                "maxLvl": 15,
+                "maxLvl": 12,
                 "rate": 2.0
             },
             {
                 "species": "heracross",
                 "minLvl": 5,
-                "maxLvl": 15,
+                "maxLvl": 12,
                 "rate": 2.0
             },
             {
                 "species": "pinsir",
                 "minLvl": 5,
-                "maxLvl": 15,
+                "maxLvl": 12,
                 "rate": 2.0
             },
             {
                 "species": "munchlax",
                 "minLvl": 5,
-                "maxLvl": 15,
+                "maxLvl": 12,
                 "rate": 0.7
             }
         ]
